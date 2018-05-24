@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Partner Conversations :: PortX(TM) Docs Prototype</title>
+    <link rel="canonical" href="https://modusbox.org/trade-route/1.0/partner-conversations.html">
+    <meta name="generator" content="Antora 1.0.1">
+    <link rel="stylesheet" href="../../_/css/site.css">
+  </head>
+  <body class="article">
+<header class="header" role="banner">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://modusbox.org">PortX(TM) Docs Prototype</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Resources</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Resource A</a>
+            <a class="navbar-item" href="#">Resource B</a>
+            <a class="navbar-item" href="#">Resource C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="main-wrapper">
+<div class="navigation-container" data-component="trade-route" data-version="1.0">
+  <aside class="navigation" role="navigation">
+    <div class="panels">
+<div class="navigation-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="index.html">Trade Route(TM)</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="index.html">TradeRoute Manager</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="/trade-route/key-concepts">Key Concepts</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/b2b-transaction-processing-framework">B2B Transaction-Processing Framework</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/resolution-processes">Resolution Processes</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/tracking">Tracking</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="/trade-route/examples">Examples</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="/trade-route/transaction-monitoring">Transaction Monitoring</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/central-pane-elements">Central Pane Elements</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/tracking-scenarios">Tracking Scenarios</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="/trade-route/partner-configuration">Partner Configuration</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/company-information">Company Information</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/identifiers">Identifiers</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/on-hold-inactive">On-Hold/Inactive</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/certificate">Certificate</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/x12-settings">X12 Settings</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/edifact-settings">EDIFACT Settings</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/csv-settings">CSV Settings</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/transaction-designer">Transaction Designer</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/document-types">Document Types</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/endpoints">Endpoints</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/maps">Maps</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/channels">Channels</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/routes">Routes</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/partner-conversations">Partner Conversations</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/rosettanet-pips">RosettaNet PIPs</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/rosettanet-agreements">RosettaNet Agreements</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="/trade-route/administration">Administration</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/environments">Environments</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/error-codes">Error Codes</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/security">Security</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/lookup-tables">Lookup Tables</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="/trade-route/tutorials">Tutorials</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/apm-tutorial-td">Anypoint Partner Manager Tutorial: Designing a Transaction</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/transaction-tracking-walkthrough">Transaction Tracking Walkthrough</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="/trade-route/anypoint-partner-manager-api">Anypoint Partner Manager API</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="/trade-route/glossary">Glossary</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="navigation-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Trade Route(TM)</span>
+    <span class="version">1.0</span>
+  </div>
+  <ul class="components">
+    <li class="component">
+      <span class="title">AS2 Connector</span>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../as2-connector/1.0/as2-connector.html">1.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <span class="title">FTPS Connector</span>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../ftps-connector/1.0/ftps-connector.html">1.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <span class="title">Partner Manager Connector</span>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../pmc/1.0/pmc.html">1.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <span class="title">PortX(TM)</span>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../portx/LiftOff/index.html">LiftOff</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <span class="title">Release Notes</span>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../release-notes/1.0/release-notes.html">1.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component is-current">
+      <span class="title">Trade Route(TM)</span>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="index.html">1.0</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+  <main class="main" role="main">
+<div class="toolbar" role="navigation">
+  <button class="navigation-toggle"></button>
+  <a href="../../portx/LiftOff/index.html" class="home-link"></a>
+<nav class="crumbs" role="navigation" aria-label="breadcrumbs">
+  <ul>
+    <li class="crumb"><a href="index.html">Trade Route(TM)</a></li>
+    <li class="crumb"><a href="partner-conversations.html">Partner Conversations</a></li>
+  </ul>
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/modusintegration/modusbox-docs/edit/dev/trade-route/modules/ROOT/pages/partner-conversations.adoc">Edit this Page</a></div>
+</div>
+<article class="doc">
+<h1>Partner Conversations</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>When you create a  <em>Partner Conversation</em>, you establish a sequence of events between your company and a trading partner. You can track each event in the sequence of the conversation as it proceeds from the first event to the last.</p>
+</div>
+<div class="paragraph">
+<p>This page provides instructing for creating and editing Partner Conversations. For information about tracking Conversations, see  <a href="/portx/transaction-monitoring">Transaction Monitoring</a>.</p>
+</div>
+<div class="paragraph">
+<p>include::/_sources/edit-settings.adoc[]</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic" start="3">
+<li>
+<p>In the <strong>CONFIGURATION</strong> section of the left-hand navigation pane on the <a href="partner-configuration.html#img-company-information" class="page">Company Information Page</a>, click <strong>Partner Conversations</strong>.</p>
+<div class="paragraph">
+<p>The <a href="#img-partner-conversations">Partner Conversations Page</a> appears.</p>
+</div>
+</li>
+</ol>
+</div>
+<div id="img-partner-conversations" class="imageblock">
+<div class="content">
+<img src="_images/partner-conversations.png" alt="img-partner-conversations">
+</div>
+<div class="title">Figure 1. Partner Conversations Page</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic" start="4">
+<li>
+<p>From this page, you can:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="#_add_a_new_partner_conversation">Add a New Partner Conversation</a></p>
+</li>
+<li>
+<p><a href="#_edit_an_existing_partner_conversation">Edit an Existing Partner Conversation</a></p>
+</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_edit_an_existing_partner_conversation"><a class="anchor" href="#_edit_an_existing_partner_conversation"></a>Edit an Existing Partner Conversation</h2>
+<div class="sectionbody">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>On the <a href="#img-partner-conversations">Partner Conversations Page</a>, click the Partner Conversation you want to edit.</p>
+<div class="paragraph">
+<p>The <a href="#img-partner-conversation-edit">Partner Conversation-Edit Page</a> appears.</p>
+</div>
+</li>
+</ol>
+</div>
+<div id="img-partner-conversation-edit" class="imageblock">
+<div class="content">
+<img src="_images/partner-conversation-edit.png" alt="img-partner-conversation-edit">
+</div>
+<div class="title">Figure 2. Partner Conversation-Edit Page</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic" start="2">
+<li>
+<p>On the <a href="#img-partner-conversation-edit">Partner Conversation-Edit Page</a>, you can:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="#_add_a_new_step">Add a New Step</a></p>
+</li>
+<li>
+<p><a href="#_edit_an_existing_step">Edit an Existing Step</a></p>
+</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_add_a_new_partner_conversation"><a class="anchor" href="#_add_a_new_partner_conversation"></a>Add a New Partner Conversation</h2>
+<div class="sectionbody">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>On the <a href="#img-partner-conversations">Partner Conversations Page</a>, click <strong>New</strong>.</p>
+<div class="paragraph">
+<p>The <a href="#img-partner-conversation">Partner Conversation Page</a> appears.</p>
+</div>
+</li>
+</ol>
+</div>
+<div id="img-partner-conversation" class="imageblock">
+<div class="content">
+<img src="_images/partner-conversation.png" alt="img-partner-conversation">
+</div>
+<div class="title">Figure 3. Partner Conversation Page</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic" start="2">
+<li>
+<p>In the <strong>Name</strong> box, type a name for this process.</p>
+</li>
+<li>
+<p>Click <strong>Save</strong>.</p>
+<div class="paragraph">
+<p>The <a href="#img-partner-conversation-steps">Partner Conversation Steps Page</a> appears.</p>
+</div>
+</li>
+</ol>
+</div>
+<div id="img-partner-conversation-steps" class="imageblock">
+<div class="content">
+<img src="_images/partner-conversation-steps.png" alt="img-partner-conversation-steps">
+</div>
+<div class="title">Figure 4. Partner Conversation Steps Page</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_add_a_new_step"><a class="anchor" href="#_add_a_new_step"></a>Add a New Step</h2>
+<div class="sectionbody">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>On the <a href="#img-partner-conversation-steps">Partner Conversation Steps Page</a>, in the <strong>Steps</strong> section, click <strong>New</strong>.<br>
+The <a href="#img-partner-conversation-define-step">Partner Conversation Define-Step Page</a> appears.</p>
+</li>
+</ol>
+</div>
+<div id="img-partner-conversation-define-step" class="imageblock">
+<div class="content">
+<img src="_images/partner-conversation-define-step.png" alt="img-partner-conversation-define-step">
+</div>
+<div class="title">Figure 5. Partner Conversation Define-Step Page</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic" start="2">
+<li>
+<p>In the <strong>Direction</strong> dropdown listbox, click the down-arrowhead, then click either <strong>INBOUND</strong> or <strong>OUTBOUND</strong>.</p>
+</li>
+<li>
+<p>Click the <strong>Document Definition</strong> box.</p>
+<div class="paragraph">
+<p>The <strong>Pick a document</strong> box appears.</p>
+</div>
+</li>
+<li>
+<p>In the <strong>Pick a document</strong> box, click the row that corresponds to the document for which you want to define a process, then click <strong>Use selected</strong>.</p>
+<div class="paragraph">
+<p>The <a href="#img-partner-conversation-steps">Partner Conversation Steps Page</a> reappears, with the direction and document you selected in the preceding steps shown.</p>
+</div>
+</li>
+<li>
+<p>Click <strong>Save</strong> to save the definition.</p>
+<div class="paragraph">
+<p>The <a href="#img-partner-conversation-step-added">Partner Conversation Step-Added Page</a> appears.</p>
+</div>
+</li>
+</ol>
+</div>
+<div id="img-partner-conversation-step-added" class="imageblock">
+<div class="content">
+<img src="_images/partner-conversation-step-added.png" alt="img-partner-conversation-step-added">
+</div>
+<div class="title">Figure 6. Partner Conversation Step-Added Page</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_add_additional_steps"><a class="anchor" href="#_add_additional_steps"></a>Add Additional Steps</h2>
+<div class="sectionbody">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>On the <a href="#img-partner-conversation-step-added">Partner Conversation Step-Added Page</a>, click <strong>New</strong>.</p>
+<div class="paragraph">
+<p>The <a href="#img-partner-conversation-add-another-step">Partner Conversation Add-Another-Step-Page</a> appears.</p>
+</div>
+</li>
+</ol>
+</div>
+<div id="img-partner-conversation-add-another-step" class="imageblock">
+<div class="content">
+<img src="_images/partner-conversation-add-another-step.png" alt="img-partner-conversation-add-another-step">
+</div>
+<div class="title">Figure 7. Partner Conversation Add-Another-Step-Page</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic" start="2">
+<li>
+<p>Enter values for direction and definition, as in the previous steps.</p>
+</li>
+<li>
+<p>In the <strong>Document Definition Properties</strong> dropdown listbox, click the down-arrowhead, then select a property.</p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+For a property to appear in this list, it must have been defined in <a href="/portx/document-types">Document Types</a>.
+</td>
+</tr>
+</table>
+</div>
+</li>
+<li>
+<p>In the <strong>Other Document Definition Properties</strong> dropdown listbox, click the down-arrowhead, then select a property.</p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+For a property to appear in this list, it must have been defined in <a href="/portx/document-types">Document Types</a>.
+</td>
+</tr>
+</table>
+</div>
+</li>
+<li>
+<p>In the <strong>New Correlation Type Name</strong> box, enter a name for this correlation type, then click <strong>Create</strong>.</p>
+</li>
+<li>
+<p>Click <strong>Save</strong>.<br>
+The <a href="#img-partner-conversation-step-added">Partner Conversation Step-Added Page</a> appears.</p>
+<div class="paragraph">
+<p>To add another step, repeat the previous steps.</p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_edit_an_existing_step"><a class="anchor" href="#_edit_an_existing_step"></a>Edit an Existing Step</h2>
+<div class="sectionbody">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>On the <a href="#img-partner-conversation-edit">Partner Conversation-Edit Page</a>, in the <strong>Step</strong> column, click the number that corresponds to the step you want to edit.</p>
+<div class="paragraph">
+<p>The <a href="#img-partner-conversation-define-step">Partner Conversation Define-Step Page</a> appears.</p>
+</div>
+</li>
+<li>
+<p>Edit information that pertains to the step as appropriate.</p>
+<div class="paragraph">
+<p>For more information, see <a href="#_add_a_new_step">Add a New Step</a>.</p>
+</div>
+</li>
+<li>
+<p>Click <strong>Save</strong>.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</article>
+  </main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script src="../../_/js/site.js"></script>
+<script src="../../_/js/vendor/highlight.js"></script>
+<script>hljs.initHighlighting()</script>
+  </body>
+</html>

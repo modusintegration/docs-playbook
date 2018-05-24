@@ -1,0 +1,1037 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X12 Module HIPAA :: PortX(TM) Docs Prototype</title>
+    <link rel="canonical" href="https://modusbox.org/trade-route/1.0/x12-module-hipaa.html">
+    <meta name="keywords" content="b2b, x12, schema, module, edi">
+    <meta name="generator" content="Antora 1.0.1">
+    <link rel="stylesheet" href="../../_/css/site.css">
+  </head>
+  <body class="article">
+<header class="header" role="banner">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://modusbox.org">PortX(TM) Docs Prototype</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Resources</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Resource A</a>
+            <a class="navbar-item" href="#">Resource B</a>
+            <a class="navbar-item" href="#">Resource C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="main-wrapper">
+<div class="navigation-container" data-component="trade-route" data-version="1.0">
+  <aside class="navigation" role="navigation">
+    <div class="panels">
+<div class="navigation-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="index.html">Trade Route(TM)</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="index.html">TradeRoute Manager</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="/trade-route/key-concepts">Key Concepts</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/b2b-transaction-processing-framework">B2B Transaction-Processing Framework</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/resolution-processes">Resolution Processes</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/tracking">Tracking</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="/trade-route/examples">Examples</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="/trade-route/transaction-monitoring">Transaction Monitoring</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/central-pane-elements">Central Pane Elements</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/tracking-scenarios">Tracking Scenarios</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="/trade-route/partner-configuration">Partner Configuration</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/company-information">Company Information</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/identifiers">Identifiers</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/on-hold-inactive">On-Hold/Inactive</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/certificate">Certificate</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/x12-settings">X12 Settings</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/edifact-settings">EDIFACT Settings</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/csv-settings">CSV Settings</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/transaction-designer">Transaction Designer</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/document-types">Document Types</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/endpoints">Endpoints</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/maps">Maps</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/channels">Channels</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/routes">Routes</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/partner-conversations">Partner Conversations</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/rosettanet-pips">RosettaNet PIPs</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/rosettanet-agreements">RosettaNet Agreements</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="/trade-route/administration">Administration</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/environments">Environments</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/error-codes">Error Codes</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/security">Security</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/lookup-tables">Lookup Tables</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="/trade-route/tutorials">Tutorials</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/apm-tutorial-td">Anypoint Partner Manager Tutorial: Designing a Transaction</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/transaction-tracking-walkthrough">Transaction Tracking Walkthrough</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="/trade-route/anypoint-partner-manager-api">Anypoint Partner Manager API</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="/trade-route/glossary">Glossary</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="navigation-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Trade Route(TM)</span>
+    <span class="version">1.0</span>
+  </div>
+  <ul class="components">
+    <li class="component">
+      <span class="title">AS2 Connector</span>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../as2-connector/1.0/as2-connector.html">1.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <span class="title">FTPS Connector</span>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../ftps-connector/1.0/ftps-connector.html">1.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <span class="title">Partner Manager Connector</span>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../pmc/1.0/pmc.html">1.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <span class="title">PortX(TM)</span>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../portx/LiftOff/index.html">LiftOff</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <span class="title">Release Notes</span>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../release-notes/1.0/release-notes.html">1.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component is-current">
+      <span class="title">Trade Route(TM)</span>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="index.html">1.0</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+  <main class="main" role="main">
+<div class="toolbar" role="navigation">
+  <button class="navigation-toggle"></button>
+  <a href="../../portx/LiftOff/index.html" class="home-link"></a>
+<nav class="crumbs" role="navigation" aria-label="breadcrumbs">
+  <ul>
+    <li class="crumb"><a href="index.html">Trade Route(TM)</a></li>
+    <li class="crumb"><a href="x12-module-hipaa.html">X12 Module HIPAA</a></li>
+  </ul>
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/modusintegration/modusbox-docs/edit/dev/trade-route/modules/ROOT/pages/x12-module-hipaa.adoc">Edit this Page</a></div>
+</div>
+<article class="doc">
+<h1>X12 Module HIPAA</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>In addition to the base X12 standards, the X12 Module also supports the HIPAA (Health Insurance Portability and Accountability Act) standards based on X12 version 005010.</p>
+</div>
+<div class="paragraph">
+<p>The X12 Module HIPAA support includes:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>X12 HIPAA EDI message-reading, message-validation, and message-writing</p>
+</li>
+<li>
+<p>Integration with DataSense and DataWeave</p>
+</li>
+<li>
+<p>HIPAA message packs for 005010X212, 005010X214, 005010X217, 005010X218, 005010X220A1, 005010X221A1, 005010X222A2, 005010X223A2. 005010X223A3, 005010X224A3, and 005010X279A1</p>
+</li>
+<li>
+<p>The ability to customize the base X12 HIPAA schemas</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Most aspects of using HIPAA with the X12 Module are the same as using standard X12. The main differences are:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The form of the schemas</p>
+</li>
+<li>
+<p>Extent and type of validation performed</p>
+</li>
+<li>
+<p>Data structure representation</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The supplied HIPAA schemas use different structures from base X12 schemas. The structure used for HIPAA reflects the way in which the same segments are used in different locations in a transaction set for different purposes, and often with different requirements for code sets and field usages. To help distinguish between the different usages, the HIPAA schemas use full names as segment keys. This differs from the approach used with basic X12 standards, where the segment keys use a numeric prefix along with the segment tag.</p>
+</div>
+<div class="paragraph">
+<p>HIPAA schemas also include details of code sets defined for elements. Data is validated against these code sets both when parsing and writing transaction sets.</p>
+</div>
+<div class="paragraph">
+<p>This page helps provides details of using the X12 Module for HIPAA transaction sets, and how usage differs from standard X12.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_configuration_for_hipaa_usage"><a class="anchor" href="#_configuration_for_hipaa_usage"></a>Configuration for HIPAA Usage</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>To use the X12 Module connector for HIPAA transaction sets you must:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Select one or more HIPAA schemas to be used.</p>
+</li>
+<li>
+<p>Set the snipValidationType configuration parameter to 'TYPE2_HIPAA'</p>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="_determining_the_hipaa_schema_location"><a class="anchor" href="#_determining_the_hipaa_schema_location"></a>Determining the HIPAA Schema Location</h3>
+<div class="paragraph">
+<p>To use the connector, you need to know the locations of the schemas in your project. If you&#8217;re using the out of the box HIPAA schemas and not customizing anything, the schema location follows the  <code>/hipaa/{version}/{transaction-set}.esl</code> pattern. For example, if you&#8217;re using the <code>005010X222A2</code> version and the 837 transaction set, your schema location is <code>/hipaa/005010X222A2/837.esl</code>.</p>
+</div>
+<div class="paragraph">
+<p>If you&#8217;re using a modified HIPAA schema, you should put your schemas under a directory in src/main/app and refer to the location using <code>${app.home}</code>. For example, if you&#8217;ve put your HIPAA 837 schema under src/main/app/mypartner/837.esl, your schema location is <code>${app.home}/mypartner/837.esl</code>.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_configuring_the_x12_module"><a class="anchor" href="#_configuring_the_x12_module"></a>Configuring the X12 Module</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>After you install the connector and configure your schema(s), you can start using the connector.</p>
+</div>
+<div class="sect2">
+<h3 id="_visual_editor"><a class="anchor" href="#_visual_editor"></a>Visual Editor</h3>
+<div class="paragraph">
+<p>Follow these steps to create a global X12 module configuration in a Mule application:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Click the Global Elements tab at the base of the canvas, then click Create.</p>
+</li>
+<li>
+<p>In the Choose Global Type wizard, use the filter to locate and select, X12 Module, then click OK.</p>
+</li>
+<li>
+<p>Configure the parameters according to the connector reference.</p>
+</li>
+<li>
+<p>Click OK to save the global connector configurations.</p>
+</li>
+<li>
+<p>Return to the Message Flow tab in Studio.</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_xml_editor_or_standalone"><a class="anchor" href="#_xml_editor_or_standalone"></a>XML Editor or Standalone</h3>
+<div class="paragraph">
+<p>Ensure that you have included the EDI name spaces in your configuration file.</p>
+</div>
+<div class="paragraph">
+<p>Follow these steps to configure a EDI module in your application.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Create a global ServiceNow configuration outside and above your flows, using the following global configuration code.</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;x12-edi:config name="X12_EDI" snipValidationType="TYPE2_HIPAA" doc:name="X12 EDI"&gt;
+    &lt;x12-edi:schemas&gt;
+        &lt;x12-edi:schema&gt;/hipaa/005010X212/276.esl&lt;/x12-edi:schema&gt;
+    &lt;/x12-edi:schemas&gt;
+&lt;/x12-edi:config&gt;</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Configure the connector for use with your trading partner(s) using the guide below.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>After you set up a global element for your X12 module, configure the schemas, acknowledgments, IDs, and the parser options.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_setting_your_schema_locations"><a class="anchor" href="#_setting_your_schema_locations"></a>Setting Your Schema Locations</h3>
+<div class="paragraph">
+<p>You can only configure schema locations in the Anypoint Studio XML view.</p>
+</div>
+<div class="paragraph">
+<p>Using the schema locations determined above, switch to the XML view by clicking Configuration XML in Studio and modify your X12 module configuration to include a list of all the schemas you wish to include by adding an <code>edi:schema</code> element for each document type:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;x12-edi:config name="X12_EDI" snipValidationType="TYPE2_HIPAA" doc:name="X12 EDI"&gt;
+    &lt;x12-edi:schemas&gt;
+        &lt;x12-edi:schema&gt;/hipaa/005010X212/276.esl&lt;/x12-edi:schema&gt;
+    &lt;/x12-edi:schemas&gt;
+&lt;/x12-edi:config&gt;</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_setting_your_x12_interchange_ids"><a class="anchor" href="#_setting_your_x12_interchange_ids"></a>Setting your X12 Interchange IDs</h3>
+<div class="paragraph">
+<p>You can configure the interchange ID, interchange ID qualifier, and group application ID for you and your trading partner on the X12 Module connector configuration.</p>
+</div>
+<div class="paragraph">
+<p>The Self Identification parameters identify your side of the trading partner relationship, while the Partner Identification parameters identify your trading partner. The values you set are used when writing EDI messages to supply the interchange ID, interchange ID qualifier, or group application ID, and are verified in receive messages. If you don&#8217;t want to restrict incoming messages, you can leave these blank, and set the values for outgoing messages on the write operation or the actual outgoing message. Values set on the write operation override the connector configuration, and values set directly on the message override both the connector configuration and any values set on the write operation.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_understanding_x12_message_structure"><a class="anchor" href="#_understanding_x12_message_structure"></a>Understanding X12 Message Structure</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The connector enables reading or writing of X12 documents into or from the canonical EDI message structure. This structure is represented as a hierarchy of Java Maps and Lists, which can be manipulated using DataWeave or code. Each transaction has its own structure, as defined in the schemas and previously outlined.</p>
+</div>
+<div class="paragraph">
+<p>The message itself contains the following keys (some of which only apply to either the read operation or the write operation, as indicated):</p>
+</div>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Key name</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Delimiters (optional)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The delimiters used for the message (set based on the last interchange processed by a read operation). If set for a write operation, this overrides the values in the module configuration. The characters in the string are interpreted based on position, in the following order: (data separator), (sub-element separator), (repetition separator, or <code>U</code> if none), (segment terminator).</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Errors (read only)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A list of all errors including non-fatal errors found in parsing the message. See the X12Error structure description in the Reading and Validating EDI Messages section below.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">FunctionalAcksGenerated (read only)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A list of 997 or 999 acknowledgments as configured that were generated by the module during the read operation. To send an acknowledgment, see the Sending Acknowledgments section below.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Group (write only)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Map of GS group header segment values used as defaults when writing groups.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Interchange (write only)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Map of ISA interchange header segment values used as defaults when writing interchanges.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">InterchangeAcksGenerated (read only)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A list of TA1 acknowledgments that were generated by the module during the read operation.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">InterchangeAcksReceived (read only)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A list of TA1 acknowledgments that were received by the module during the read operation.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">InterchangeAcksToSend (write only)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A list of TA1 acknowledgments that are to be sent by the module during the write operation.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Transactions</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A hierarchy of the transaction sets that were read by the module during a read operation, or which are to be sent by the module during a write operation. The value of this top-level key is a map with standard versions as keys, in the form v005010 (for instance). For example, if you are using version 005010 850 and 855 transaction sets, the Transactions would contain a map with on key, v005010. The value of this key would be another map, this one with two keys, 850 and 855. Each of these would contain a list of individual 850 and 855 transaction sets that you could then process. If you&#8217;re using 997 functional acknowledgments, 997 is the key for a list of 997 transaction sets.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Individual transaction sets have their own maps, with the following keys:</p>
+</div>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Key name</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Detail</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Map of segments or loops from the detail section of the transaction set. Values are maps for segments or loops which occur at most once, lists of maps for values which may be repeated.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Errors (read only)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A list of errors which are associated with the transaction set. (See the X12Error class description in the Reading and Validating EDI Messages section below.)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Group</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Map of GS group header segment values. When reading a message, this map is the actual data from the enclosing group (a single map linked from all transaction sets in the group). When writing a message, these values are used for creating the enclosing group Values not populated in this map default to the values from the Group map at the message level.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Heading</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Map of segments or loops from the heading section of the transaction set. Values are maps for segments or loops that occur at most once, and lists of maps for values that may be repeated.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Id</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Transaction ID, which must match the key of the containing transaction list.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Interchange</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Map of ISA interchange header segment values. When reading a message, this map is the actual data from the enclosing interchange (a single map linked from all transaction sets in the interchange). When writing a message, these values are used for creating the enclosing interchange (gathering transactions with the same interchange values into a single interchange, regardless of whether the actual maps are the same or not). Values not populated in this map default to the values from the Interchange map at the message level.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Name</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Transaction set name.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SetHeader</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Map of ST transaction set header segment values. This gives the actual header data for a read operation, and allows you to provide overrides for configuration settings for a write operation.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Summary</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Map of segments or loops from the summary section of the transaction set. Values are maps for segments or loops which occur at most once, and lists of maps for values which may be repeated.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>HIPAA schemas aren&#8217;t divided into <code>heading</code>, <code>detail</code>, and <code>summary</code> portions as with X12 schemas. They instead use multiple areas which can be combined in various ways. See the Areas section below for details.</p>
+</div>
+<div class="paragraph">
+<p>Generated 997/999 functional acknowledgment transactions differ from received messages in their handling of interchange information:</p>
+</div>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Key name</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Interchange</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Map of ISA interchange header segment values. For functional acknowledgments generated by receive processing, this map is a copy of the data for the containing interchange with sender and receiver identification components (ISA05/ISA06 and ISA07/ISA08) interchanged. When writing a message, these values are used for creating the enclosing interchange (gathering transactions with the same interchange values into a single interchange, regardless of whether the actual maps are the same or not). Values not populated in this map default to the values from the Interchange map at the message level.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>TA1 interchange acknowledgments are in the form of maps representing the TA1 segment data and linked to data on the corresponding interchange:</p>
+</div>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Key name</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Interchange</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Map of ISA interchange header segment values. For TA1 acknowledgments generated by receive processing, this map is a copy of the data for the interchange matching the TA1 with sender and receiver identification components (ISA05/ISA06 and ISA07/ISA08) interchanged. When writing a message, these values are used for creating the enclosing interchange (gathering transactions with the same interchange values into a single interchange, regardless of whether the actual maps are the same or not). Values not populated in this map default to the values from the Interchange map at the message level.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_time_fields"><a class="anchor" href="#_time_fields"></a>Time Fields</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>All X12 and HIPAA Time fields are represented as Integer values for the number of milliseconds.
+For example, if a message has the value <code>024020</code>, its DataWeave mapping
+appears as <code>9620000</code> milliseconds.</p>
+</div>
+<div class="paragraph">
+<p>The value <code>024020</code> is in the format "HHMMSS", so if we convert it to milliseconds, we need to do:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>(02*3600000) + (40*60000) + (20*1000) = 9620000</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_reading_and_validating_hipaa_edi_messages"><a class="anchor" href="#_reading_and_validating_hipaa_edi_messages"></a>Reading and Validating HIPAA EDI Messages</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>To read a HIPAA message, search the palette for "X12 EDI" and drag the X12 module into a flow. Then, go to the properties view, select the connector configuration you created above and select the Read operation. This operation reads any byte stream into the structure described by your X12 schemas.</p>
+</div>
+<div class="paragraph">
+<p>The X12 module validates the message when it reads it in. Message validation includes checking the syntax and content of envelope segments ISA, GS, GE, and IEA as well as the actual transaction sets in the message. Normally errors are both logged and accumulated and reported in either TA1 technical acknowledgment segments or 997 acknowledgment transaction sets, and all accepted transaction sets (whether error free or with non-fatal errors) are passed on for processing as part of the output message Map. Errors in reading the input data results in exceptions being thrown.</p>
+</div>
+<div class="paragraph">
+<p>Error data entered in the receive data map uses the X12Error class, a read-only JavaBean with the following properties:</p>
+</div>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Property</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">segment</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The zero-based index within the input of the segment causing the error.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">segTag</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The tag for the segment causing the error.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">fatal</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Flag for a fatal error, meaning the associated transaction set, group, or interchange was rejected as a result of the error.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">errorType</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Enumeration for the different types of errors defined by the X12 standards: INTERCHANGE_NOTE, GROUP_SYNTAX, TRANSACTION_SYNTAX, SEGMENT_SYNTAX, or ELEMENT_SYNTAX.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">errorCode</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Error code, as defined by the X12 standard for the indicated type of error.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">errorText</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Text description of the error.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">errorLevel</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Enumeration for the different levels of errors: ROOT_LEVEL, INTERCHANGE_LEVEL, GROUP_LEVEL, or TRANSACTION_LEVEL.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">interchangeId</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Interchange identifier, if errorLevel INTERCHANGE_LEVEL or above.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">groupId</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Group identifier, if errorLevel GROUP_LEVEL or TRANSACTION_LEVEL.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">transactionId</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Interchange identifier, if errorLevel TRANSACTION_LEVEL.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Error data is returned by the read operation as optional lists with the Errors key at every level of the data structure. At the transaction set level, this list contains non-fatal errors encountered during the parsing of that transaction set. At the interchange level, this list contains errors (both fatal and non-fatal) for transaction sets with fatal errors. At the root level of the read, this list contains both interchange errors and every other error reported at any nested level.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_writing_hipaa_edi_messages"><a class="anchor" href="#_writing_hipaa_edi_messages"></a>Writing HIPAA EDI Messages</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>To write an outgoing message, construct an outgoing HIPAA EDI message according to the structure as defined above. For example, this sample creates an outgoing EDI message which is written to a file.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">  ...
+&lt;x12-edi:write config-ref="Walmart" doc:name="Send 855"/&gt;
+&lt;file:outbound-endpoint responseTimeout="10000" doc:name="File" path="output" outputPattern="ack.edi"/&gt;</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_sending_functional_acknowledgments"><a class="anchor" href="#_sending_functional_acknowledgments"></a>Sending Functional Acknowledgments</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>As with X12, sending generated functional acknowledgments (997 or 999 transaction sets) for HIPAA is the same as writing any other EDI message, except you set the transactions to the acknowledgments that were generated during the read operation. For example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;x12-edi:read config-ref="Walmart" doc:name="Read EDI Doc"/&gt;
+  ...
+&lt;dw:transform-message doc:name="Create Outgoing Message"&gt;
+            &lt;dw:input-payload doc:sample="InMessage.dwl"/&gt;
+            &lt;dw:set-payload&gt;&lt;![CDATA[%dw 1.0
+%output application/java
+---
+{
+    TransactionSets: {
+        v005010: {
+            '997' : payload.FunctionalAcksGenerated
+        }
+    }
+}]]&gt;&lt;/dw:set-payload&gt;
+&lt;/dw:transform-message&gt;
+&lt;x12-edi:write config-ref="Walmart" doc:name="Send 997"/&gt;
+&lt;file:outbound-endpoint responseTimeout="10000" doc:name="File" path="output" outputPattern="ack.edi"/&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The generated functional acknowledgments have interchange data set up for sending back to the sender of the original message, so you don&#8217;t need to change anything in the transactions to do the send.</p>
+</div>
+<div class="paragraph">
+<p>If you use 999 acknowledgments, add any required CTX segments yourself to the basic structure generated by the X12 Module.
+However, this connector does not track implementation convention changes to the base transaction set structure.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_sending_interchange_acknowledgments"><a class="anchor" href="#_sending_interchange_acknowledgments"></a>Sending Interchange Acknowledgments</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Sending interchange acknowledgments (TA1 segments) works the same as for X12: just set the value of the InterchangeAcksToSend key in the message map to the list of TA1 segment maps to be sent. The generated TA1 segments have interchange data set up for sending back to the sender of the original message, so you don&#8217;t need to change anything in the segment data to do the send.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_hipaa_schema_definitions"><a class="anchor" href="#_hipaa_schema_definitions"></a>HIPAA Schema Definitions</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The X12 Module uses a YAML format called ESL (for EDI Schema Language) to represent both standard X12 and HIPAA schemas. The HIPAA standards are based on X12, but modify the corresponding X12 base standards in several respects including:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Multiple specialized definitions of HL (Hierarchical Level) loops, where a basic loop structure defined in X12 is expanded into several variations, often nested.</p>
+</li>
+<li>
+<p>Modular loop definitions which may be reused at different points in the definition.</p>
+</li>
+<li>
+<p>Distinguishing between different uses of a repeated segment by code values in a particular element.</p>
+</li>
+<li>
+<p>Changing usage requirements for segments and segment components.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>To represent these features of HIPAA, the ESL schema definitions are very different from standard X12 schemas. Here&#8217;s a partial example, taken from the schema for the 005010X222A2 837 transaction set:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-yaml hljs" data-lang="yaml">form: HIPAA
+version: '005010X222A2'
+structures:
+- id: '837'
+  name: 'Health Care Claim'
+  class: 'HC'
+  areas:
+  - code: '1'
+    items:
+    - { idRef: 'ST_TransactionSetHeader', position: '0050', usage: M }
+    - { idRef: 'BHT_BeginningOfHierarchicalTransaction', position: '0100', usage: M }
+    - groupId: '1000A_Loop'
+      usage: O
+      items:
+      - { idRef: 'NM1_SubmitterName', position: '0200', usage: M }
+      - { idRef: 'PER_SubmitterEDIContactInformation', position: '0450', usage: M, count: 2 }
+    - groupId: '1000B_Loop'
+      usage: O
+      items:
+      - { idRef: 'NM1_ReceiverName', position: '0500', usage: M }
+  - code: '2'
+    items:
+    - groupId: '2000A_Loop'
+      count: '&gt;1'
+      usage: M
+      items:
+      - { idRef: 'HL_BillingProviderHierarchicalLevel', position: '0010', usage: I }
+      - { idRef: 'PRV_BillingProviderSpecialtyInformation', position: '0030', usage: O }
+      - { idRef: 'CUR_ForeignCurrencyInformation', position: '0100', usage: O }
+      - groupId: '2010AA_Loop'
+        usage: O
+        items:
+        - { idRef: 'NM1_BillingProviderName', position: '0150', usage: M }
+        - { idRef: 'N3_BillingProviderAddress', position: '0250', usage: M }
+        - { idRef: 'N4_BillingProviderCityStateZIPCode', position: '0300', usage: M }
+        - { idRef: 'REF_BillingProviderTaxIdentification', position: '0350', usage: M }
+        - { idRef: 'REF_BillingProviderUPINLicenseInformation', position: '0360', usage: O, count: 2 }
+        - { idRef: 'PER_BillingProviderContactInformation', position: '0400', usage: O, count: 2 }
+      - { area: '3', usage: O }
+      - { area: '4', count: '&gt;1', usage: O }
+  - code: '3'
+    items:
+    - groupId: '2010AB_Loop'
+      usage: O
+      items:
+      - { idRef: 'NM1_PayToAddressName', position: '0150', usage: O }
+      - { idRef: 'N3_PayToAddressADDRESS', position: '0250', usage: M }
+      - { idRef: 'N4_PayToAddressCityStateZIPCode', position: '0300', usage: M }
+    - groupId: '2010AC_Loop'
+      usage: O
+      items:
+      - { idRef: 'NM1_PayToPlanName', position: '0450', usage: O }
+      - { idRef: 'N3_PayToPlanAddress', position: '0550', usage: M }
+      - { idRef: 'N4_PayToPlanCityStateZIPCode', position: '0600', usage: M }
+      - { idRef: 'REF_PayToPlanSecondaryIdentification', position: '0650', usage: O }
+      - { idRef: 'REF_PayToPlanTaxIdentificationNumber', position: '0655', usage: M }</code></pre>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_areas_key"><a class="anchor" href="#_areas_key"></a>Areas Key</h3>
+<div class="paragraph">
+<p>In the above schema portion, the areas key has a value array of individual area definitions. Areas are similar to the breakdown of normal X12 transaction sets into header, detail, and summary sections, but provide much finer granularity - rather than the three fixed portions of a transaction set defined in X12, there may be twenty or more areas defined in a HIPAA transaction set.</p>
+</div>
+<div class="paragraph">
+<p>Each area is a reusable component of the definition. It is identified by a code character value, which by convention may be a single digit or single alpha character.</p>
+</div>
+<div class="paragraph">
+<p>Areas are referenced for inclusion in the definition with an area item in the component list. In an X12 schema definition, the list of components of a group or area may contain only segments, groups, and a group variation called wrapped, which is used for LS/LE loops, in X12 terms. In a HIPAA schema definition, the list of components may also contains area references. The effect of referencing an area is the same as if all the components of the area were inserted in the definition at the point of the reference.</p>
+</div>
+<div class="paragraph">
+<p>Referring back to the above schema portion, at the end of the components list for area code 2, there are references to areas 3 and 4, with area 4 optionally repeating.</p>
+</div>
+<div class="paragraph">
+<p>The data structure for HIPAA messages maintains the X12 division into Heading, Detail, and Summary sections. The Heading is always the area with the lowest sort order code, the Detail is the next one (including all referenced areas), and the Summary is the highest sort order code.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_code_sets"><a class="anchor" href="#_code_sets"></a>Code Sets</h3>
+<div class="paragraph">
+<p>Below is another portion of the same 005010X222A2 837 transaction set schema as used above, this portion showing the BHT_BeginningOfHierarchicalTransaction segment definition:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-yaml hljs" data-lang="yaml">- id: 'BHT_BeginningOfHierarchicalTransaction'
+  name: 'Beginning of Hierarchical Transaction'
+  varTag: 'BHT'
+  values:
+  - { id: '1005', name: 'Hierarchical Structure Code', usage: M, codeSet: { '0019': 'Information Source, Subscriber, Dependent' }, type: ID, length: 4 }
+  - { id: '353', name: 'Transaction Set Purpose Code', usage: M, codeSet: { '00': 'Original', '18': 'Reissue' }, type: ID, length: 2 }
+  - { id: '127', name: 'Originator Application Transaction Identifier', usage: M, type: AN, minLength: 1, maxLength: 50 }
+  - { id: '373', name: 'Transaction Set Creation Date', usage: M, type: DT, length: 8 }
+  - { id: '337', name: 'Transaction Set Creation Time', usage: M, type: TM, minLength: 4, maxLength: 8 }
+  - { id: '640', name: 'Claim or Encounter Identifier', usage: M, codeSet: { 'RP': 'Reporting', 'CH': 'Chargeable', '31': 'Subrogation Demand' }, type: ID, length: 2 }</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The first, second, and last elements in this segment define codeSet values, in the form of an array of key-value pairs. The key in each pair is a particular value for the field which is allowed by the HIPAA standard, while the value for the key is the text description of that value from the standard.</p>
+</div>
+<div class="paragraph">
+<p>The X12 EDI Connector enforces these code sets for HIPAA documents, signaling an error if a transaction set uses an undefined value for a field (that is, a value not listed as a key in the codeSet) either when parsing or writing. In some cases, such as the first element of the BHT definition, only a single value is allowed. In other cases there may be many potential values.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_segment_variants"><a class="anchor" href="#_segment_variants"></a>Segment variants</h3>
+<div class="paragraph">
+<p>Below is a third portion of the same 005010X222A2 837 transaction set schema, this one showing two different DTP segment definitions:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-yaml hljs" data-lang="yaml">- id: 'DTP_DateAccident'
+  name: 'Date - Accident'
+  varTag: 'DTP'
+  values:
+  - { id: '374', name: 'Date Time Qualifier', usage: M, varValue: true, codeSet: { '439': 'Accident' }, type: ID, length: 3 }
+  - { id: '1250', name: 'Date Time Period Format Qualifier', usage: M, codeSet: { 'D8': 'Date Expressed in Format CCYYMMDD' }, type: ID, minLength: 2, maxLength: 3 }
+  - { id: '1251', name: 'Accident Date', usage: M, type: AN, minLength: 1, maxLength: 35 }
+- id: 'DTP_DateAcuteManifestation'
+  name: 'Date - Acute Manifestation'
+  varTag: 'DTP'
+  values:
+  - { id: '374', name: 'Date Time Qualifier', usage: M, varValue: true, codeSet: { '453': 'Acute Manifestation of a Chronic Condition' }, type: ID, length: 3 }
+  - { id: '1250', name: 'Date Time Period Format Qualifier', usage: M, codeSet: { 'D8': 'Date Expressed in Format CCYYMMDD' }, type: ID, minLength: 2, maxLength: 3 }
+  - { id: '1251', name: 'Acute Manifestation Date', usage: M, type: AN, minLength: 1, maxLength: 35 }</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>These two definitions apply to different instances of the DTP segment, as part of the 2300 Claim Information loop. In the transaction set structure these uses of the DTP segment occur essentially in the same position, matching two possible occurrences of a repeating DTP segment in the base X12 standard. But because the two uses of the segment are supplying different information, the HIPAA standard gives them different names and interprets the DTP03 field in different ways.</p>
+</div>
+<div class="paragraph">
+<p>In this case the data value in the first field of the segment, the Date Time Qualifier field, identifies which variation of the segment is actually used. Since the code set for this field has different values for each of these uses, the value present in the field tells whether the DTP segment in a parsed document is a DTP_DateAccident or a DTP_DateAcuteManifestation (or any of several other uses of the DTP segment in the same position). The <code>varValue: true</code> flag in the schema definition indicates that this first field is used in this way to distinguish between variations.</p>
+</div>
+<div class="paragraph">
+<p>Note that even though the value of this field is effectively fixed for each use of the segment, it still must be set correctly when writing data. If you supply a different value for this field, or don&#8217;t supply a value, you get an error when writing.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_syntax_rules"><a class="anchor" href="#_syntax_rules"></a>Syntax Rules</h3>
+<div class="paragraph">
+<p>Here&#8217;s a final example from the 005010X222A2 837 transaction set schema, to illustrate how syntax rules are represented:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-yaml hljs" data-lang="yaml">- id: 'N4_PayerCityStateZIPCode'
+  name: 'Payer City, State, ZIP Code'
+  varTag: 'N4'
+  values:
+  - { id: '19', name: 'Payer City Name', usage: M, type: AN, minLength: 2, maxLength: 30 }
+  - { id: '156', name: 'Payer State or Province Code', usage: O, type: ID, length: 2 }
+  - { id: '116', name: 'Payer Postal Zone or ZIP Code', usage: O, type: ID, minLength: 3, maxLength: 15 }
+  - { id: '26', name: 'Country Code', usage: O, type: ID, minLength: 2, maxLength: 3 }
+  - { id: '309', name: 'Location Qualifier', usage: U, type: ID, minLength: 1, maxLength: 2 }
+  - { id: '310', name: 'Location Identifier', usage: U, type: AN, minLength: 1, maxLength: 30 }
+  - { id: '1715', name: 'Country Subdivision Code', usage: O, type: ID, minLength: 1, maxLength: 3 }
+  rules:
+  - { type: E, items: [2, 7] }
+  - { type: C, items: [6, 5] }
+  - { type: C, items: [7, 4] }</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Syntax rules are used in X12 and HIPAA to define relationships between values within a
+segment or composite. The rules are included in the schema at the same level as the
+list of values. The code for the type of rule is the same as used by X12 and HIPAA
+specifications, and the list of items gives the numbers of the values governed by the rule.</p>
+</div>
+<div class="paragraph">
+<p>In the case of the above example, the three rules say that:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Only one of N402 or N407 may be present (<code>{ type: E, items: [2, 7] }</code>)</p>
+</li>
+<li>
+<p>If N406 is present, then N405 is required (<code>{ type: C, items: [6, 5] }</code>)</p>
+</li>
+<li>
+<p>If N407 is present, then N404 is required (<code>{ type: C, items: [7, 4] }</code>)</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_modifying_schemas"><a class="anchor" href="#_modifying_schemas"></a>Modifying Schemas</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Due to the differences between standard X12 and HIPAA schemas, the use of overlay schemas to modify a base
+definition is not supported for HIPAA. Instead, the recommended approach to use for modifications is to
+extract the supplied HIPAA schema from inside the edi-schemas-x12-{version}.jar included in the
+connector (which contains both standard X12 and HIPAA schemas) and modify the extracted schema to use
+directly. Unlike X12 schemas, which as supplied use a base set of segment, composite, and element
+definitions, the HIPAA schemas are self-contained. This makes it easy to make changes to the schema
+without needing to work with multiple files.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_recommended_types_of_testing_from_wedi"><a class="anchor" href="#_recommended_types_of_testing_from_wedi"></a>Recommended Types of Testing from WEDI</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Type 1: EDI syntax integrity testing – Testing of the EDI file for valid segments, segment order, element attributes, testing for numeric values in numeric data elements, validation of X12 or NCPDP syntax, and compliance with X12 and NCPDP rules. This validates the basic syntactical integrity of the EDI submission.</p>
+</li>
+<li>
+<p>Type 2: HIPAA syntactical requirement testing – Testing for HIPAA Implementation Guide-specific syntax requirements, such as limits on repeat counts, used and not used qualifiers, codes, elements, and segments. Also included in this type is testing for HIPAA required or intra-segment situational data elements, testing for non-medical code sets as laid out in the Implementation Guide, and values and codes noted in the Implementation Guide via an X12 code list or table.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>As the connector cannot determine a course of action for intra-segment situational data elements, Intra-segment situational data elements are not covered by X12 EDI Connector. Users need to set a validation logic outside of the connector.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_see_also"><a class="anchor" href="#_see_also"></a>See Also</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="/release-notes/x12-edifact-modules-release-notes">Release Notes</a>.</p>
+</li>
+<li>
+<p><a href="/portx/_attachments/x12-hipaa_5010.zip">X12 Module HIPAA Anypoint Studio project</a>.</p>
+</li>
+<li>
+<p><a href="http://www.x12.org/x12-work-products/x12-transaction-sets.cfm">ASC X12 Transaction Sets</a>.</p>
+</li>
+<li>
+<p><a href="https://en.wikipedia.org/wiki/X12_Document_List">X12 Document List</a>.</p>
+</li>
+<li>
+<p><a href="http://mulesoft.github.com/edi-module">EDI module reference</a>.</p>
+</li>
+<li>
+<p><a href="https://forums.mulesoft.com">MuleSoft Forum</a></p>
+</li>
+<li>
+<p><a href="https://support.mulesoft.com">Contact MuleSoft Support</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</article>
+  </main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script src="../../_/js/site.js"></script>
+<script src="../../_/js/vendor/highlight.js"></script>
+<script>hljs.initHighlighting()</script>
+  </body>
+</html>

@@ -1,0 +1,1225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Partner Manager Connector Release Notes :: PortX(TM) Docs Prototype</title>
+    <link rel="canonical" href="https://modusbox.org/release-notes/1.0/partner-manager-connector-release-notes.html">
+    <meta name="keywords" content="partner manager, connector, release notes, b2b">
+    <meta name="generator" content="Antora 1.0.1">
+    <link rel="stylesheet" href="../../_/css/site.css">
+  </head>
+  <body class="article">
+<header class="header" role="banner">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://modusbox.org">PortX(TM) Docs Prototype</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Resources</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Resource A</a>
+            <a class="navbar-item" href="#">Resource B</a>
+            <a class="navbar-item" href="#">Resource C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="main-wrapper">
+<div class="navigation-container" data-component="release-notes" data-version="1.0">
+  <aside class="navigation" role="navigation">
+    <div class="panels">
+<div class="navigation-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="release-notes.html">Release Notes</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="anypoint-partner-manager-release-notes.html">Anypoint Partner Manager Release Notes</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="as2-connector-release-notes.html">AS2 Connector Release Notes</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="1">
+    <a class="nav-link" href="partner-manager-connector-release-notes.html">Partner Manager Connector Release Notes</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="ftps-connector-release-notes.html">FTPS Connector Release Notes (for Mule 4)</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="navigation-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Release Notes</span>
+    <span class="version">1.0</span>
+  </div>
+  <ul class="components">
+    <li class="component">
+      <span class="title">AS2 Connector</span>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../as2-connector/1.0/as2-connector.html">1.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <span class="title">FTPS Connector</span>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../ftps-connector/1.0/ftps-connector.html">1.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <span class="title">Partner Manager Connector</span>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../pmc/1.0/pmc.html">1.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <span class="title">PortX(TM)</span>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../portx/LiftOff/index.html">LiftOff</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component is-current">
+      <span class="title">Release Notes</span>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="release-notes.html">1.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <span class="title">Trade Route(TM)</span>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../trade-route/1.0/index.html">1.0</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+  <main class="main" role="main">
+<div class="toolbar" role="navigation">
+  <button class="navigation-toggle"></button>
+  <a href="../../portx/LiftOff/index.html" class="home-link"></a>
+<nav class="crumbs" role="navigation" aria-label="breadcrumbs">
+  <ul>
+    <li class="crumb"><a href="release-notes.html">Release Notes</a></li>
+    <li class="crumb"><a href="partner-manager-connector-release-notes.html">Partner Manager Connector Release Notes</a></li>
+  </ul>
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/modusintegration/modusbox-docs/edit/dev/release-notes/modules/ROOT/pages/partner-manager-connector-release-notes.adoc">Edit this Page</a></div>
+</div>
+<article class="doc">
+<h1>Partner Manager Connector Release Notes</h1>
+<div class="sect1">
+<h2 id="_version_6_6_3_6_february_2018"><a class="anchor" href="#_version_6_6_3_6_february_2018"></a>Version 6.6.3 - 6 February, 2018</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_compatibility"><a class="anchor" href="#_compatibility"></a>Compatibility</h3>
+<div class="paragraph">
+<p>Supported Mule Runtime Versions: 3.6.4, 3.7.3, 3.8.1, 3.8.2</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_fixed_issues"><a class="anchor" href="#_fixed_issues"></a>Fixed Issues</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Fixed minor memory leak.</p>
+</li>
+<li>
+<p>Expiring entries in second-level cache based on last access.</p>
+</li>
+<li>
+<p>Fixed issue in which the cache key was malformed in some instances, causing accumulation of spurious cache entries in the second-level cache.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_version_6_6_2_10_january_2018"><a class="anchor" href="#_version_6_6_2_10_january_2018"></a>Version 6.6.2 - 10 January, 2018</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_compatibility_2"><a class="anchor" href="#_compatibility_2"></a>Compatibility</h3>
+<div class="paragraph">
+<p>Supported Mule Runtime Versions: 3.6.4, 3.7.3, 3.8.1, 3.8.2</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_fixed_issues_2"><a class="anchor" href="#_fixed_issues_2"></a>Fixed Issues</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Serializing org.mule.el.context.MessagePropertyMapContext in transmission metadata when in asynchronous mode.</p>
+</li>
+<li>
+<p>Fixed possible data loss during cache import following a non-fatal exception.</p>
+</li>
+<li>
+<p>Preventing accidental access to the same cache from different applications.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_version_6_6_1_27_december_2017"><a class="anchor" href="#_version_6_6_1_27_december_2017"></a>Version 6.6.1 - 27 December, 2017</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_compatibility_3"><a class="anchor" href="#_compatibility_3"></a>Compatibility</h3>
+<div class="paragraph">
+<p>Supported Mule Runtime Versions: 3.6.4, 3.7.3, 3.8.1, 3.8.2</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_fixed_issues_3"><a class="anchor" href="#_fixed_issues_3"></a>Fixed Issues</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Support serialization of org.mule.el.context.MessagePropertyMapContext in metadata when in asynchronous mode.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_version_6_6_0_6_december_2017"><a class="anchor" href="#_version_6_6_0_6_december_2017"></a>Version 6.6.0 - 6 December, 2017</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_compatibility_4"><a class="anchor" href="#_compatibility_4"></a>Compatibility</h3>
+<div class="paragraph">
+<p>Supported Mule Runtime Versions: 3.6.4, 3.7.3, 3.8.1, 3.8.2</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_new_features_and_functionality"><a class="anchor" href="#_new_features_and_functionality"></a>New Features and Functionality</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Added optional <strong>disableHostnameVerification</strong> attribute to connector config.</p>
+</li>
+<li>
+<p>Returning null instead of throwing exception when partnership is not found for given identifier in <strong>get-partnership-by-identifiers</strong> operation.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_fixed_issues_4"><a class="anchor" href="#_fixed_issues_4"></a>Fixed Issues</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Eliminated possible mutations to metadata when in asynchronous mode.</p>
+</li>
+<li>
+<p>Addressed the following issues when <em>enableCaching</em> is true:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Paging in search results (added).</p>
+</li>
+<li>
+<p>Exception-handling (made consistent).</p>
+</li>
+<li>
+<p>Route status calcluation when the local time zone is not UTC (made correct).</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_version_6_5_0_13_october_2017"><a class="anchor" href="#_version_6_5_0_13_october_2017"></a>Version 6.5.0 - 13 October, 2017</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_compatibility_5"><a class="anchor" href="#_compatibility_5"></a>Compatibility</h3>
+<div class="paragraph">
+<p>Supported Mule Runtime Versions: 3.5.2, 3.7.2, 3.7.3</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_new_features_and_functionality_2"><a class="anchor" href="#_new_features_and_functionality_2"></a>New Features and Functionality</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Added optional <em>trustStorePath</em> attribute to connector config.</p>
+</li>
+<li>
+<p>Generating a Mule message ID per asynchronous operation in order to support idempotent persistence in <strong>config-file-storage-custom</strong>.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_fixed_issues_5"><a class="anchor" href="#_fixed_issues_5"></a>Fixed Issues</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Applying connector config HTTP settings to <strong>retrieve-payload</strong> operation.</p>
+</li>
+<li>
+<p>Reduced possible superfluous errors on connector shutdown when <strong>asynchronousMode</strong> is enabled.</p>
+</li>
+<li>
+<p>Consistently handling exceptions thrown when <strong>enableCaching</strong> is true.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_version_6_3_2_15_september_2017"><a class="anchor" href="#_version_6_3_2_15_september_2017"></a>Version 6.3.2 - 15 September, 2017</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_compatibility_6"><a class="anchor" href="#_compatibility_6"></a>Compatibility</h3>
+<div class="paragraph">
+<p>Supported Mule Runtime Versions: 3.5.2, 3.7.2, 3.7.3</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_fixed_issues_6"><a class="anchor" href="#_fixed_issues_6"></a>Fixed Issues</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Changing content encoding to UTF-8.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_known_issues"><a class="anchor" href="#_known_issues"></a>Known Issues</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Multiple configurations are not supported when <strong>asynchronousMode</strong> is enabled.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_version_6_4_1_14_september_2017"><a class="anchor" href="#_version_6_4_1_14_september_2017"></a>Version 6.4.1 - 14 September, 2017</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_compatibility_7"><a class="anchor" href="#_compatibility_7"></a>Compatibility</h3>
+<div class="paragraph">
+<p>Supported Mule Runtime Versions: 3.5.2, 3.7.2, 3.7.3</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_fixed_issues_7"><a class="anchor" href="#_fixed_issues_7"></a>Fixed Issues</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Changing content encoding to UTF-8.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_version_6_4_0_8_september_2017"><a class="anchor" href="#_version_6_4_0_8_september_2017"></a>Version 6.4.0 - 8 September, 2017</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_compatibility_8"><a class="anchor" href="#_compatibility_8"></a>Compatibility</h3>
+<div class="paragraph">
+<p>Supported Mule Runtime Versions: 3.5.2, 3.7.2, 3.7.3</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_new_features_and_functionality_3"><a class="anchor" href="#_new_features_and_functionality_3"></a>New Features and Functionality</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Added optional <em>queueName</em> attribute to connector config.</p>
+</li>
+<li>
+<p>Added <em>numberOfThreads</em> attribute to connector config.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_fixed_issues_8"><a class="anchor" href="#_fixed_issues_8"></a>Fixed Issues</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Preventing runaway cache refresh thread after connector is stopped.</p>
+</li>
+<li>
+<p>Fixed bug where the wrong environments ID is used when having multiple connector cache-enabled instances.</p>
+</li>
+<li>
+<p>Fixed deserialization/serialization errors when a persistent queue manager is used for asynchronous mode.</p>
+</li>
+<li>
+<p>Improved asynchronous mode performance.</p>
+</li>
+<li>
+<p>Eliminated possible mutations to original Mule event when in asynchronous mode.</p>
+</li>
+<li>
+<p>Supporting multiple configurations when <strong>asynchronousMode</strong> is enabled.</p>
+</li>
+<li>
+<p>Fixed locking issue across cache instances while refreshing.</p>
+</li>
+<li>
+<p>Improved caching performance.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_version_6_3_1_9_august_2017"><a class="anchor" href="#_version_6_3_1_9_august_2017"></a>Version 6.3.1 - 9 August, 2017</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_compatibility_9"><a class="anchor" href="#_compatibility_9"></a>Compatibility</h3>
+<div class="paragraph">
+<p>Supported Mule Runtime Versions: 3.5.2, 3.7.2, 3.7.3</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_fixed_issues_9"><a class="anchor" href="#_fixed_issues_9"></a>Fixed Issues</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Calculating correct route status when caching is enabled.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_known_issues_2"><a class="anchor" href="#_known_issues_2"></a>Known Issues</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Multiple configurations are not supported when <strong>asynchronousMode</strong> is enabled.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_version_6_3_0_4_august_2017"><a class="anchor" href="#_version_6_3_0_4_august_2017"></a>Version 6.3.0 - 4 August, 2017</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_compatibility_10"><a class="anchor" href="#_compatibility_10"></a>Compatibility</h3>
+<div class="paragraph">
+<p>Supported Mule Runtime Versions: 3.5.2, 3.7.2, 3.7.3</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_new_features_and_functionality_4"><a class="anchor" href="#_new_features_and_functionality_4"></a>New Features and Functionality</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Added <em>routeStatus</em> attribute to <em>evaluate-transaction-release-status</em> operation.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_fixed_issues_10"><a class="anchor" href="#_fixed_issues_10"></a>Fixed Issues</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Fixed inconsistent behavior and <em>NoClassDefFoundError</em> exception when caching is enabled.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_known_issues_3"><a class="anchor" href="#_known_issues_3"></a>Known Issues</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Multiple configurations are not supported when <strong>asynchronousMode</strong> is enabled.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_version_6_2_0_24_july_2017"><a class="anchor" href="#_version_6_2_0_24_july_2017"></a>Version 6.2.0 - 24 July, 2017</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_compatibility_11"><a class="anchor" href="#_compatibility_11"></a>Compatibility</h3>
+<div class="paragraph">
+<p>Supported Mule Runtime Versions: 3.5.2, 3.7.2, 3.7.3</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_new_features_and_functionality_5"><a class="anchor" href="#_new_features_and_functionality_5"></a>New Features and Functionality</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Added support for retries.</p>
+</li>
+<li>
+<p>Skipping export download for cache refresh if no changes were made to configuration.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_fixed_issues_11"><a class="anchor" href="#_fixed_issues_11"></a>Fixed Issues</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Fixed caching issue where a result with multiple items could lead to missing nested objects if the nested objects have the same ID.</p>
+</li>
+<li>
+<p>Solved bug where <em>evaluate-transaction-release-status</em> attempts to evaluate <em>target</em> attribute at the wrong time.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_known_issues_4"><a class="anchor" href="#_known_issues_4"></a>Known Issues</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Multiple configurations are not supported when <strong>asynchronousMode</strong> is enabled.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_version_6_1_2_12_july_2017"><a class="anchor" href="#_version_6_1_2_12_july_2017"></a>Version 6.1.2 - 12 July, 2017</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_compatibility_12"><a class="anchor" href="#_compatibility_12"></a>Compatibility</h3>
+<div class="paragraph">
+<p>Supported Mule Runtime Versions: 3.5.2, 3.7.2, 3.7.3</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_fixed_issues_12"><a class="anchor" href="#_fixed_issues_12"></a>Fixed Issues</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Fixed race condition which allowed duplicate refresh threads.</p>
+</li>
+<li>
+<p>Fixed issue where inboundFormatOptions and outboundFormatOptions in documentDefinition is empty when caching is enabled.</p>
+</li>
+<li>
+<p>Reduced garbage collection overhead when caching is enabled.</p>
+</li>
+<li>
+<p>Searching error codes from Trading Partner Manager instead of Tracker.</p>
+</li>
+<li>
+<p>Release status returned from <em>evaluate-transaction-release-status</em> can now be saved in any location and not just in <em>b2bTransmissionSession</em>.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_known_issues_5"><a class="anchor" href="#_known_issues_5"></a>Known Issues</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Multiple configurations are not supported when <strong>asynchronousMode</strong> is enabled.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_version_6_1_1_19_june_2017"><a class="anchor" href="#_version_6_1_1_19_june_2017"></a>Version 6.1.1 - 19 June, 2017</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_compatibility_13"><a class="anchor" href="#_compatibility_13"></a>Compatibility</h3>
+<div class="paragraph">
+<p>Supported Mule Runtime Versions: 3.5.2, 3.7.2, 3.7.3</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_fixed_issues_13"><a class="anchor" href="#_fixed_issues_13"></a>Fixed Issues</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Improved cache performance.</p>
+</li>
+<li>
+<p>Revised HTTP connection TTL in order to reduce the risk of cached DNS entries becoming stale.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_known_issues_6"><a class="anchor" href="#_known_issues_6"></a>Known Issues</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Multiple configurations are not supported when <strong>asynchronousMode</strong> is enabled.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_version_6_1_0_may_25_2017"><a class="anchor" href="#_version_6_1_0_may_25_2017"></a>Version 6.1.0 - May 25, 2017</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_compatibility_14"><a class="anchor" href="#_compatibility_14"></a>Compatibility</h3>
+<div class="paragraph">
+<p>Supported Mule Runtime Versions: 3.5.2, 3.7.2, 3.7.3</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_new_features_and_functionality_6"><a class="anchor" href="#_new_features_and_functionality_6"></a>New Features and Functionality</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Added <strong>cacheMaxExportTries</strong> option to connector config.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_fixed_issues_14"><a class="anchor" href="#_fixed_issues_14"></a>Fixed Issues</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Fixed broken behavior in unique control number enforcement of EDIFACT and X12 documents.</p>
+</li>
+<li>
+<p>Made query attribute in <strong>search</strong> optional.</p>
+</li>
+<li>
+<p>Export download no longer continues indefinitely when the number of download attempts exceeds fifteen.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_known_issues_7"><a class="anchor" href="#_known_issues_7"></a>Known Issues</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Multiple configurations are not supported when <strong>asynchronousMode</strong> is enabled.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_version_6_0_1_may_11_2017"><a class="anchor" href="#_version_6_0_1_may_11_2017"></a>Version 6.0.1 - May 11, 2017</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_compatibility_15"><a class="anchor" href="#_compatibility_15"></a>Compatibility</h3>
+<div class="paragraph">
+<p>Supported Mule Runtime Versions: 3.5.2, 3.7.2, 3.7.3</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_fixed_issues_15"><a class="anchor" href="#_fixed_issues_15"></a>Fixed Issues</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Turned on TLS hostname verification in <strong>retrieve-payload</strong>.</p>
+</li>
+<li>
+<p>Permitting at most a single refresh thread when caching is enabled.</p>
+</li>
+<li>
+<p>Closing idle HTTP connections.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_known_issues_8"><a class="anchor" href="#_known_issues_8"></a>Known Issues</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Multiple configurations are not supported when <strong>asynchronousMode</strong> is enabled.</p>
+</li>
+<li>
+<p>Broken with Maven.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_version_6_0_0_may_4_2017"><a class="anchor" href="#_version_6_0_0_may_4_2017"></a>Version 6.0.0 - May 4, 2017</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_compatibility_16"><a class="anchor" href="#_compatibility_16"></a>Compatibility</h3>
+<div class="paragraph">
+<p>Supported Mule Runtime Versions: 3.5.2, 3.7.2, 3.7.3</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_new_features_and_functionality_7"><a class="anchor" href="#_new_features_and_functionality_7"></a>New Features and Functionality</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Re-written support for caching and exposed it as connector config option.</p>
+</li>
+<li>
+<p>Added <em>connectTimeout</em>, <em>connectionRequestTimeout</em>, and <em>socketTimeout</em> to configuration.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_known_issues_9"><a class="anchor" href="#_known_issues_9"></a>Known Issues</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Multiple configurations are not supported when <strong>asynchronousMode</strong> is enabled.</p>
+</li>
+<li>
+<p>Broken with Maven.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_migrating_from_older_versions"><a class="anchor" href="#_migrating_from_older_versions"></a>Migrating from Older Versions</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Results returned from <em>Search</em> operation are no longer wrapped.</p>
+</li>
+<li>
+<p>Use <em>search</em> instead of <em>get-error-codes</em> to get error codes.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_version_5_3_0_april_10_2017"><a class="anchor" href="#_version_5_3_0_april_10_2017"></a>Version 5.3.0 - April 10, 2017</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_compatibility_17"><a class="anchor" href="#_compatibility_17"></a>Compatibility</h3>
+<div class="paragraph">
+<p>Supported Mule Runtime Versions: 3.5.2, 3.7.2, 3.7.3</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_new_features_and_functionality_8"><a class="anchor" href="#_new_features_and_functionality_8"></a>New Features and Functionality</h3>
+<div class="paragraph">
+<p>Added operations to:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Start errors notification.</p>
+</li>
+<li>
+<p>End errors notification (that is, notification sent).</p>
+</li>
+<li>
+<p>Start transactions release (when a transaction has been on-hold, this starts the process of returning the transaction to active processing).</p>
+</li>
+<li>
+<p>End transactions release (that is, complete return to active processing).</p>
+</li>
+<li>
+<p>Evaluate transaction release status.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_known_issues_10"><a class="anchor" href="#_known_issues_10"></a>Known Issues</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Multiple configurations are not supported when <strong>asynchronousMode</strong> is enabled.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_version_5_2_0_march_22_2017"><a class="anchor" href="#_version_5_2_0_march_22_2017"></a>Version 5.2.0 - March 22 2017</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_compatibility_18"><a class="anchor" href="#_compatibility_18"></a>Compatibility</h3>
+<div class="paragraph">
+<p>Supported Mule Runtime Versions: 3.5.2, 3.7.2, 3.7.3</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_new_features_and_functionality_9"><a class="anchor" href="#_new_features_and_functionality_9"></a>New Features and Functionality</h3>
+<div class="paragraph">
+<p>Added:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Error resource for Search Operation.</p>
+</li>
+<li>
+<p>Ability to harvest properties using lookup table searches.</p>
+</li>
+<li>
+<p>Operations to:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Retrieve error codes.</p>
+</li>
+<li>
+<p>Return events for a transaction.</p>
+</li>
+<li>
+<p>Search partner details by identifier.</p>
+</li>
+<li>
+<p>Retrieve payloads using security configuration scheme.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_fixed_issues_16"><a class="anchor" href="#_fixed_issues_16"></a>Fixed Issues</h3>
+<div class="paragraph">
+<p>Improved <strong>asynchronousMode</strong> performance.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_known_issues_11"><a class="anchor" href="#_known_issues_11"></a>Known Issues</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Multiple configurations are not supported when <strong>asynchronousMode</strong> is enabled.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_version_5_1_0_march_1_2017"><a class="anchor" href="#_version_5_1_0_march_1_2017"></a>Version 5.1.0 - March 1, 2017</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_compatibility_19"><a class="anchor" href="#_compatibility_19"></a>Compatibility</h3>
+<div class="paragraph">
+<p>Supported Mule Runtime Versions: 3.5.2, 3.6.1, 3.7.2, 3.7.3</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_new_features_and_functionality_10"><a class="anchor" href="#_new_features_and_functionality_10"></a>New Features and Functionality</h3>
+<div class="paragraph">
+<p><strong>harvest-document-properties</strong> operation.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_fixed_issues_17"><a class="anchor" href="#_fixed_issues_17"></a>Fixed Issues</h3>
+<div class="paragraph">
+<p><strong>ClassCastException</strong> no longer happens when attempting to read an XML document from <strong>java.io.InputStream</strong>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_known_issues_12"><a class="anchor" href="#_known_issues_12"></a>Known Issues</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Multiple configurations are not supported when <strong>asynchronousMode</strong> is enabled.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_version_5_0_0_february_23_2017"><a class="anchor" href="#_version_5_0_0_february_23_2017"></a>Version 5.0.0 - February 23, 2017</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_compatibility_20"><a class="anchor" href="#_compatibility_20"></a>Compatibility</h3>
+<div class="paragraph">
+<p>Supported Mule Runtime Versions: 3.5.2, 3.6.1, 3.7.2, 3.7.3</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_new_features_and_functionality_11"><a class="anchor" href="#_new_features_and_functionality_11"></a>New Features and Functionality</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Added support for asynchronous tracking.</p>
+</li>
+<li>
+<p>Removed <em>lastEventId</em> entry from <em>b2bTransmissionSession</em> flow variable.</p>
+</li>
+<li>
+<p>Added support for parent transactions.</p>
+</li>
+<li>
+<p>Made <em>toPartyIdentifier</em> optional in <em>resolve-routes</em> operation.</p>
+</li>
+<li>
+<p>Allowing the maximum number of HTTP connections to each Partner Manager service to be configurable.</p>
+</li>
+<li>
+<p>Adding support for route filtering by properties.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_migrating_from_older_versions_2"><a class="anchor" href="#_migrating_from_older_versions_2"></a>Migrating from Older Versions</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Replace references to lastEventId with transactionId.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_known_issues_13"><a class="anchor" href="#_known_issues_13"></a>Known Issues</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Multiple configs are not supported when <strong>asynchronousMode</strong> is enabled.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_version_4_0_1_april_6_2017"><a class="anchor" href="#_version_4_0_1_april_6_2017"></a>Version 4.0.1 - April 6, 2017</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_compatibility_21"><a class="anchor" href="#_compatibility_21"></a>Compatibility</h3>
+<div class="paragraph">
+<p>Supported Mule Runtime Versions: 3.5.2, 3.6.1, 3.7.2, 3.7.3</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_fixed_issues_18"><a class="anchor" href="#_fixed_issues_18"></a>Fixed Issues</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Fixed SE-5706.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_version_4_0_0_december_13_2016"><a class="anchor" href="#_version_4_0_0_december_13_2016"></a>Version 4.0.0 - December 13, 2016</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_compatibility_22"><a class="anchor" href="#_compatibility_22"></a>Compatibility</h3>
+<div class="paragraph">
+<p>Supported Mule Runtime Versions: 3.5.2, 3.6.1, 3.7.2, 3.7.3</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_new_features_and_functionality_12"><a class="anchor" href="#_new_features_and_functionality_12"></a>New Features and Functionality</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Added <strong>update-transaction-status</strong> operation.</p>
+</li>
+<li>
+<p>Removed deprecated <strong>transportType</strong> attribute in <strong>resolve-routes</strong> operation.</p>
+</li>
+<li>
+<p>Added <strong>harvest-endpoint-properties</strong> operation.</p>
+</li>
+<li>
+<p>Added ability to <strong>track-document</strong> operation to harvest properties.</p>
+</li>
+<li>
+<p>Added <strong>propagate-endpoint-properties</strong> operation.</p>
+</li>
+<li>
+<p>Added <strong>lookup</strong> operation.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_migrating_from_older_versions_3"><a class="anchor" href="#_migrating_from_older_versions_3"></a>Migrating from Older Versions</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Remove <strong>transportType</strong> attribute in <strong>resolve-routes</strong> operation.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_version_3_1_0_november_11_2016"><a class="anchor" href="#_version_3_1_0_november_11_2016"></a>Version 3.1.0 - November 11, 2016</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_compatibility_23"><a class="anchor" href="#_compatibility_23"></a>Compatibility</h3>
+<div class="paragraph">
+<p>Supported Mule Runtime Versions: 3.5.2, 3.6.1, 3.7.2, 3.7.3</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_new_features_and_functionality_13"><a class="anchor" href="#_new_features_and_functionality_13"></a>New Features and Functionality</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Added support for RosettaNet.</p>
+</li>
+<li>
+<p>Added document property harvesting.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_fixed_issues_19"><a class="anchor" href="#_fixed_issues_19"></a>Fixed Issues</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Fixed NullPointerException happening when. <strong>config-file-storage-custom</strong> is used with EDIFACT or X12 module.</p>
+</li>
+<li>
+<p>Permitting <strong>partnerIdentifier</strong> in <strong>track-document</strong> operation to override party identifiers in EDI documents.</p>
+</li>
+<li>
+<p>Optimized caching.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_version_3_0_0_september_22_2016"><a class="anchor" href="#_version_3_0_0_september_22_2016"></a>Version 3.0.0 - September 22, 2016</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_compatibility_24"><a class="anchor" href="#_compatibility_24"></a>Compatibility</h3>
+<div class="paragraph">
+<p>Supported Mule Runtime Versions: 3.5.2, 3.6.1, 3.7.2, 3.7.3</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_migrating_from_older_versions_4"><a class="anchor" href="#_migrating_from_older_versions_4"></a>Migrating from Older Versions</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Rename <strong>document</strong> attribute in <strong>track-document</strong> operation to <strong>document-ref</strong>.</p>
+</li>
+<li>
+<p>Rename <strong>partnerIdentifier</strong> attribute in <strong>resolve-routes</strong> operation to <strong>fromPartyIdentifier</strong>.</p>
+</li>
+<li>
+<p>Rename <strong>partnerIdentifierType</strong> attribute in <strong>resolve-routes</strong> operation to <strong>partyIdentifierType</strong>.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_new_features_and_functionality_14"><a class="anchor" href="#_new_features_and_functionality_14"></a>New Features and Functionality</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Added document definition to list of resources that can be searched.</p>
+</li>
+<li>
+<p>Added <strong>count</strong>, <strong>offset</strong>, <strong>orderBy</strong>, and <strong>descending</strong> attributes to <strong>search</strong> operation.</p>
+</li>
+<li>
+<p>Added <strong>toPartyIdentifier</strong> attribute to <strong>resolve-routes</strong> operation.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_fixed_issues_20"><a class="anchor" href="#_fixed_issues_20"></a>Fixed Issues</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Fixed issue where maps representing X12 and EDIFACT documents cannot be processed.</p>
+</li>
+<li>
+<p>Fixed issue in resolve-routes operation where standard instead of version is passed to query parameter.</p>
+</li>
+<li>
+<p>Propagating message properties to flow set in <strong>config-file-storage-custom</strong> config.</p>
+</li>
+<li>
+<p>Ensuring HTTP connections are closed in instances where no content is returned.</p>
+</li>
+<li>
+<p>Fixed issue where byte stream is mistakenly serialized to string when content is saved to custom file storage.</p>
+</li>
+<li>
+<p>Removed test connectivity check on connector start up to make error message more friendly when testing the connection from Anypoint Studio.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_version_2_0_0_july_8_2016"><a class="anchor" href="#_version_2_0_0_july_8_2016"></a>Version 2.0.0 - July 8, 2016</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_compatibility_25"><a class="anchor" href="#_compatibility_25"></a>Compatibility</h3>
+<div class="paragraph">
+<p>Supported Mule Runtime Versions: 3.5.2, 3.6.1, 3.7.2, 3.7.3</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_new_features_and_functionality_15"><a class="anchor" href="#_new_features_and_functionality_15"></a>New Features and Functionality</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Renamed <strong>executionId</strong> in <strong>b2bTransmissionSession</strong> to <strong>transactionId</strong>.</p>
+</li>
+<li>
+<p>Added support for reporting errors to Anypoint Partner Manager.</p>
+</li>
+<li>
+<p>Added operation for searching.</p>
+</li>
+<li>
+<p>Added operation for resolving routes.</p>
+</li>
+<li>
+<p>Added operation for tracking documents.</p>
+</li>
+<li>
+<p>Added operations for replaying transactions.</p>
+</li>
+<li>
+<p>Including last event ID in <strong>b2bTransmissionSession</strong> flowVar.</p>
+</li>
+<li>
+<p>Removed <strong>formatType</strong> and <strong>toPartyIdentifier</strong> attributes from <strong>track-transmission</strong> operation.</p>
+</li>
+<li>
+<p>Renamed <strong>fromPartyIdentifier</strong> attribute to <strong>partnerIdentifier</strong> and content attribute to <strong>file</strong> in <strong>track-transmission</strong> operation.</p>
+</li>
+<li>
+<p>Added <strong>transport</strong> attribute to <strong>track-transmission</strong> operation.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_version_1_0_0_december_22_2015"><a class="anchor" href="#_version_1_0_0_december_22_2015"></a>Version 1.0.0 - December 22, 2015</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_compatibility_26"><a class="anchor" href="#_compatibility_26"></a>Compatibility</h3>
+<div class="paragraph">
+<p>Supported Mule Runtime Versions: 3.5.2, 3.6.1, 3.7.2, 3.7.3</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_new_features_and_functionality_16"><a class="anchor" href="#_new_features_and_functionality_16"></a>New Features and Functionality</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Added facility to test connection.</p>
+</li>
+<li>
+<p>Renamed connector to Partner Manager Connector.</p>
+</li>
+<li>
+<p>Renamed environment attribute to environmentId and removed default value.</p>
+</li>
+<li>
+<p>Caching options.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script src="../../_/js/site.js"></script>
+<script src="../../_/js/vendor/highlight.js"></script>
+<script>hljs.initHighlighting()</script>
+  </body>
+</html>

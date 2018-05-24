@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X12 Settings Inbound (Read) :: PortX(TM) Docs Prototype</title>
+    <link rel="canonical" href="https://modusbox.org/trade-route/1.0/x12-inbound-(read)-settings.html">
+    <meta name="generator" content="Antora 1.0.1">
+    <link rel="stylesheet" href="../../_/css/site.css">
+  </head>
+  <body class="article">
+<header class="header" role="banner">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://modusbox.org">PortX(TM) Docs Prototype</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Resources</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Resource A</a>
+            <a class="navbar-item" href="#">Resource B</a>
+            <a class="navbar-item" href="#">Resource C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="main-wrapper">
+<div class="navigation-container" data-component="trade-route" data-version="1.0">
+  <aside class="navigation" role="navigation">
+    <div class="panels">
+<div class="navigation-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="index.html">Trade Route(TM)</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="index.html">TradeRoute Manager</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="/trade-route/key-concepts">Key Concepts</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/b2b-transaction-processing-framework">B2B Transaction-Processing Framework</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/resolution-processes">Resolution Processes</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/tracking">Tracking</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="/trade-route/examples">Examples</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="/trade-route/transaction-monitoring">Transaction Monitoring</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/central-pane-elements">Central Pane Elements</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/tracking-scenarios">Tracking Scenarios</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="/trade-route/partner-configuration">Partner Configuration</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/company-information">Company Information</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/identifiers">Identifiers</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/on-hold-inactive">On-Hold/Inactive</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/certificate">Certificate</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/x12-settings">X12 Settings</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/edifact-settings">EDIFACT Settings</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/csv-settings">CSV Settings</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/transaction-designer">Transaction Designer</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/document-types">Document Types</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/endpoints">Endpoints</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/maps">Maps</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/channels">Channels</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/routes">Routes</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/partner-conversations">Partner Conversations</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/rosettanet-pips">RosettaNet PIPs</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/rosettanet-agreements">RosettaNet Agreements</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="/trade-route/administration">Administration</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/environments">Environments</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/error-codes">Error Codes</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/security">Security</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/lookup-tables">Lookup Tables</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="/trade-route/tutorials">Tutorials</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/apm-tutorial-td">Anypoint Partner Manager Tutorial: Designing a Transaction</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/transaction-tracking-walkthrough">Transaction Tracking Walkthrough</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="/trade-route/anypoint-partner-manager-api">Anypoint Partner Manager API</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="/trade-route/glossary">Glossary</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="navigation-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Trade Route(TM)</span>
+    <span class="version">1.0</span>
+  </div>
+  <ul class="components">
+    <li class="component">
+      <span class="title">AS2 Connector</span>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../as2-connector/1.0/as2-connector.html">1.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <span class="title">FTPS Connector</span>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../ftps-connector/1.0/ftps-connector.html">1.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <span class="title">Partner Manager Connector</span>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../pmc/1.0/pmc.html">1.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <span class="title">PortX(TM)</span>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../portx/LiftOff/index.html">LiftOff</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <span class="title">Release Notes</span>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../release-notes/1.0/release-notes.html">1.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component is-current">
+      <span class="title">Trade Route(TM)</span>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="index.html">1.0</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+  <main class="main" role="main">
+<div class="toolbar" role="navigation">
+  <button class="navigation-toggle"></button>
+  <a href="../../portx/LiftOff/index.html" class="home-link"></a>
+<nav class="crumbs" role="navigation" aria-label="breadcrumbs">
+  <ul>
+    <li class="crumb"><a href="index.html">Trade Route(TM)</a></li>
+    <li class="crumb"><a href="x12-inbound-(read)-settings.html">X12 Settings Inbound (Read)</a></li>
+  </ul>
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/modusintegration/modusbox-docs/edit/dev/trade-route/modules/ROOT/pages/x12-inbound-(read)-settings.adoc">Edit this Page</a></div>
+</div>
+<article class="doc">
+<h1>X12 Settings Inbound (Read)</h1>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Setting</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Envelope Headers (ISA)</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Auth. Info. Qualifier (ISA 01)
+Most common value is <strong>00</strong>; rarely is another used.</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Required?</dt>
+<dd>
+<p>No</p>
+</dd>
+<dt class="hdlist1">Valid values</dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p><code>00</code></p>
+</li>
+<li>
+<p><code>01</code></p>
+</li>
+<li>
+<p><code>02</code></p>
+</li>
+<li>
+<p><code>03</code></p>
+</li>
+<li>
+<p><code>04</code></p>
+</li>
+<li>
+<p><code>05</code></p>
+</li>
+<li>
+<p><code>06</code></p>
+</li>
+</ul>
+</div>
+</dd>
+<dt class="hdlist1">Default</dt>
+<dd>
+<p><code>00</code></p>
+</dd>
+</dl>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Authorization Information (ISA 02)</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Enter a value if appropriate for your organization.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+If the value in the previous box (ISA 01) is <code>00</code> (the default), then this box is disabled.
+</td>
+</tr>
+</table>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Required?</dt>
+<dd>
+<p>No</p>
+</dd>
+<dt class="hdlist1">Valid values</dt>
+<dd>
+<p>Alphanumeric</p>
+</dd>
+<dt class="hdlist1">Default</dt>
+<dd>
+<p>Defaults to ten blank spaces</p>
+</dd>
+</dl>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Security Inf. Qualifier (ISA 03)</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Select a value from the dropdown listbox (if appropriate for your organization).</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Required?</dt>
+<dd>
+<p>No</p>
+</dd>
+<dt class="hdlist1">Valid values</dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p><code>00</code></p>
+</li>
+<li>
+<p><code>01</code></p>
+</li>
+</ul>
+</div>
+</dd>
+<dt class="hdlist1">Default</dt>
+<dd>
+<p><code>00</code></p>
+</dd>
+</dl>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+If the value in (ISA 03) is 01, then a valid password value is required in ISA 04.
+</td>
+</tr>
+</table>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Security Information (ISA 04)</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Enter a value if appropriate for your organization.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+If the value in the previous box (ISA 03) is <code>00</code> (the default), then this box is disabled
+</td>
+</tr>
+</table>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Required?</dt>
+<dd>
+<p>No</p>
+</dd>
+<dt class="hdlist1">Valid values</dt>
+<dd>
+<p>Alphanumeric</p>
+</dd>
+<dt class="hdlist1">Default</dt>
+<dd>
+<p>Defaults to ten blank spaces</p>
+</dd>
+</dl>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Interchange sender ID qualifier (ISA 05)</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>This value populates based on the value saved in <a href="#Interchange ID qualifier - ISA">[Interchange ID qualifier - ISA]</a></p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Required?</dt>
+<dd>
+<p>Yes (must be entered and saved in <a href="#Interchange ID qualifier - ISA">[Interchange ID qualifier - ISA]</a>)</p>
+</dd>
+</dl>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Interchange sender ID (ISA 06)</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>This value populates based on the value entered and saved in <a href="#Interchange ID - ISA">[Interchange ID - ISA]</a></p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Required?</dt>
+<dd>
+<p>Yes (must be entered and saved in <a href="#Interchange ID - ISA">[Interchange ID - ISA]</a></p>
+</dd>
+</dl>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Interchange receiver ID qualifier (ISA 07)</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>This value populates based on the value entered and saved in <a href="#Interchange ID qualifier - ISA">[Interchange ID qualifier - ISA]</a></p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Required?</dt>
+<dd>
+<p>Yes (must be entered and saved in <a href="#Interchange ID qualifier - ISA">[Interchange ID qualifier - ISA]</a>)</p>
+</dd>
+</dl>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Interchange receiver ID (ISA 08)</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>This value populates based on the value entered and saved in <a href="#Interchange ID - ISA">[Interchange ID - ISA]</a></p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Required?</dt>
+<dd>
+<p>Yes (must be entered and saved in <a href="#Interchange ID - ISA">[Interchange ID - ISA]</a>)</p>
+</dd>
+</dl>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Interchange Control Version (ISA 12)</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Identifies the X12 version this partner uses.</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Required?</dt>
+<dd>
+<p>No</p>
+</dd>
+<dt class="hdlist1">Valid values</dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p><code>00401 (4010)</code></p>
+</li>
+<li>
+<p><code>00501 (5010)</code></p>
+</li>
+</ul>
+</div>
+</dd>
+<dt class="hdlist1">Default</dt>
+<dd>
+<p><code>00401 (4010)</code></p>
+</dd>
+</dl>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Parser Settings (Failure conditions)</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="ulist">
+<ul>
+<li>
+<p><code>Fail document when value length outside allowed range</code></p>
+</li>
+<li>
+<p><code>Fail document when invalid character in value</code></p>
+</li>
+<li>
+<p><code>Fail document if value is repeated too many times</code></p>
+</li>
+<li>
+<p><code>Fail document if unknown segments are used</code></p>
+</li>
+<li>
+<p><code>Fail document when segments are out of order</code></p>
+</li>
+<li>
+<p><code>Fail document when unused segments are included</code></p>
+</li>
+<li>
+<p><code>Fail document when too many repeats of a segment</code></p>
+</li>
+<li>
+<p><code>Fail document when unused segments are included</code></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Each of these options identifies a condition for which PortX can fail an inbound  document from a trading partner. If any of these options selected, and an X12 document meets the condition in a selected option, a 997 message stating a failure will be sent.</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Parser Settings (Other options)</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="dlist">
+<dl>
+<dt class="hdlist1">Require 997</dt>
+<dd>
+<p>If selected, a 997 message will be sent regardless of whether or not an error condition is met.</p>
+</dd>
+<dt class="hdlist1">Generate 999</dt>
+<dd>
+<p>If a 999 acknowledgement is needed check this box. The default X12 acknowledgement will be 997.</p>
+</dd>
+</dl>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Character Set and Encoding</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Drop-down listbox enabling choice of three character sets.</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Valid values</dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Basic</strong><br>
+This character set includes:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Uppercase letters <code>A</code> through <code>Z</code></p>
+</li>
+<li>
+<p>Digits <code>0</code> through <code>9</code></p>
+</li>
+<li>
+<p>Special characters<br>
+<code>! “ &amp; ’ ( ) * + , - . / : ; ? =</code></p>
+</li>
+<li>
+<p>The character created by pressing the space bar.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>Extended</strong><br>
+This character set includes:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>All characters in the Basic character set</p>
+</li>
+<li>
+<p>Lowercase letters <code>a</code> through <code>z</code></p>
+</li>
+<li>
+<p>Select language characters</p>
+</li>
+<li>
+<p>Other special characters:<br>
+<code>% @ [ ] _ { } \ &lt;pipe&gt; &lt; &gt; ~ # $</code></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>Unrestricted</strong> character set - includes all characters.</p>
+</li>
+</ul>
+</div>
+</dd>
+<dt class="hdlist1">Default</dt>
+<dd>
+<p><code>Basic</code></p>
+</dd>
+</dl>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Control Number Settings</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>These settings, when selected, require unique inbound <strong>ISA 13</strong>, <strong>GS 06</strong> and <strong>ST 02</strong> control numbers on all inbound documents for a trading partner.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>Require unique ISA control numbers (ISA 13)</code></p>
+</li>
+<li>
+<p><code>Require unique GS control numbers (GS 06)</code></p>
+</li>
+<li>
+<p><code>Require unique transaction set control numbers (ST 02)</code></p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</article>
+  </main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script src="../../_/js/site.js"></script>
+<script src="../../_/js/vendor/highlight.js"></script>
+<script>hljs.initHighlighting()</script>
+  </body>
+</html>

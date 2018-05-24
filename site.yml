@@ -1,0 +1,39 @@
+site:
+  start_page: portx::index.adoc
+  title: PortX(TM) Docs Prototype
+  url: https://modusbox.org
+content:
+  sources:
+
+  - url: https://github.com/modusintegration/modusbox-docs.git 
+    branches: dev 
+    start_path: portx
+  - url: https://github.com/modusintegration/modusbox-docs.git 
+    branches: dev 
+    start_path: trade-route
+  - url: https://github.com/modusintegration/modusbox-docs.git 
+    branches: dev 
+    start_path: as2-connector 
+  - url: https://github.com/modusintegration/modusbox-docs.git 
+    branches: dev 
+    start_path: ftps-connector
+  - url: https://github.com/modusintegration/modusbox-docs.git 
+    branches: dev 
+    start_path: pmc
+  - url: https://github.com/modusintegration/modusbox-docs.git 
+    branches: dev 
+    start_path: release-notes
+    
+
+
+output:
+  destinations:
+  - provider: fs
+    path: build/site
+    clean: true
+ui:
+  bundle:
+    url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/master/raw/build/ui-bundle.zip?job=bundle-stable
+    snapshot: true
+runtime:
+  pull: true

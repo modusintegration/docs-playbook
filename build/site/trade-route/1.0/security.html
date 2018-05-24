@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security :: PortX(TM) Docs Prototype</title>
+    <link rel="canonical" href="https://modusbox.org/trade-route/1.0/security.html">
+    <meta name="generator" content="Antora 1.0.1">
+    <link rel="stylesheet" href="../../_/css/site.css">
+  </head>
+  <body class="article">
+<header class="header" role="banner">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://modusbox.org">PortX(TM) Docs Prototype</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Resources</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Resource A</a>
+            <a class="navbar-item" href="#">Resource B</a>
+            <a class="navbar-item" href="#">Resource C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="main-wrapper">
+<div class="navigation-container" data-component="trade-route" data-version="1.0">
+  <aside class="navigation" role="navigation">
+    <div class="panels">
+<div class="navigation-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="index.html">Trade Route(TM)</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="index.html">TradeRoute Manager</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="/trade-route/key-concepts">Key Concepts</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/b2b-transaction-processing-framework">B2B Transaction-Processing Framework</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/resolution-processes">Resolution Processes</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/tracking">Tracking</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="/trade-route/examples">Examples</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="/trade-route/transaction-monitoring">Transaction Monitoring</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/central-pane-elements">Central Pane Elements</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/tracking-scenarios">Tracking Scenarios</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="/trade-route/partner-configuration">Partner Configuration</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/company-information">Company Information</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/identifiers">Identifiers</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/on-hold-inactive">On-Hold/Inactive</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/certificate">Certificate</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/x12-settings">X12 Settings</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/edifact-settings">EDIFACT Settings</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/csv-settings">CSV Settings</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/transaction-designer">Transaction Designer</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/document-types">Document Types</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/endpoints">Endpoints</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/maps">Maps</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/channels">Channels</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/routes">Routes</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/partner-conversations">Partner Conversations</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/rosettanet-pips">RosettaNet PIPs</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/rosettanet-agreements">RosettaNet Agreements</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="/trade-route/administration">Administration</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/environments">Environments</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/error-codes">Error Codes</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/security">Security</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/lookup-tables">Lookup Tables</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="/trade-route/tutorials">Tutorials</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/apm-tutorial-td">Anypoint Partner Manager Tutorial: Designing a Transaction</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/transaction-tracking-walkthrough">Transaction Tracking Walkthrough</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="/trade-route/anypoint-partner-manager-api">Anypoint Partner Manager API</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="/trade-route/glossary">Glossary</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="navigation-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Trade Route(TM)</span>
+    <span class="version">1.0</span>
+  </div>
+  <ul class="components">
+    <li class="component">
+      <span class="title">AS2 Connector</span>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../as2-connector/1.0/as2-connector.html">1.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <span class="title">FTPS Connector</span>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../ftps-connector/1.0/ftps-connector.html">1.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <span class="title">Partner Manager Connector</span>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../pmc/1.0/pmc.html">1.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <span class="title">PortX(TM)</span>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../portx/LiftOff/index.html">LiftOff</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <span class="title">Release Notes</span>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../release-notes/1.0/release-notes.html">1.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component is-current">
+      <span class="title">Trade Route(TM)</span>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="index.html">1.0</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+  <main class="main" role="main">
+<div class="toolbar" role="navigation">
+  <button class="navigation-toggle"></button>
+  <a href="../../portx/LiftOff/index.html" class="home-link"></a>
+<nav class="crumbs" role="navigation" aria-label="breadcrumbs">
+  <ul>
+    <li class="crumb"><a href="index.html">Trade Route(TM)</a></li>
+    <li class="crumb"><a href="security.html">Security</a></li>
+  </ul>
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/modusintegration/modusbox-docs/edit/dev/trade-route/modules/ROOT/pages/security.adoc">Edit this Page</a></div>
+</div>
+<article class="doc">
+<h1>Security</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="olist arabic">
+<ol class="arabic" start="3">
+<li>
+<p>In the <strong>Partners</strong> section of the left-hand navigation pane on the <a href="partner-configuration.html#img-company-information" class="page">Company Information Page</a>, click <strong>Security</strong>.</p>
+<div class="paragraph">
+<p>The <a href="#img-security">Security Page</a> appears.</p>
+</div>
+</li>
+</ol>
+</div>
+<div id="img-security" class="imageblock">
+<div class="content">
+<img src="_images/security.png" alt="img-security">
+</div>
+<div class="title">Figure 1. Security Page</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic" start="4">
+<li>
+<p>On this page, you can:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="#_create_a_new_api_key">Create a New API Key</a></p>
+</li>
+<li>
+<p><a href="#_specify_a_method_for_authenticating_persisted_messages">Specify a Method for Authenticating Persisted Messages</a></p>
+</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_create_a_new_api_key"><a class="anchor" href="#_create_a_new_api_key"></a>Create a New API Key</h2>
+<div class="sectionbody">
+<div class="admonitionblock warning">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-warning" title="Warning"></i>
+</td>
+<td class="content">
+The API Key is used by any Mule application across your entire Master <a href="/access-management/organization">Organization</a> that communicates with PortX. Therefore, before you create a new API Key, coordinate with your organization&#8217;s MuleSoft administrator to ensure that none of your organization&#8217;s processes are using an existing API Key because, if they are, creating a new API Key will cause them to cease functioning. In that case, instead of creating a new API Key, use the existing API Key.
+</td>
+</tr>
+</table>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>On the <a href="#img-security">Security Page</a>, click <strong>Create a new API key</strong>.</p>
+<div class="paragraph">
+<p>The <a href="#img-api-key-warning">API Key Warning Page</a> appears.</p>
+</div>
+</li>
+</ol>
+</div>
+<div id="img-api-key-warning" class="imageblock">
+<div class="content">
+<img src="_images/api-key-warning.png" alt="img-api-key-warning">
+</div>
+<div class="title">Figure 2. API Key Warning Page</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic" start="2">
+<li>
+<p>Read the <a href="#img-api-key-warning">API Key Warning Page</a> carefully.</p>
+<div class="paragraph">
+<p>If, after you have read <a href="#img-api-key-warning">API Key Warning Page</a>, you are sure you want to create the key, on <a href="#img-api-key-warning">API Key Warning Page</a>, click <strong>Generate</strong>.</p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_specify_a_method_for_authenticating_persisted_messages"><a class="anchor" href="#_specify_a_method_for_authenticating_persisted_messages"></a>Specify a Method for Authenticating Persisted Messages</h2>
+<div class="sectionbody">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>In <strong>Persisted Message Authentication Settings</strong>, click the <strong>Scheme</strong> dropdown list.<br>
+A list of available authentication methods appears.</p>
+</li>
+<li>
+<p>Click the method you want to use.<br>
+Settings specific to the method you choose appear.</p>
+</li>
+<li>
+<p>Enter values for the method-specific settings.<br>
+For more information, click the method you chose:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="#_s3_bucket">S3 Bucket</a></p>
+</li>
+<li>
+<p><a href="#_basic_auth">Basic Auth</a></p>
+</li>
+<li>
+<p><a href="#_clientid_secret">ClientId / Secret</a></p>
+</li>
+<li>
+<p><a href="#_api_key">API Key</a></p>
+</li>
+<li>
+<p><a href="#_pingfederate_oauth_client_credentials">PingFederate OAuth - Client Credentials</a></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Click <strong>Save</strong> to save settings.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_s3_bucket"><a class="anchor" href="#_s3_bucket"></a>S3 Bucket</h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Name</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Access Key ID</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Type: string<br>
+Required: Yes, if this method is selected from the <strong>Scheme</strong> dropdown list.<br>
+Default: None</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Security Key</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Type: string<br>
+Required: Yes, if this method is selected from the <strong>Scheme</strong> dropdown list.<br>
+Default: None</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Bucket Name</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Type: string<br>
+Required: Yes, if this method is selected from the <strong>Scheme</strong> dropdown list.<br>
+Default: None</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Region</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Type: string<br>
+Required: Yes, if this method is selected from the <strong>Scheme</strong> dropdown list.<br>
+Default: None</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_basic_auth"><a class="anchor" href="#_basic_auth"></a>Basic Auth</h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Name</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Username</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Type: string<br>
+Required: Yes, if this method is selected from the <strong>Scheme</strong> dropdown list.<br>
+Default: None</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Password</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Type: string<br>
+Required: Yes, if this method is selected from the <strong>Scheme</strong> dropdown list.<br>
+Default: None</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_clientid_secret"><a class="anchor" href="#_clientid_secret"></a>ClientId / Secret</h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Name</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>ClientId</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Type: string<br>
+Required: Yes, if this method is selected from the <strong>Scheme</strong> dropdown list.<br>
+Default: None</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Secret</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Type: string<br>
+Required: Yes, if this method is selected from the <strong>Scheme</strong> dropdown list.<br>
+Default: None</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_api_key"><a class="anchor" href="#_api_key"></a>API Key</h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Name</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>API Key</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Type: string<br>
+Required: Yes, if this method is selected from the <strong>Scheme</strong> dropdown list.<br>
+Default: None</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Http Header</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Type: string<br>
+Required: No<br>
+Default: None</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_pingfederate_oauth_client_credentials"><a class="anchor" href="#_pingfederate_oauth_client_credentials"></a>PingFederate OAuth - Client Credentials</h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Name</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Token Url</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Type: string<br>
+Required: Yes, if this method is selected from the <strong>Scheme</strong> dropdown list.<br>
+Default: None</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Client ID</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Type: string<br>
+Required: Yes, if this method is selected from the <strong>Scheme</strong> dropdown list.<br>
+Default: None</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Client Secret</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Type: string<br>
+Required: Yes, if this method is selected from the <strong>Scheme</strong> dropdown list.<br>
+Default: None</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</article>
+  </main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script src="../../_/js/site.js"></script>
+<script src="../../_/js/vendor/highlight.js"></script>
+<script>hljs.initHighlighting()</script>
+  </body>
+</html>

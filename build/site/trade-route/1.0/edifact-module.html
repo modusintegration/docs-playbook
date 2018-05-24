@@ -1,0 +1,1113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EDIFACT Module :: PortX(TM) Docs Prototype</title>
+    <link rel="canonical" href="https://modusbox.org/trade-route/1.0/edifact-module.html">
+    <meta name="keywords" content="b2b, edifact, maven, module, DataSense, DataWeave">
+    <meta name="generator" content="Antora 1.0.1">
+    <link rel="stylesheet" href="../../_/css/site.css">
+  </head>
+  <body class="article">
+<header class="header" role="banner">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://modusbox.org">PortX(TM) Docs Prototype</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Resources</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Resource A</a>
+            <a class="navbar-item" href="#">Resource B</a>
+            <a class="navbar-item" href="#">Resource C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="main-wrapper">
+<div class="navigation-container" data-component="trade-route" data-version="1.0">
+  <aside class="navigation" role="navigation">
+    <div class="panels">
+<div class="navigation-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="index.html">Trade Route(TM)</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="index.html">TradeRoute Manager</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="/trade-route/key-concepts">Key Concepts</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/b2b-transaction-processing-framework">B2B Transaction-Processing Framework</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/resolution-processes">Resolution Processes</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/tracking">Tracking</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="/trade-route/examples">Examples</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="/trade-route/transaction-monitoring">Transaction Monitoring</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/central-pane-elements">Central Pane Elements</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/tracking-scenarios">Tracking Scenarios</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="/trade-route/partner-configuration">Partner Configuration</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/company-information">Company Information</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/identifiers">Identifiers</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/on-hold-inactive">On-Hold/Inactive</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/certificate">Certificate</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/x12-settings">X12 Settings</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/edifact-settings">EDIFACT Settings</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/csv-settings">CSV Settings</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/transaction-designer">Transaction Designer</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/document-types">Document Types</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/endpoints">Endpoints</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/maps">Maps</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/channels">Channels</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/routes">Routes</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/partner-conversations">Partner Conversations</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/rosettanet-pips">RosettaNet PIPs</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/rosettanet-agreements">RosettaNet Agreements</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="/trade-route/administration">Administration</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/environments">Environments</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/error-codes">Error Codes</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/security">Security</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/lookup-tables">Lookup Tables</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="/trade-route/tutorials">Tutorials</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/apm-tutorial-td">Anypoint Partner Manager Tutorial: Designing a Transaction</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/transaction-tracking-walkthrough">Transaction Tracking Walkthrough</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="/trade-route/anypoint-partner-manager-api">Anypoint Partner Manager API</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="/trade-route/glossary">Glossary</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="navigation-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Trade Route(TM)</span>
+    <span class="version">1.0</span>
+  </div>
+  <ul class="components">
+    <li class="component">
+      <span class="title">AS2 Connector</span>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../as2-connector/1.0/as2-connector.html">1.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <span class="title">FTPS Connector</span>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../ftps-connector/1.0/ftps-connector.html">1.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <span class="title">Partner Manager Connector</span>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../pmc/1.0/pmc.html">1.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <span class="title">PortX(TM)</span>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../portx/LiftOff/index.html">LiftOff</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <span class="title">Release Notes</span>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../release-notes/1.0/release-notes.html">1.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component is-current">
+      <span class="title">Trade Route(TM)</span>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="index.html">1.0</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+  <main class="main" role="main">
+<div class="toolbar" role="navigation">
+  <button class="navigation-toggle"></button>
+  <a href="../../portx/LiftOff/index.html" class="home-link"></a>
+<nav class="crumbs" role="navigation" aria-label="breadcrumbs">
+  <ul>
+    <li class="crumb"><a href="index.html">Trade Route(TM)</a></li>
+    <li class="crumb"><a href="edifact-module.html">EDIFACT Module</a></li>
+  </ul>
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/modusintegration/modusbox-docs/edit/dev/trade-route/modules/ROOT/pages/edifact-module.adoc">Edit this Page</a></div>
+</div>
+<article class="doc">
+<h1>EDIFACT Module</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>The EDIFACT Module provides message reading, validation, and writing capabilities to communicate with trading partners using EDIFACT EDI exchanges.</p>
+</div>
+<div class="paragraph">
+<p>Included in the EDIFACT Module are the following capabilities:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>EDIFACT message reading, validation, and writing</p>
+</li>
+<li>
+<p>Integration with DataSense and DataWeave</p>
+</li>
+<li>
+<p>The ability to define your own schemas or customize the base EDIFACT schemas</p>
+</li>
+<li>
+<p>Support for many <a href="/portx/supported-edi-document-types">common EDIFACT versions</a> out of the box</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>To get started using the connector, follow these steps:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Install the EDIFACT connector.</p>
+</li>
+<li>
+<p>Create schemas to describe your EDIFACT messages according to your implementation.</p>
+</li>
+<li>
+<p>Configure the EDIFACT Module for your trading partner according to your implementation convention.</p>
+</li>
+<li>
+<p>Use the EDIFACT module inside Mule flows.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>This page helps you learn how to do each of these steps.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_installation"><a class="anchor" href="#_installation"></a>Installation</h2>
+<div class="sectionbody">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>In Anypoint Studio, click the Exchange icon in the Studio taskbar.</p>
+</li>
+<li>
+<p>Click Login in Anypoint Exchange.</p>
+</li>
+<li>
+<p>Search for the connector and click Install.</p>
+</li>
+<li>
+<p>Follow the prompts to install the connector.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>When Studio has an update, a message displays in the lower right corner, which you can click to install the update.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_using_the_edifact_module_via_maven"><a class="anchor" href="#_using_the_edifact_module_via_maven"></a>Using the EDIFACT Module via Maven</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>To use the EDIFACT Module in conjunction with Maven, see <a href="http://mulesoft.github.io/edi-module/edifact/guide/install.html">
+Mule EDI Anypoint EDIFACT Connector</a>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_edi_schema_language"><a class="anchor" href="#_edi_schema_language"></a>EDI Schema Language</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The EDIFACT Module uses a YAML format called ESL (for EDI Schema Language) to represent EDI schemas.  Basic ESLs define the structure of EDI messages in terms of <em>structures</em> (messages, in EDIFACT terminology), <em>groups</em> (segment groups, in EDIFACT), <em>segments</em>, <em>composites</em>, and <em>elements</em>. ESLs for the EDIFACT D.93A, D.95B, D.96A, D.97A, D.98B, D.99A, D.99B, D.00A, D.01B, D.02A, and D.03B versions are included out of the box.</p>
+</div>
+<div class="paragraph">
+<p>To configure the EDIFACT Module according to your implementation convention, define an <em>overlay schema</em>. An overlay schema is a special form of ESL that allows you to modify a base schema, such as an EDIFACT D.98B ORDERS schema, with your specific conventions. (You don&#8217;t need an overlay schema if you&#8217;re using the structure defined by the standard, but most EDI exchanges modify the base definitions in an implementation convention)</p>
+</div>
+<div class="paragraph">
+<p>If you wish, you can also define your own schemas from scratch. See the <a href="/portx/edi-schema-language-reference">EDI Schema Language Reference</a> for more details.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+YAML uses a combination of lists and sets of key-value pairs. Order of values is not important, as long as required items are present. Quotes (either single or double quotes) are used around values which may consist of digits but are meant to be interpreted as strings (since otherwise the YAML parser treats the values as numbers). Indentation is used to show the nesting of lists.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>For readability, the ESL structures shown here define all simple key-value pairs before any lists that are part of the same definition.</p>
+</div>
+<div class="sect2">
+<h3 id="_defining_your_implementation_convention_with_an_overlay_schema"><a class="anchor" href="#_defining_your_implementation_convention_with_an_overlay_schema"></a>Defining Your Implementation Convention with an Overlay Schema</h3>
+<div class="paragraph">
+<p>To specify a schema according to your implementation convention, you can follow the following process:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Create an "overlay" schema which imports the base schema you want to customize - for example, EDIFACT D.98B ORDERS.</p>
+</li>
+<li>
+<p>Customize the overall structure - segment usage, positions, groups, and counts.</p>
+</li>
+<li>
+<p>Customize segments - including usage and counts.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Overlay schemas are very similar in structure to a <a href="/portx/edi-schema-language-reference">complete schema definition</a>, but instead of providing all the details of the schema structure, they only list changes. The schemas specify the way implementation conventions are used with a particular trading partner to extend and customize the standard.</p>
+</div>
+<div class="paragraph">
+<p>For example, here&#8217;s the start of a sample overlay schema modifying the basic EDIFACT D.98B ORDERS definition. This sample customizes the "PAI" segment and specifies that it is unused - thereby ensuring that it doesn&#8217;t show up in the mapping structures in Studio.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-yaml hljs" data-lang="yaml">form: EDIFACT
+version: 'd98b'
+imports: [ '/edifact/d98b/ORDERS.esl' ]
+structures:
+- idRef: 'ORDERS'
+  name: Purchase Order
+  heading:
+  - { idRef: 'PAI', position: '0040', usage: U }</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_structure_overlay"><a class="anchor" href="#_structure_overlay"></a>Structure Overlay</h3>
+<div class="paragraph">
+<p>A structure overlay details modifications to the base schema definition of an EDIFACT message. Most often these modifications take the form of marking segments or groups in the base definition as unused, but any usage or repetition count change is allowed. Here&#8217;s the form taken by a structure overlay:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-yaml hljs" data-lang="yaml">- idRef: 'ORDERS'
+  heading:
+  - { idRef: 'PAI', position: '0040', usage: U }
+  - { idRef: 'IMD', position: '0060', usage: U }
+  - groupIdRef: 'Segment group 15'
+    position: '0560'
+    items:
+    - { idRef: 'HAN', position: '0570', usage: U }
+    - { idRef: 'MEA', position: '0580', usage: U }
+    - { idRef: 'FTX', position: '0590', usage: U }</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The modifications in this example specify that the PAI and IMD segments of the standard ORDERS heading are not being used, along with the selected segments in Segment group 15.</p>
+</div>
+<div class="paragraph">
+<p>The key-value pairs at the structure level are:</p>
+</div>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Key</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>idRef</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>The ID for the message being modified</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>name</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>The message name (optional)</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>heading, detail, summary</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>List of segment and group modifications within each section of the structure (optional, each is only used when there are modifications to that section)</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>The lists of segment modifications for the different sections of the structure (heading, detail, summary) all use the same structure. Each item in the list is either a segment reference or a group definition. Segment references are shown using a compact YAML syntax where the values for each reference are given as comma-separated key-value pairs enclosed in curly braces. The values are:</p>
+</div>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Key</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>idRef</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>The referenced segment ID (optional, verified if provided but otherwise ignored – the position value is used to uniquely identify segments within the section)</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>position</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>The segment position within the message section</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>usage</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Usage code, which may be M for Mandatory, O for Optional, C for Conditional, or U for Unused (optional, base definition value used if not specified)</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>count</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Maximum repetition count value, which may be a number or the special value '&gt;1' meaning any number of repeats (optional, base definition value used if not specified)</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Group overlays are shown in expanded form, with key-value pairs on separate lines. The values in a group definition are:</p>
+</div>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Key</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>groupIdRef</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>The referenced segment group id (optional, verified if provided but otherwise ignored – the position value is used to uniquely identify a group within a section)</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>position</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>The group position within the message section</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>usage</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>usage code, which may be M for Mandatory, O for Optional, C for Conditional, or U for Unused</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>count</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Maximum repetition count value, which may be a number or the special value `&gt;1 `meaning any number of repeats (optional, base definition value used if not specified)</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>items</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>List of segments (and potentially nested loops) making up the loop</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_segment_overlays"><a class="anchor" href="#_segment_overlays"></a>Segment Overlays</h3>
+<div class="paragraph">
+<p>A segment overlay again details modifications to the base schema definition. Most often these modifications take the form of marking elements or composites in the base definition as unused, but any usage or repetition count change is allowed. Here are some sample segment overlays:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-yaml hljs" data-lang="yaml">segments:
+- { idRef: FTX, trim: 20 }
+- idRef: LIN
+  items:
+  - { position: 40, usage: U }
+- { idRef: ALC, trim: 30 }
+- idRef: PCI
+  items:
+  - { position: 20, usage: U }
+  - { position: 40, usage: U }</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The above example uses the compact form for segment modifications that only involve a truncate, while modifications that make changes to individual values are expressed in expanded form. As with all the other YAML examples, the two forms are actually equivalent and can be used interchangeably.</p>
+</div>
+<div class="paragraph">
+<p>The key-value pairs in a segment overlay are:</p>
+</div>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Key</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>idRef</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Segment identifier</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>trim</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Trim position in segment, meaning all values from this point on are marked as unused (optional)</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>items</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>List of individual value modifications</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>The items list references values in the segment by position. The values for these references are:</p>
+</div>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Key</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>position</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>The value position within the segment</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>name</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>The name of the value in the segment (optional, base definition value used if not specified)</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>usage</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Usage code, which may be M for Mandatory, O for Optional, C for Conditional, or U for Unused (optional, base definition value used if not specified)</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>count</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Maximum repetition count value, which may be any number or the special value <code>&gt;1</code> meaning any number of repeats (optional, base definition value used if not specified)</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_determining_the_edifact_schema_location"><a class="anchor" href="#_determining_the_edifact_schema_location"></a>Determining the EDIFACT Schema Location</h3>
+<div class="paragraph">
+<p>To use DataSense views of input and output EDI data you need to know the locations of the schemas in your project. If you&#8217;re using the out of the box EDIFACT schemas and not customizing anything, the schema location follows the pattern "/edifact/{version}/{message}.esl", so for the D.98B version of the ORDERS message your schema location is "/edifact/d98b/ORDERS.esl". You can find these schemas bundled with the connector in the file edi-schemas-edifact-&lt;VERSION&gt;.jar.</p>
+</div>
+<div class="paragraph">
+<p>If you&#8217;re creating a custom implementation convention, you should put your schemas under a directory in src/main/app and refer to the location using ${app.home}. For example, if you&#8217;ve put your ORDERS schema under src/main/app/mypartner/ORDERS.esl, your schema location is "${app.home}/mypartner/ORDERS.esl".</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_configuring_the_edifact_module"><a class="anchor" href="#_configuring_the_edifact_module"></a>Configuring the EDIFACT Module</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>After you install the connector and configure your schema customizations (if any), you can start using the connector. Create separate configurations for each implementation convention.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>[tab,title="Studio Visual Editor"]
+....
+Follow these steps to create a global EDI module configuration in a Mule application:
+
+. Click the *Global Elements* tab at the base of the canvas, then click *Create*.
+. In the *Choose Global Type* wizard, use the filter to locate and select, *EDIFACT Module*, and click *OK*.
++
+image:edi-choose-global-type.png[edi-choose-global-type]
++
+. Configure the parameters according to the connector reference.
+. Click *OK* to save the global connector configurations.
+. Return to the *Message Flow* tab in Studio.
+....
+[tab,title="XML Editor or Standalone"]
+....
+First, ensure that you have included the appropriate EDI namespace in your configuration file. For EDIFACT, the namespace and schema location are:
+
+[source, yaml, linenums]
+----
+http://www.mulesoft.org/schema/mule/edifact-edi
+http://www.mulesoft.org/schema/mule/edifact-edi/1.0/mule-edifact-edi.xsd
+----
+
+Follow these steps to configure a EDIFACT module in your application.
+
+. Create a global EDIFACT configuration outside and above your flows.
++
+[source, xml, linenums]
+----
+&lt;edifact-edi:config name="ediTx" interchangeIdQualifierSelf="16" interchangeIdSelf="102096559PROD"
+    interchangeIdQualifierPartner="01" interchangeIdPartner="PARTNER"&gt;
+  &lt;edifact-edi:schemas&gt;
+    &lt;edifact-edi:schema&gt;/edifact/d98b/ORDERS.esl&lt;/edifact-edi:schema&gt;
+    &lt;edifact-edi:schema&gt;/edifact/d98b/ORDRSP.esl&lt;/edifact-edi:schema&gt;
+ &lt;/edifact-edi:schemas&gt;
+&lt;/edifact-edi:config&gt;
+----
++
+. Configure the connector according to your implementation convention using the guide below.
+....</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>After you set up a global element for your EDIFACT module, configure the schemas, acknowledgements, IDs, and the parser options. A reference for these options is located in the <a href="http://mulesoft.github.com/edi-module">module reference</a>.</p>
+</div>
+<div class="sect2">
+<h3 id="_setting_your_schema_locations"><a class="anchor" href="#_setting_your_schema_locations"></a>Setting Your Schema Locations</h3>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Currently, you can only configure schema locations in the Anypoint Studio XML view.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Using the schema locations determined above, switch to the XML view in Studio by clicking <strong>Configuration XML</strong>. Modify your EDIFACT module configuration to include a list of all the schemas you wish to include by adding an <code>edi:schema</code> element for each document type:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;edifact-edi:config name="MyTradingPartner" doc:name="EDI" interchangeIdQualifierSelf="01" interchangeIdSelf="ABCDEFG" groupIdSelf="ABC123" interchangeIdQualifierPartner="01" interchangeIdPartner="HIJKLMN" groupIdPartner="DEF456"&gt;
+    &lt;edifact-edi:schemas&gt;
+        &lt;edifact-edi:schema&gt;/edifact/d98b/ORDERS.esl&lt;/edifact-edi:schema&gt;
+        &lt;edifact-edi:schema&gt;/edifact/d98b/ORDRSP.esl&lt;/edifact-edi:schema&gt;
+    &lt;/edifact-edi:schemas&gt;
+&lt;/edifact-edi:config&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>When the connector is processing an input or output message, it first looks for a match among the configured schemas. If it doesn&#8217;t find a match with one of these, it tries to load a schema from the classpath, using the path construction described at the start of this section. So you can work with messages that are not included in the configuration, but only the data structures for these will not show up in DataSense within Anypoint Studio.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_setting_your_interchange_ids"><a class="anchor" href="#_setting_your_interchange_ids"></a>Setting Your Interchange IDs</h3>
+<div class="paragraph">
+<p>You can also configure the interchange and group identifiers and qualifiers for you and your trading partner on the EDIFACT module configuration.</p>
+</div>
+<div class="paragraph">
+<p>The "Self identification" parameters identify your side of the trading partner relationship, while the "Partner identification" parameters identify your trading partner. The values you set are used when writing EDI messages to supply the sender interchange identifier, interchange identifier qualifier, group application identifier, and group identifier qualifier, and are verified in receive messages. If you don&#8217;t want to restrict incoming messages you can leave these blank, and set the values for an outgoing message in the write operation or in the actual outgoing message. Values set in the write operation  override the connector configuration, and values set directly in the message override both the connector configuration and any values set in the write operation.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_understanding_the_mule_message_structure_for_edifact_documents"><a class="anchor" href="#_understanding_the_mule_message_structure_for_edifact_documents"></a>Understanding the Mule Message Structure for EDIFACT Documents</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The connector enables reading or writing of EDIFACT documents into or from the canonical EDI message structure. This structure is represented as a hierarchy of Java Maps and Lists, which can be manipulated using DataWeave or code. Each transaction has its own structure, as defined in the schemas, as outlined above.</p>
+</div>
+<div class="paragraph">
+<p>The message itself contains the following keys:</p>
+</div>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Key name</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Delimiters (optional)</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>The delimiters used for the message (set based on the last interchange processed by a read operation). If set for a write operation, this override the values in the module configuration. The characters in the string are interpreted based on position, in the following order: (data separator), (component separator), (repetition separator, or ' ' if none), (segment terminator), (release indicator).</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Errors (read only)</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>A list of errors which are associated with the input as a whole, or with interchanges with no messages. (See the EdifactError structure description in the Reading and Validating EDI Messages section below.)</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>FunctionalAcksGenerated (read only)</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>A list of CONTRL acknowledgments that were generated by the module during the read operation. To send an acknowledgement, see the Sending Acknowledgements section below.</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Group (write only)</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Map of UNG group header segment values used as defaults when writing groups. (Not yet implemented in the 1.0 version.)</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Interchange (write only)</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Map of UNB interchange header segment values used as defaults when writing interchanges.</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Messages</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>A hierarchy of the messages which were read by the module during a read operation, or which are to be sent by the module during a write operation. The value of this top-level key is a map with standard versions as keys, in the form <code>D00A</code> (for instance). The value associated with each standard version is another map, this one keyed by message name. For example, if you were only using D.00A ORDERS and ORDRSP messages, the Messages map would contain a single key, <code>D00A</code>, with another map as the value. This map would in turn have two keys, <code>ORDERS</code> and <code>ORDRSP</code>, each with a list as the value. Each list would contain the individual messages that you could then process. If you&#8217;re using CONTRL functional acknowledgments <code>CONTRL</code> is the key for a list of CONTRL messages.</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Individual transaction sets have their own maps, with the following keys:</p>
+</div>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Key name</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Detail</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Map of segments or segment groups from the detail section of the transaction set. Values are maps for segments or groups which occur at most once, lists of maps for values which may be repeated.</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Errors (read only)</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>A list of errors which are associated with the input as a whole, or with interchanges with no messages. (See the EdifactError class description in the <a href="#_reading_and_validating_edi_messages">Reading and Validating EDI Messages</a> section below.)</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Group</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Map of UNG group header segment values, when groups are used. When reading, this map is the actual data from the enclosing group (a single map linked from all messages in the group). When writing, these values are used for optionally creating an enclosing group (gathering message with the same interchange and group values into a single group, regardless of whether the actual maps are the same or not). Values not populated in this map default to the values from the group map at the message level.</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Heading</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Map of segments or segment groups from the heading section of the transaction set. Values are maps for segments or groups which occur at most once, lists of maps for values which may be repeated.</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Id</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Message ID, which must match the key of the containing message list.</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Interchange</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Map of UNB interchange header segment values. When reading a message, this map is the actual data from the enclosing interchange (a single map linked from all transaction sets in the interchange). When writing a message, these values are used for creating the enclosing interchange (gathering transactions with the same interchange values into a single interchange, regardless of whether the actual maps are the same or not). Values not populated in this map, default to the values from the interchange map at the message level.</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>MessageHeader</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Map of UNH message header segment values. This gives the actual header data for a read operation, and allows you to provide overrides for configuration settings for a write operation.</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Name</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Message name.</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Summary</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Map of segments or loops from the summary section of the transaction set. Values are maps for segments or loops which occur at most once, lists of maps for values which may be repeated.</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_reading_and_validating_edi_messages"><a class="anchor" href="#_reading_and_validating_edi_messages"></a>Reading and Validating EDI Messages</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>To read an EDIFACT message, search the palette for <strong>EDIFACT EDI</strong>, and drag the EDIFACT module into a flow. Then, go to the properties view, select the connector configuration you created above and select the <strong>Read</strong> operation. This operation  reads any byte stream into the structure described by your EDI schemas.</p>
+</div>
+<div class="paragraph">
+<p>The EDIFACT module validates the input when it reads it in. Validation includes checking the syntax and content of interchange envelope segments UNA/UNB and UNZ, optional group envelope segments UGH and UNE, as well as the actual messages. Normally errors are both logged and entered in the receive data map, as well as accumulated and reported in CONTRL acknowledgment messages. All accepted messages (whether error free or with non-fatal errors) are passed on for processing as part of the output message Map. Errors in reading the input data  results in exceptions being thrown.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/edi-messages.png" alt="edi-messages"></span></p>
+</div>
+<div class="paragraph">
+<p>Error data entered in the receive data map uses the EdifactError class, a read-only JavaBean with the following properties:</p>
+</div>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Property</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>segment</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>The zero-based index within the input of the segment causing the error</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>fatal</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Flag for a fatal error, meaning the associated message, group, or interchange was rejected as a result of the error</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>errorCode</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>EDIFACT syntax error code</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>errorText</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Text description of the error</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Error data is returned by the read operation as optional lists with the "Errors" key at every level of the data structure. At the message level, this list contains non-fatal errors encountered during the parsing of that message. At the interchange level, this list contains errors (both fatal and non-fatal) for messages with fatal errors. At the root level of the read, this list contains both interchange errors and errors for messages included in interchanges with no valid messages.</p>
+</div>
+<div class="sect2">
+<h3 id="_writing_edifact_messages"><a class="anchor" href="#_writing_edifact_messages"></a>Writing EDIFACT Messages</h3>
+<div class="paragraph">
+<p>To write an outgoing message, you can construct an outgoing EDIFACT message according to the structure as defined above. For example, this sample creates an outgoing EDIFACT message which is written to a file.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">  ...
+&lt;edifact-edi:write config-ref="MyTradingPartner" doc:name="Send ORDERS"/&gt;
+&lt;file:outbound-endpoint responseTimeout="10000" doc:name="File" path="output" outputPattern="ack.edi"/&gt;</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_sending_acknowledgements"><a class="anchor" href="#_sending_acknowledgements"></a>Sending Acknowledgements</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Sending acknowledgments is the same as writing any other EDIFACT message, except you set the messages list to the acknowledgements that were generated during the read operation. For example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;edifact-edi:read config-ref="Walmart" doc:name="Read EDI Doc"/&gt;
+  ...
+&lt;dw:transform-message doc:name="Transform Message"&gt;
+&lt;dw:input-payload doc:sample="InMessage.dwl"/&gt;
+&lt;dw:set-payload&gt;&lt;![CDATA[%dw 1.0
+%output application/java
+---
+{
+    Messages: {
+        D96A: {
+            CONTRL: payload.FunctionalAcksGenerated
+        }
+    }
+}]]&gt;&lt;/dw:set-payload&gt;
+ &lt;/dw:transform-message&gt;
+&lt;set-payload value="#[ ['Transactions' : ['CONTRL' : payload.FunctionalAcksGenerated] ] ]" doc:name="Create outgoing message"/&gt;
+&lt;edifact-edi:write config-ref="MyTradingPartner" doc:name="Send CONTRL Ack"/&gt;
+&lt;file:outbound-endpoint responseTimeout="10000" doc:name="File" path="output" outputPattern="ack.edi"/&gt;</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_limitations"><a class="anchor" href="#_limitations"></a>Limitations</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>EDIFACT packages (containers for binary data) are not supported, and  cause errors if you attempt to use them.</p>
+</li>
+<li>
+<p>EDIFACT interactive exchanges (using UIB header segment and UIZ trailer segment) are not supported.</p>
+</li>
+<li>
+<p>Code values are not currently verified for either reading or writing.</p>
+</li>
+<li>
+<p>EDIFACT dependency notes are not currently enforced for either reading or writing.</p>
+</li>
+<li>
+<p>EDIFACT groups are not supported yet.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</article>
+  </main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script src="../../_/js/site.js"></script>
+<script src="../../_/js/vendor/highlight.js"></script>
+<script>hljs.initHighlighting()</script>
+  </body>
+</html>

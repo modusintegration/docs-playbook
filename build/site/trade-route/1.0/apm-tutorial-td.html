@@ -1,0 +1,1273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PortX Tutorial: Designing a Transaction :: PortX(TM) Docs Prototype</title>
+    <link rel="canonical" href="https://modusbox.org/trade-route/1.0/apm-tutorial-td.html">
+    <meta name="generator" content="Antora 1.0.1">
+    <link rel="stylesheet" href="../../_/css/site.css">
+  </head>
+  <body class="article">
+<header class="header" role="banner">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://modusbox.org">PortX(TM) Docs Prototype</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Resources</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Resource A</a>
+            <a class="navbar-item" href="#">Resource B</a>
+            <a class="navbar-item" href="#">Resource C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="main-wrapper">
+<div class="navigation-container" data-component="trade-route" data-version="1.0">
+  <aside class="navigation" role="navigation">
+    <div class="panels">
+<div class="navigation-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="index.html">Trade Route(TM)</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="index.html">TradeRoute Manager</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="/trade-route/key-concepts">Key Concepts</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/b2b-transaction-processing-framework">B2B Transaction-Processing Framework</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/resolution-processes">Resolution Processes</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/tracking">Tracking</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="/trade-route/examples">Examples</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="/trade-route/transaction-monitoring">Transaction Monitoring</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/central-pane-elements">Central Pane Elements</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/tracking-scenarios">Tracking Scenarios</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="/trade-route/partner-configuration">Partner Configuration</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/company-information">Company Information</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/identifiers">Identifiers</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/on-hold-inactive">On-Hold/Inactive</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/certificate">Certificate</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/x12-settings">X12 Settings</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/edifact-settings">EDIFACT Settings</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/csv-settings">CSV Settings</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/transaction-designer">Transaction Designer</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/document-types">Document Types</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/endpoints">Endpoints</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/maps">Maps</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/channels">Channels</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/routes">Routes</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/partner-conversations">Partner Conversations</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/rosettanet-pips">RosettaNet PIPs</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/rosettanet-agreements">RosettaNet Agreements</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="/trade-route/administration">Administration</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/environments">Environments</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/error-codes">Error Codes</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/security">Security</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/lookup-tables">Lookup Tables</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="/trade-route/tutorials">Tutorials</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/apm-tutorial-td">Anypoint Partner Manager Tutorial: Designing a Transaction</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="/trade-route/transaction-tracking-walkthrough">Transaction Tracking Walkthrough</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="/trade-route/anypoint-partner-manager-api">Anypoint Partner Manager API</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="/trade-route/glossary">Glossary</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="navigation-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Trade Route(TM)</span>
+    <span class="version">1.0</span>
+  </div>
+  <ul class="components">
+    <li class="component">
+      <span class="title">AS2 Connector</span>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../as2-connector/1.0/as2-connector.html">1.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <span class="title">FTPS Connector</span>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../ftps-connector/1.0/ftps-connector.html">1.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <span class="title">Partner Manager Connector</span>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../pmc/1.0/pmc.html">1.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <span class="title">PortX(TM)</span>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../portx/LiftOff/index.html">LiftOff</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <span class="title">Release Notes</span>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../release-notes/1.0/release-notes.html">1.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component is-current">
+      <span class="title">Trade Route(TM)</span>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="index.html">1.0</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+  <main class="main" role="main">
+<div class="toolbar" role="navigation">
+  <button class="navigation-toggle"></button>
+  <a href="../../portx/LiftOff/index.html" class="home-link"></a>
+<nav class="crumbs" role="navigation" aria-label="breadcrumbs">
+  <ul>
+    <li class="crumb"><a href="index.html">Trade Route(TM)</a></li>
+    <li class="crumb"><a href="apm-tutorial-td.html">PortX Tutorial: Designing a Transaction</a></li>
+  </ul>
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/modusintegration/modusbox-docs/edit/dev/trade-route/modules/ROOT/pages/apm-tutorial-td.adoc">Edit this Page</a></div>
+</div>
+<article class="doc">
+<h1>PortX Tutorial: Designing a Transaction</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>This tutorial:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Illustrates the role PortX plays in B2B transaction processing.</p>
+</li>
+<li>
+<p>Introduces <em>Transaction Designer</em>, an PortX feature that enables you to design the elements of a transaction from beginning to end.</p>
+</li>
+<li>
+<p>Provides instructions for using Transaction Designer to configure PortX so that you can simulate a transaction and see how PortX processes it.</p>
+</li>
+</ul>
+</div>
+<div id="img-td-overview" class="imageblock">
+<div class="content">
+<img src="_images/td-overview.png" alt="img-td-overview">
+</div>
+<div class="title">Figure 1. Transaction Overview</div>
+</div>
+<div class="paragraph">
+<p>The elements required to process a transaction are shown in <a href="#img-td-overview">Transaction Overview</a>. In this tutorial, you will create and configure these elements in this order:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="#_configure_a_supplier">Configure a Supplier</a></p>
+</li>
+<li>
+<p><a href="#_design_a_target_channel">Design a Target Channel</a></p>
+</li>
+<li>
+<p><a href="#_configure_a_buyer">Configure a Buyer</a></p>
+</li>
+<li>
+<p><a href="#_design_a_source_channel">Design a Source Channel</a></p>
+</li>
+<li>
+<p><a href="#_configure_an_s3_bucket_optional">Configure an S3 Bucket (optional)</a></p>
+</li>
+<li>
+<p><a href="#_copy_portx_information">Copy PortX Information</a></p>
+</li>
+<li>
+<p><a href="#_configure_portx_routing_engine_in_anypoint_studio">Configure PortX Routing Engine in Anypoint Studio</a></p>
+</li>
+<li>
+<p><a href="#_start_the_applications">Start the Applications</a></p>
+</li>
+<li>
+<p><a href="#_send_a_message">Send a Message</a></p>
+</li>
+<li>
+<p><a href="#_monitor_the_transaction">Monitor the Transaction</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_before_you_begin"><a class="anchor" href="#_before_you_begin"></a>Before You Begin</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Verify that you have the following:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Anypoint Platform user account with PortX access</p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+If you are unable to access PortX, see your Mulesoft account administrator for assistance.
+</td>
+</tr>
+</table>
+</div>
+</li>
+<li>
+<p>Anypoint Studio with Mule 3.8.4 and the following connectors:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Partner Manager 6.5.0</p>
+</li>
+<li>
+<p>AS2 v2.1.0</p>
+</li>
+<li>
+<p>FTPS v2.0.0</p>
+</li>
+<li>
+<p>EDIFACT EDI</p>
+</li>
+<li>
+<p>RosettaNet</p>
+</li>
+<li>
+<p>X12 v1.2.2</p>
+</li>
+<li>
+<p>Object Store v2.1.0</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="_download_tutorial_materials"><a class="anchor" href="#_download_tutorial_materials"></a>Download Tutorial Materials</h3>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Download link: <a href="https://drive.google.com/open?id=1ZqNUazJHoBJ5Xj25L9OXEXYRilrsdkTH">PortX Tutorial Materials</a>.</p>
+</li>
+<li>
+<p>Click <strong>PortX Tutorial Materials.zip</strong> to expand it.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_get_started"><a class="anchor" href="#_get_started"></a>Get Started</h2>
+<div class="sectionbody">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><a href="/portx/anypoint-partner-manager#start-anypoint-manager">Start PortX</a>.
+The <a href="anypoint-partner-manager.html#img-apm-start" class="page">Transaction Monitoring Page</a> appears.</p>
+</li>
+<li>
+<p>In the left-hand navigation pane, click <strong>Partner Configuration</strong>.
+The <a href="#img-partner-configuration">Partner Configuration Page</a> appears.</p>
+</li>
+</ol>
+</div>
+<div id="img-partner-configuration" class="imageblock">
+<div class="content">
+<img src="_images/partner-configuration.png" alt="img-partner-configuration">
+</div>
+<div class="title">Figure 2. Partner Configuration Page</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_configure_a_supplier"><a class="anchor" href="#_configure_a_supplier"></a>Configure a Supplier</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This tutorial works with two partners: a Supplier and a Buyer.</p>
+</div>
+<div class="paragraph">
+<p>The Supplier is <strong>AAZFasteners</strong>, a fictional retailer of nuts and bolts, also identified on the <a href="#img-partner-configuration">Partner Configuration Page</a> as <strong>YOUR COMPANY</strong>.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+In your copy of PortX, <strong>YOUR COMPANY</strong> is probably not named <strong>AAZFasteners</strong>. However, for illustration purposes, we refer to <strong>YOUR COMPANY</strong> as <strong>AAZFasteners</strong> throughout this tutorial. If you want to change the name of <strong>YOUR COMPANY</strong> to <strong>AAZFasteners</strong>, see <a href="/portx/partner-configuration#create-and-configure-partners">Create and Configure Partners</a>. However, the tutorial will work without making this change.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>The other partner in this tutorial is the <em>Buyer</em>, a fictional retailer of home supplies. In <a href="#_create_the_buyer_partner">Create the Buyer Partner</a>, we create this partner, identifying it as <strong>AcmeHomeSupply</strong>.
+In the tutorial, AcmeHomeSupply uses PortX to order products from AAZFasteners. In the following sections, you will:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="#_add_identifiers">Add Identifiers</a></p>
+</li>
+<li>
+<p><a href="#_upload_certificates">Upload Certificates</a></p>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="_add_identifiers"><a class="anchor" href="#_add_identifiers"></a>Add Identifiers</h3>
+<div class="paragraph">
+<p><em>Identifiers</em> are values, communicated in messages, that can be used to uniquely identify a specific partner. Some identifiers are defined by standards bodies, such as <em>DUNS numbers</em>, which are assigned by Dun and Bradstreet. Others are mutually defined between partners. AS2 uses identifiers to identify the sender and receiver of a transmission. X12 and EDIFACT use identifiers to identify the sender and receiver of an EDI document.</p>
+</div>
+<div class="paragraph">
+<p>For these partners, we use two identifiers:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>X12-ISA</p>
+</li>
+<li>
+<p>AS2</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>In the following sections, we add identifiers for the supplier. We will add buyer identifiers in <a href="#_add_buyer_identifiers">Add Buyer Identifiers</a>.</p>
+</div>
+<div class="sect3">
+<h4 id="_add_supplier_x12_isa_identifier"><a class="anchor" href="#_add_supplier_x12_isa_identifier"></a>Add Supplier X12-ISA Identifier</h4>
+<div class="paragraph">
+<p>include::_sources/tutorial/supplier/identifier-x12-isa-supplier.adoc[]</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_add_supplier_as2_identifier"><a class="anchor" href="#_add_supplier_as2_identifier"></a>Add Supplier AS2 Identifier</h4>
+<div class="paragraph">
+<p>include::_sources/tutorial/supplier/identifier-as2-supplier.adoc[]</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_upload_certificates"><a class="anchor" href="#_upload_certificates"></a>Upload Certificates</h3>
+<div class="paragraph">
+<p>PortX provides for the uploading of certificates to verify the identity of a partner.</p>
+</div>
+<div class="sect3">
+<h4 id="_upload_the_supplier_certificate"><a class="anchor" href="#_upload_the_supplier_certificate"></a>Upload the Supplier Certificate</h4>
+<div class="paragraph">
+<p>include::_sources/tutorial/supplier/certificate-supplier.adoc[]</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_design_a_target_channel"><a class="anchor" href="#_design_a_target_channel"></a>Design a Target Channel</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>A <em>channel</em> provides a means of specifying, for a given partner:</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Type</dt>
+<dd>
+<p>Source or Target, As created in <a href="/portx/maps">Channels</a> or in <a href="/portx/transaction-designer">Transaction Designer</a>. Source Channel settings are always specific to the origin of a document. Target Channel settings are always specific to the destination.</p>
+</dd>
+<dt class="hdlist1">Document</dt>
+<dd>
+<p>As created in <a href="/portx/document-types">Document Types</a> or in <a href="/portx/transaction-designer">Transaction Designer</a></p>
+</dd>
+<dt class="hdlist1">Document Map</dt>
+<dd>
+<p>As created in <a href="/portx/maps">Maps</a> or in <a href="/portx/transaction-designer">Transaction Designer</a></p>
+</dd>
+<dt class="hdlist1">Endpoint</dt>
+<dd>
+<p>As created in <a href="/portx/endpoints">Endpoints</a> or in <a href="/portx/transaction-designer">Transaction Designer</a></p>
+</dd>
+</dl>
+</div>
+<div class="paragraph">
+<p>In this section, you create a template for any transaction in which you receive a purchase order from a partner and send it to your HTTP endpoint. Later, in <a href="#_design_a_source_channel">Design a Source Channel</a>, you will use this template as the starting point from which you configure a transaction specific to receiving a purchase order from AcmeHomeSupply.</p>
+</div>
+<div class="sect3">
+<h4 id="_start_transaction_designer"><a class="anchor" href="#_start_transaction_designer"></a>Start Transaction Designer</h4>
+<div class="paragraph">
+<p>include::_sources/tutorial/supplier/start-td-aaz.adoc[]</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_create_the_target_channel"><a class="anchor" href="#_create_the_target_channel"></a>Create the Target Channel</h3>
+<div class="paragraph">
+<p>include::_sources/tutorial/supplier/td-target-channel-aaz.adoc[]</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_create_the_source_document_type_for_the_target_channel"><a class="anchor" href="#_create_the_source_document_type_for_the_target_channel"></a>Create the Source Document Type for the Target Channel</h3>
+<div class="paragraph">
+<p>The terms  <em>document</em>, <em>file</em>, and <em>message</em> are used interchangeably in the B2B world to reflect an instance of a structured payload being passed through a system to convey information about a transaction. For consistency, we use the term document to represent these instances.</p>
+</div>
+<div class="paragraph">
+<p>PortX enables you to categorize and configure specific <em>Document Types</em>. In this section, you create a Source Document Type for the Target Channel.</p>
+</div>
+<div class="sect3">
+<h4 id="_to_create_the_source_document_type_for_the_target_channel"><a class="anchor" href="#_to_create_the_source_document_type_for_the_target_channel"></a>To Create the Source Document Type for the Target Channel</h4>
+<div class="paragraph">
+<p>include::_sources/tutorial/supplier/td-target-channel-source-doc-aaz.adoc[]</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_configure_endpoints"><a class="anchor" href="#_configure_endpoints"></a>Configure Endpoints</h3>
+<div class="paragraph">
+<p>An <em>endpoint</em> is the entry point to a service, a process, or a queue or topic destination in service-oriented architecture.
+In PortX, an endpoint defines the protocol, address, and other details specific to an exchange of messages between partners.</p>
+</div>
+<div class="sect3">
+<h4 id="_configure_the_target_endpoint"><a class="anchor" href="#_configure_the_target_endpoint"></a>Configure the Target Endpoint</h4>
+<div class="paragraph">
+<p>include::_sources/tutorial/supplier/td-target-channel-endpoint-aaz.adoc[]</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_save_the_transaction"><a class="anchor" href="#_save_the_transaction"></a>Save the Transaction</h3>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>In the <strong>Transaction Name</strong> box, type <strong>TargetPurchaseOrder</strong>.</p>
+</li>
+<li>
+<p>Click <strong>Save Template</strong>.</p>
+<div class="paragraph">
+<p>The <a href="#img-td-save-transaction-aaz">Save transaction Page</a> appears.</p>
+</div>
+</li>
+</ol>
+</div>
+<div id="img-td-save-transaction-aaz" class="imageblock">
+<div class="content">
+<img src="_images/yc/td-save-transaction-aaz.png" alt="img-td-save-transaction-aaz">
+</div>
+<div class="title">Figure 3. Save transaction Page</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic" start="3">
+<li>
+<p>On the <a href="#img-td-save-transaction-aaz">Save transaction Page</a>, click <strong>Close</strong>.</p>
+<div class="paragraph">
+<p>The <a href="#img-td-target-channel-in-progress-aaz">[img-td-target-channel-in-progress-aaz]</a> appears.</p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_configure_a_buyer"><a class="anchor" href="#_configure_a_buyer"></a>Configure a Buyer</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_create_the_buyer_partner"><a class="anchor" href="#_create_the_buyer_partner"></a>Create the Buyer Partner</h3>
+<div class="paragraph">
+<p>include::_sources/tutorial/buyer/create-buyer-partner.adoc[]</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_add_buyer_identifiers"><a class="anchor" href="#_add_buyer_identifiers"></a>Add Buyer Identifiers</h3>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Make sure you are configuring <strong>AcmeHomeSupply</strong>, not <strong>AAZFasteners</strong>.
+</td>
+</tr>
+</table>
+</div>
+<div class="sect3">
+<h4 id="_add_buyer_x12_isa_identifier"><a class="anchor" href="#_add_buyer_x12_isa_identifier"></a>Add Buyer X12-ISA Identifier</h4>
+<div class="paragraph">
+<p>To add this identifier, perform steps in <a href="#_add_supplier_x12_isa_identifier">Add Supplier X12-ISA Identifier</a>,
+substituting <strong>Acme</strong> for <strong>AAZ</strong>.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_add_buyer_as2_identifier"><a class="anchor" href="#_add_buyer_as2_identifier"></a>Add Buyer AS2 Identifier</h4>
+<div class="paragraph">
+<p>To add this identifier, perform steps in <a href="#_add_supplier_as2_identifier">Add Supplier AS2 Identifier</a>,
+substituting <strong>Acme</strong> for <strong>AAZ</strong>.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_upload_the_buyer_certificate"><a class="anchor" href="#_upload_the_buyer_certificate"></a>Upload the Buyer Certificate</h3>
+<div class="paragraph">
+<p>To add the certificate, perform steps in <a href="#_upload_the_supplier_certificate">Upload the Supplier Certificate</a>,
+substituting <strong>partner.cer</strong> for <strong>HomeOrg.p12</strong>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_create_the_buyer_send_endpoint"><a class="anchor" href="#_create_the_buyer_send_endpoint"></a>Create the Buyer Send Endpoint</h3>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>On the <a href="#img-certificate">[img-certificate]</a>, in the <strong>CONFIGURATION</strong> section of the left-hand navigation pane, click <strong>Endpoints</strong>.</p>
+<div class="paragraph">
+<p>The <a href="#img-endpoints">Endpoints Page</a> appears.</p>
+</div>
+</li>
+</ol>
+</div>
+<div id="img-endpoints" class="imageblock">
+<div class="content">
+<img src="_images/endpoints.png" alt="img-endpoints">
+</div>
+<div class="title">Figure 4. Endpoints Page</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic" start="2">
+<li>
+<p>On the <a href="#img-endpoints">Endpoints Page</a>, click <strong>New</strong>.</p>
+<div class="paragraph">
+<p>The <a href="#img-endpoint-add">Add New Endpoint Page</a> appears.</p>
+</div>
+<div id="img-endpoint-add" class="imageblock">
+<div class="content">
+<img src="_images/endpoint.png" alt="img-endpoint-add">
+</div>
+<div class="title">Figure 5. Add New Endpoint Page</div>
+</div>
+</li>
+<li>
+<p>In the <strong>Protocol</strong> listbox, click the down-arrow to expand the list of available protocols.</p>
+<div class="paragraph">
+<p>From the list, click <strong>AS2</strong>.</p>
+</div>
+</li>
+<li>
+<p>In the <strong>Type</strong> listbox, click the down-arrow to expand the list of available Types.</p>
+<div class="paragraph">
+<p>From the list, click <strong>Send</strong>.</p>
+</div>
+<div class="paragraph">
+<p>The <a href="#img-endpoint-add">Add New Endpoint Page</a> expands to enable configuraton of additional settings.</p>
+</div>
+</li>
+<li>
+<p>Select <strong>Default for AcmeHomeSupply</strong>.</p>
+</li>
+<li>
+<p>In the URL box, enter <strong><a href="http://localhost:8089/850" class="bare">http://localhost:8089/850</a></strong></p>
+</li>
+<li>
+<p>Make sure that the following checkboxes are selected:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Message Encrypted</strong></p>
+</li>
+<li>
+<p><strong>Message Signed</strong></p>
+</li>
+<li>
+<p><strong>MDN Required</strong></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Click <strong>Save</strong></p>
+<div class="paragraph">
+<p>The <a href="#img-endpoints">Endpoints Page</a> appears.</p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_design_a_source_channel"><a class="anchor" href="#_design_a_source_channel"></a>Design a Source Channel</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="#_start_transaction_designer">Start Transaction Designer</a></p>
+</li>
+<li>
+<p><a href="#_create_the_source_channel">Create the Source Channel</a></p>
+</li>
+<li>
+<p><a href="#_create_the_source_document">Create the Source Document</a></p>
+</li>
+<li>
+<p><a href="#_create_the_buyer_receive_endpoint">Create the Buyer Receive Endpoint</a></p>
+</li>
+<li>
+<p><a href="#_configure_the_map">Configure the Map</a></p>
+</li>
+<li>
+<p><a href="#_add_the_target_channel">Add the Target Channel</a></p>
+</li>
+</ul>
+</div>
+<div class="sect3">
+<h4 id="_start_transaction_designer_2"><a class="anchor" href="#_start_transaction_designer_2"></a>Start Transaction Designer</h4>
+<div class="paragraph">
+<p>include::_sources/tutorial/buyer/start-td-acme.adoc[]</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_create_the_source_channel"><a class="anchor" href="#_create_the_source_channel"></a>Create the Source Channel</h3>
+<div class="paragraph">
+<p>include::_sources/tutorial/buyer/td-source-channel-acme.adoc[]</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_create_the_source_document"><a class="anchor" href="#_create_the_source_document"></a>Create the Source Document</h3>
+<div class="paragraph">
+<p>include::_sources/tutorial/buyer/td-source-channel-source-doc-acme.adoc[]</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_create_the_buyer_receive_endpoint"><a class="anchor" href="#_create_the_buyer_receive_endpoint"></a>Create the Buyer Receive Endpoint</h3>
+<div class="paragraph">
+<p>include::_sources/tutorial/buyer/td-source-channel-endpoint-acme.adoc[]</p>
+</div>
+<div class="paragraph">
+<p>Note that, on the <a href="#img-td-possible-endpoints-no-property-acme">[img-td-possible-endpoints-no-property-acme]</a>, the warning <strong>1 property cannot be found in the document type</strong> appears.</p>
+</div>
+<div class="sect3">
+<h4 id="_add_a_property"><a class="anchor" href="#_add_a_property"></a>Add a Property</h4>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>On the <a href="#img-td-possible-endpoints-no-property-acme">[img-td-possible-endpoints-no-property-acme]</a>, click the Property icon (identified by a gold arrow in the figure).
+The <a href="#img-td-linked-endpoint-properties-acme">Linked Endpoint Properties Page</a> appears.</p>
+</li>
+</ol>
+</div>
+<div id="img-td-linked-endpoint-properties-acme" class="imageblock">
+<div class="content">
+<img src="_images/partner/td-linked-endpoint-properties-acme.png" alt="img-td-linked-endpoint-properties-acme">
+</div>
+<div class="title">Figure 6. Linked Endpoint Properties Page</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic" start="2">
+<li>
+<p>On the <a href="#img-td-linked-endpoint-properties-acme">Linked Endpoint Properties Page</a>, click <strong>New Property</strong>.</p>
+<div class="paragraph">
+<p>The Add Property Page appears.</p>
+</div>
+</li>
+</ol>
+</div>
+<div class="olist arabic">
+<ol class="arabic" start="3">
+<li>
+<p>In the <strong>Property Type</strong> listbox, click the down-arrow.</p>
+</li>
+<li>
+<p>In the drop-down list, scroll down to select <strong>Direction (system)</strong>.</p>
+</li>
+<li>
+<p>In the <strong>Property Source Type</strong> box, select <strong>Constant</strong>.</p>
+</li>
+<li>
+<p>In the <strong>Path</strong> box, type <strong>INBOUND</strong>.</p>
+</li>
+<li>
+<p>Click <strong>Save Property</strong>.</p>
+<div class="paragraph">
+<p>The <a href="#img-td-linked-endpoint-properties-acme">Linked Endpoint Properties Page</a> appears.</p>
+</div>
+</li>
+<li>
+<p>Click <strong>Save</strong>.</p>
+<div class="paragraph">
+<p>The <a href="#img-td-possible-endpoints-acme">[img-td-possible-endpoints-acme]</a> appears.</p>
+</div>
+</li>
+<li>
+<p>Click <strong>Save</strong>.</p>
+<div class="paragraph">
+<p>The <a href="#img-td-source-channel-in-progress-endpoint-added-acme">Source Channel in-progress Page</a> appears.</p>
+</div>
+<div class="paragraph">
+<p>Note that <strong>Resolution</strong> status is <strong>Complete</strong>.</p>
+</div>
+</li>
+</ol>
+</div>
+<div id="img-td-source-channel-in-progress-endpoint-added-acme" class="imageblock">
+<div class="content">
+<img src="_images/partner/td-source-channel-in-progress-endpoint-added-acme.png" alt="img-td-source-channel-in-progress-endpoint-added-acme">
+</div>
+<div class="title">Figure 7. Source Channel in-progress Page</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_configure_the_map"><a class="anchor" href="#_configure_the_map"></a>Configure the Map</h3>
+<div class="paragraph">
+<p>A <em>map</em> is a file that contains information necessary to transform one document type to another. In this walkthrough, we upload a map to transform a source document of the type we created in the previous section to a target document of the type we created in the previous section.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>On the <a href="#img-td-source-channel-in-progress-endpoint-added-acme">Source Channel in-progress Page</a>, click <strong>New Map</strong>.</p>
+<div class="paragraph">
+<p>The <a href="#img-td-new-map-acme">Map Page</a> appears.</p>
+</div>
+</li>
+</ol>
+</div>
+<div id="img-td-new-map-acme" class="imageblock">
+<div class="content">
+<img src="_images/partner/td-new-map-acme.png" alt="img-td-new-map-acme">
+</div>
+<div class="title">Figure 8. Map Page</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic" start="2">
+<li>
+<p>On the <a href="#img-td-new-map-acme">Map Page</a>, click the <strong>Target Document</strong> box.</p>
+<div class="paragraph">
+<p>The Pick a document Page appears.</p>
+</div>
+</li>
+<li>
+<p>On the Pick a document Page, click the row that corresponds to the Target Document Type - that is, the row for which the value in the <strong>Name</strong> column is  <strong>JSON-PurchaseOrder-AAZFasteners</strong>.</p>
+<div class="paragraph">
+<p>The <a href="#img-td-new-map-acme">Map Page</a> appears, with <strong>JSON-PurchaseOrder-AAZFasteners</strong> in the <strong>Target Document</strong> box.</p>
+</div>
+</li>
+<li>
+<p>In the <strong>Mapping Type</strong> box, click <strong>DataWeave</strong>.</p>
+<div class="paragraph">
+<p>For more information, see <a href="/mule-user-guide/v/3.8/dataweave">DataWeave</a>.</p>
+</div>
+</li>
+<li>
+<p>Click <strong>Save</strong>.</p>
+<div class="paragraph">
+<p>The <a href="#img-td-source-channel-in-progress-map-added-acme">Source Channel in-progress Page</a> appears.</p>
+</div>
+</li>
+</ol>
+</div>
+<div id="img-td-source-channel-in-progress-map-added-acme" class="imageblock">
+<div class="content">
+<img src="_images/partner/td-source-channel-in-progress-map-added-acme.png" alt="img-td-source-channel-in-progress-map-added-acme">
+</div>
+<div class="title">Figure 9. Source Channel in-progress Page</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic" start="6">
+<li>
+<p>On the <a href="#img-td-source-channel-in-progress-map-added-acme">Source Channel in-progress Page</a>, Click the <strong>Mapping Script</strong> box.</p>
+<div class="paragraph">
+<p>The <strong>Map Script</strong> window  appears.</p>
+</div>
+</li>
+<li>
+<p>Click <strong>Choose File</strong>, then navigate to the folder you created when you unzipped <strong>EDI Demo</strong> in <a href="#_download_tutorial_materials">Download Tutorial Materials</a>.</p>
+<div class="paragraph">
+<p>In the <strong>Maps</strong> folder, select <strong>apm-tutorial-850_4010_IN.dwl</strong>.</p>
+</div>
+<div class="paragraph">
+<p><strong>apm-tutorial-850_4010_IN.dwl</strong> appears in the <strong>Schema</strong> box.</p>
+</div>
+</li>
+<li>
+<p>Click <strong>Save</strong>.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>The Source Channel in-progress Page appears.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_add_the_target_channel"><a class="anchor" href="#_add_the_target_channel"></a>Add the Target Channel</h3>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>On the <a href="#img-td-source-channel-in-progress-map-added-acme">Source Channel in-progress Page</a>, click <strong>Use Existing Channel</strong>.</p>
+<div class="paragraph">
+<p>The <strong>Pick a Target Channel</strong> box appears.</p>
+</div>
+</li>
+<li>
+<p>On the <strong>Pick a Target Channel</strong> box, pick the <strong>JSON</strong> channel you created in <a href="#_design_a_target_channel">Design a Target Channel</a>.</p>
+<div class="paragraph">
+<p>The <a href="#img-td-source-channel-in-progress-map-added-acme">Source Channel in-progress Page</a> appears, displaying the completed Target Channel.</p>
+</div>
+</li>
+<li>
+<p>Click <strong>Save</strong>.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>The <a href="#img-td-save-transaction">Save Transaction Page</a> appears.</p>
+</div>
+<div id="img-td-save-transaction" class="imageblock">
+<div class="content">
+<img src="_images/partner/td-save-transaction.png" alt="img-td-save-transaction">
+</div>
+<div class="title">Figure 10. Save Transaction Page</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic" start="4">
+<li>
+<p>Click <strong>Close</strong>.</p>
+<div class="paragraph">
+<p>The <a href="#img-td-source-channel-in-progress-map-added-acme">Source Channel in-progress Page</a> appears.</p>
+</div>
+</li>
+<li>
+<p>In the left-hand navigation pane, click <strong>Transaction Designs</strong>.</p>
+<div class="paragraph">
+<p>The <a href="#img-td-designs-acme">Transaction Designer Page</a> appears.</p>
+</div>
+</li>
+</ol>
+</div>
+<div id="img-td-designs-acme" class="imageblock">
+<div class="content">
+<img src="_images/partner/td-designs-acme.png" alt="img-td-designs-acme">
+</div>
+<div class="title">Figure 11. Transaction Designer Page</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_configure_an_s3_bucket_optional"><a class="anchor" href="#_configure_an_s3_bucket_optional"></a>Configure an S3 Bucket (optional)</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Configuring an Amazon Simple Storage Service (Amazon S3) bucket enables you to view message payloads in <a href="#_monitor_the_transaction">Monitor the Transaction</a>. You will add configuration data from the bucket in <a href="#_configure_portx_routing_engine_in_anypoint_studio">Configure PortX Routing Engine in Anypoint Studio</a>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_copy_portx_information"><a class="anchor" href="#_copy_portx_information"></a>Copy PortX Information</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>In order to identify your PortX environment and its API Key to Anypoint Studio:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="#_copy_your_environment_id">Copy your Environment ID</a></p>
+</li>
+<li>
+<p><a href="#_identify_or_create_an_api_key">Identify or Create an API Key</a></p>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="_copy_your_environment_id"><a class="anchor" href="#_copy_your_environment_id"></a>Copy your Environment ID</h3>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>On the <a href="anypoint-partner-manager.html#img-apm-start" class="page">B2B Transactions Page</a>, in the left-hand navigation pane, click <strong>Administration</strong>, then click <strong>Environments</strong>.</p>
+</li>
+<li>
+<p>In the row that corresponds to the environment with which you are working, click <strong>copy</strong>.</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_identify_or_create_an_api_key"><a class="anchor" href="#_identify_or_create_an_api_key"></a>Identify or Create an API Key</h3>
+<div class="paragraph">
+<p>In order to create a Mule project, you must enter an <a href="/portx/glossary#secta">API Key</a> and an .</p>
+</div>
+<div class="paragraph">
+<p>If you have an existing API Key, use it. If you do not know the API Key, consult your organization&#8217;s MuleSoft administrator.</p>
+</div>
+<div class="paragraph">
+<p>If your organization has not created an API Key, you can use PortX to create one.</p>
+</div>
+<div class="admonitionblock warning">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-warning" title="Warning"></i>
+</td>
+<td class="content">
+The API Key is used by every Mule application across your entire Master <a href="/access-management/organization">Organization</a> that communicates with PortX. Therefore, before you create a new API Key, coordinate with your organization&#8217;s MuleSoft administrator to ensure that none of your organization&#8217;s processes are using an existing API Key because, if they are, creating a new API Key will cause them to cease functioning. In that case, instead of creating a new API Key, use the existing API Key.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>To obtain a key, see <a href="/portx/administration#create-a-new-api-key">Create a New API Key</a>.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_configure_portx_routing_engine_in_anypoint_studio"><a class="anchor" href="#_configure_portx_routing_engine_in_anypoint_studio"></a>Configure PortX Routing Engine in Anypoint Studio</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>For information about using Anypoint Studio, see <a href="/anypoint-studio/">Anypoint Studio</a>.</p>
+</div>
+<div class="sect2">
+<h3 id="_import_applications"><a class="anchor" href="#_import_applications"></a>Import Applications</h3>
+<div class="sect3">
+<h4 id="_import_the_routing_engine_application"><a class="anchor" href="#_import_the_routing_engine_application"></a>Import the Routing Engine Application</h4>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>In Anypoint Studio, click <strong>File</strong>.<br>
+The File Menu appears.</p>
+</li>
+<li>
+<p>On the File Menu, click <strong>Import</strong>.<br>
+The Import Source Selection Window appears.</p>
+</li>
+<li>
+<p>In the Import Source Selection Window, select <strong>Anypoint Studio generated Deployable Archive (.zip)</strong>.</p>
+</li>
+<li>
+<p>Click <strong>Next</strong>.<br>
+The Import Mule Project Window appears.</p>
+</li>
+<li>
+<p>In the Import Mule Project Window, browse to the location to which you downloaded the archive in <a href="#_download_tutorial_materials">Download Tutorial Materials</a>.</p>
+</li>
+<li>
+<p>Click to expand <strong>PortX Tutorial Materials</strong>, and then click <strong>Apps</strong> to expand that folder.</p>
+</li>
+<li>
+<p>In the <strong>Apps</strong> folder, click <strong>apm-tutorial-routing-engine.zip</strong>, then click <strong>Open</strong>.<br>
+The <strong>Project Name</strong> box auto-populates.<br>
+NOTE: The Project Name must be unique with respect to any previously-imported projects. If it is not, <strong>Finish</strong> will not be enabled. If this is the case, change the Project Name so that <strong>Finish</strong> is enabled.</p>
+</li>
+<li>
+<p>Click <strong>Finish</strong>.<br>
+The project appears in the Anypoint Studio Package Explorer pane.</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_import_the_mock_partner_application"><a class="anchor" href="#_import_the_mock_partner_application"></a>Import the Mock Partner Application</h4>
+<div class="paragraph">
+<p>To import the mock partner application, repeat the steps in <a href="#_import_the_routing_engine_application">Import the Routing Engine Application</a>, substituting <strong>apm-acme-mock.zip</strong> for the Routing Engine App in Step 7.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_insert_portx_environment_information"><a class="anchor" href="#_insert_portx_environment_information"></a>Insert PortX Environment Information</h3>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>In Anypoint project (expand if necessary), expand the <strong>src/main/app</strong>, double-click <strong>apm.prod.edi.properties</strong>.<br>
+Project properties appear in the Anypoint Studio Canvas.</p>
+</li>
+<li>
+<p>In Line 2, replace <strong>{Insert environment id}</strong> with the environment ID you copied in <a href="#_copy_your_environment_id">Copy your Environment ID</a>.</p>
+</li>
+<li>
+<p>In Line 3, replace <strong>{Insert API Key}</strong> with the API Key
+you copied in <a href="#_identify_or_create_an_api_key">Identify or Create an API Key</a>.</p>
+</li>
+<li>
+<p>In Anypoint Studio, click <strong>File</strong>, then click <strong>Save All</strong>.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_start_the_applications"><a class="anchor" href="#_start_the_applications"></a>Start the Applications</h2>
+<div class="sectionbody">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>In Package Explorer (Anypoint Studio), right-click <strong>apm-routing-engine-nm</strong>.</p>
+</li>
+<li>
+<p>Click <strong>Run As</strong>.</p>
+</li>
+<li>
+<p>Click <strong>Mule Application (configure)</strong>.</p>
+</li>
+<li>
+<p>On the <strong>General</strong> tab, in the <strong>Mule domains/projects to launch</strong> pane, select both <strong>apm-routing-engine-nm</strong> and <strong>AS2-partnermock</strong>.</p>
+</li>
+<li>
+<p>Click <strong>Run</strong>.<br>
+When both applications have deployed, proceed to <a href="#_send_a_message">Send a Message</a>.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_send_a_message"><a class="anchor" href="#_send_a_message"></a>Send a Message</h2>
+<div class="sectionbody">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Choose and install the Postman app specific to your operating system from <a href="https://www.getpostman.com/apps">getpostman.com</a>.</p>
+</li>
+<li>
+<p>In Postman, import <strong>apm-tutorial-postman-collection.json</strong> from the location to which you downloaded in <a href="#_download_tutorial_materials">Download Tutorial Materials</a>, then select the archive and click <strong>Open</strong>.</p>
+<div class="paragraph">
+<p>The Postman user interface looks something like <a href="#img-td-postman">Postman User Interface</a>.</p>
+</div>
+</li>
+<li>
+<p>In the imported collection, select <strong>INBOUND-850</strong>.</p>
+</li>
+<li>
+<p>Click <strong>Send</strong>.</p>
+</li>
+<li>
+<p>Go to <a href="#_monitor_the_transaction">Monitor the Transaction</a> to see how PortX displays transaction information.</p>
+</li>
+<li>
+<p>If you send another request from Postman, increment the request number in the four places it appears. In <a href="#img-td-postman">Postman User Interface</a>, this number is <strong>47530</strong>. We have added yellow highlighting where the number appears in the figure.</p>
+</li>
+</ol>
+</div>
+<div id="img-td-postman" class="imageblock">
+<div class="content">
+<img src="_images/td-postman.png" alt="img-td-postman">
+</div>
+<div class="title">Figure 12. Postman User Interface</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_monitor_the_transaction"><a class="anchor" href="#_monitor_the_transaction"></a>Monitor the Transaction</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>In Anypoint Manager, in the left navigation pane, click <strong>Transaction Monitoring</strong><br>
+The <a href="#img-transaction-monitoring-successful-transaction">Transaction Monitoring Page</a> appears.</p>
+</div>
+<div id="img-transaction-monitoring-successful-transaction" class="imageblock">
+<div class="content">
+<img src="_images/transaction-monitoring-successful-transaction.png" alt="img-transaction-monitoring-successful-transaction">
+</div>
+<div class="title">Figure 13. Transaction Monitoring Page</div>
+</div>
+<div class="paragraph">
+<p>The <a href="#img-transaction-monitoring-successful-transaction">Transaction Monitoring Page</a> should confirm that:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>An XML purchase order as read from the company&#8217;s filesystem and transformed to an X12 850 document.</p>
+</li>
+<li>
+<p>The 850 was sent to a supplier over AS2.</p>
+</li>
+<li>
+<p>The <a href="/portx/as2-connector">AS2 Connector</a>
+listened for (on an AS2 endpoint) and received an X12 997 document that identifies whether the 850 was accepted or rejected.</p>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="_inspect_a_payload"><a class="anchor" href="#_inspect_a_payload"></a>Inspect a Payload</h3>
+<div class="paragraph">
+<p>PortX enables you to view a transmission payload. For example, in <a href="#img-transaction-monitoring-successful-transaction">Transaction Monitoring Page</a>, click the Payload icon in the right pane (identified in the figure by the gold arrow). The <a href="#img-transmission-payload">Transmission Payload Page</a> appears, presenting payload data.</p>
+</div>
+<div id="img-transmission-payload" class="imageblock">
+<div class="content">
+<img src="_images/transmission-payload.png" alt="img-transmission-payload">
+</div>
+<div class="title">Figure 14. Transmission Payload Page</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_more_information"><a class="anchor" href="#_more_information"></a>More Information</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>For more information, see:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="/portx/partner-configuration">Partner Configuration</a></p>
+</li>
+<li>
+<p><a href="/portx/transaction-monitoring">Transaction Monitoring</a></p>
+</li>
+<li>
+<p><a href="/portx/tracking-scenarios">Tracking Scenarios</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</article>
+  </main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script src="../../_/js/site.js"></script>
+<script src="../../_/js/vendor/highlight.js"></script>
+<script>hljs.initHighlighting()</script>
+  </body>
+</html>
