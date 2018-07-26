@@ -1,7 +1,7 @@
 site:
   start_page: portx::index.adoc
   title: PortX(TM) Docs Prototype
-  url: https://modusbox.org
+  url: https://modusbox-docs.s3-website-us-west-2.amazonaws.com/portx/LiftOff/index.html
 content:
   sources:
 
