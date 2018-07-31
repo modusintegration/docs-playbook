@@ -260,11 +260,11 @@
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p>A <a href="#">portx/glossary.adoc#sectb</a> serves as a translation layer between internal systems and the various formats (X12, EDIFACT, XML, CSV, and others) and transport protocols (AS2, FTP/S, and others) commonly used in electronic transactions between companies. Because a company cannot typically dictate that all its trading partners adhere to a single configuration, it is often necessary to develop custom solutions for each trading partner. When custom software development is required for each trading partner, the effort and time required to onboard new trading partners increases dramatically, thereby limiting the business relationships a company can pursue.</p>
+<p>A <a href="glossary.html#sectb" class="page">B2B transaction-processing solution</a> serves as a translation layer between internal systems and the various formats (X12, EDIFACT, XML, CSV, and others) and transport protocols (AS2, FTP/S, and others) commonly used in electronic transactions between companies. Because a company cannot typically dictate that all its trading partners adhere to a single configuration, it is often necessary to develop custom solutions for each trading partner. When custom software development is required for each trading partner, the effort and time required to onboard new trading partners increases dramatically, thereby limiting the business relationships a company can pursue.</p>
 </div>
 <div class="paragraph">
-<p><a href="#">portx/glossary.adoc#sectb</a> enables developers to build a single set of <a href="#mule-user-guide">Mule Runtime</a> flows that can process a wide range of messages from many different partners by dynamically applying rules and configuration data stored in
-<a href="#portx/anypoint-partner-manager">PortX</a> (PortX).
+<p><a href="glossary.html#sectb" class="page"><em>B2B Transaction Processing Framework</em></a> enables developers to build a single set of <a href="#mule-user-guide">Mule Runtime</a> flows that can process a wide range of messages from many different partners by dynamically applying rules and configuration data stored in
+<a href="#anypoint-partner-manager">PortX</a> (PortX).
 Thus, non-programmers such as data analysts can use PortX to onboard new trading partner relationships and support new transaction types without having to develop, test, or deploy new Mule Runtime flows.</p>
 </div>
 <div class="paragraph">
@@ -299,7 +299,7 @@ Processing stages and their sequence can vary between implementations.
 <div class="sect2">
 <h3 id="_receive"><a class="anchor" href="#_receive"></a>Receive</h3>
 <div class="paragraph">
-<p>Each incoming transaction from a partner or internal system is delivered through a transport protocol <a href="#portx/endpoints"><em>endpoint</em></a> configured to receive the message.</p>
+<p>Each incoming transaction from a partner or internal system is delivered through a transport protocol <a href="#endpoints"><em>endpoint</em></a> configured to receive the message.</p>
 </div>
 </div>
 <div class="sect2">
@@ -310,7 +310,7 @@ Processing stages and their sequence can vary between implementations.
 <div class="ulist">
 <ul>
 <li>
-<p><a href="#portx/endpoints">Endpoint</a> to which the transformed message is to be delivered</p>
+<p><a href="#endpoints">Endpoint</a> to which the transformed message is to be delivered</p>
 </li>
 <li>
 <p><a href="#_schema">Schema</a> to use for validation</p>
@@ -359,16 +359,16 @@ Component definitions follow the diagram.</p>
 <div class="sect3">
 <h4 id="_portx"><a class="anchor" href="#_portx"></a>PortX</h4>
 <div class="paragraph">
-<p><a href="#portx/anypoint-partner-manager">PortX</a> (PortX)
+<p><a href="#anypoint-partner-manager">PortX</a> (PortX)
 is the B2B Transaction Processing Framework user interface, enabling you to:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p><a href="#portx/partner-configuration">Configure how B2B transactions are processed</a></p>
+<p><a href="#partner-configuration">Configure how B2B transactions are processed</a></p>
 </li>
 <li>
-<p><a href="#portx/transaction-monitoring">Monitor and manage processed transactions</a></p>
+<p><a href="#transaction-monitoring">Monitor and manage processed transactions</a></p>
 </li>
 </ul>
 </div>
@@ -478,7 +478,7 @@ At this time the flows identified below must be developed by the customer. MuleS
 <p>Dynamically applies the configured mapping script from the context header to translate the message into the canonical format for the target Business Service.</p>
 </li>
 <li>
-<p>Does any necessary data translation, such as resolving partner values to your company&#8217;s values using <a href="#portx/">lookup tables</a> functions, and flows.</p>
+<p>Does any necessary data translation, such as resolving partner values to your company&#8217;s values using xref:[lookup tables] functions, and flows.</p>
 </li>
 <li>
 <p>Uses the Trade Route Connector to track the mapped, canonical version of the message.</p>
@@ -600,7 +600,7 @@ At this time the flows identified below must be developed by the customer. MuleS
 <p>A <em>send endpoint</em> is a URL from which a document can be sent.</p>
 </div>
 <div class="paragraph">
-<p>For information about how endpoints are created, see <a href="#">portx/resolution-processes.adoc#endpoint-resolution</a>.</p>
+<p>For information about how endpoints are created, see <a href="resolution-processes.html#endpoint-resolution" class="page">Endpoint Resolution</a>.</p>
 </div>
 </div>
 <div class="sect2">
@@ -612,7 +612,7 @@ At this time the flows identified below must be developed by the customer. MuleS
 <div class="sect2">
 <h3 id="_document_type"><a class="anchor" href="#_document_type"></a>Document Type</h3>
 <div class="paragraph">
-<p><a href="#portx/document-types">Document Types</a> are configured in PortX. A given document type
+<p><a href="#document-types">Document Types</a> are configured in PortX. A given document type
 is identified by the following pieces of information:</p>
 </div>
 <div class="ulist">
@@ -829,10 +829,10 @@ In the interest of illustrating a range of usage scenarios, the architecture sho
 <h2 id="_user_interface"><a class="anchor" href="#_user_interface"></a>User Interface</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>The PortX user interface enables <a href="#portx/partner-configuration">partner configuration</a>, <a href="#portx/administration">administration</a> and detailed <a href="#portx/transaction-monitoring">transaction monitoring</a>.</p>
+<p>The PortX user interface enables <a href="#partner-configuration">partner configuration</a>, <a href="#administration">administration</a> and detailed <a href="#transaction-monitoring">transaction monitoring</a>.</p>
 </div>
 <div class="sect2">
-<h3 id="_a_href_portx_partner_configuration_partner_configuration_a"><a class="anchor" href="#_a_href_portx_partner_configuration_partner_configuration_a"></a><a href="#portx/partner-configuration">Partner Configuration</a></h3>
+<h3 id="_a_href_partner_configuration_partner_configuration_a"><a class="anchor" href="#_a_href_partner_configuration_partner_configuration_a"></a><a href="#partner-configuration">Partner Configuration</a></h3>
 <div class="ulist">
 <ul>
 <li>
@@ -840,59 +840,59 @@ In the interest of illustrating a range of usage scenarios, the architecture sho
 <div class="ulist">
 <ul>
 <li>
-<p><a href="#portx/x12-settings">X12 Settings</a></p>
+<p><a href="#x12-settings">X12 Settings</a></p>
 </li>
 <li>
-<p><a href="#portx/edifact-settings">EDIFACT Settings</a></p>
+<p><a href="#edifact-settings">EDIFACT Settings</a></p>
 </li>
 <li>
-<p><a href="#portx/csv-settings">CSV Settings</a></p>
+<p><a href="#csv-settings">CSV Settings</a></p>
 </li>
 </ul>
 </div>
 </li>
 <li>
-<p><a href="#portx/document-types">Document Types</a></p>
+<p><a href="#document-types">Document Types</a></p>
 </li>
 <li>
-<p><a href="#portx/endpoints">Endpoints</a></p>
+<p><a href="#endpoints">Endpoints</a></p>
 </li>
 <li>
-<p><a href="#portx/maps">Maps</a></p>
+<p><a href="#maps">Maps</a></p>
 </li>
 <li>
-<p><a href="#portx/channels">Channels</a></p>
+<p><a href="#channels">Channels</a></p>
 </li>
 <li>
-<p><a href="#portx/routes">Routes</a></p>
+<p><a href="#routes">Routes</a></p>
 </li>
 <li>
-<p><a href="#portx/partner-conversations">Partner Conversations</a></p>
+<p><a href="#partner-conversations">Partner Conversations</a></p>
 </li>
 </ul>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_a_href_portx_administration_administration_a"><a class="anchor" href="#_a_href_portx_administration_administration_a"></a><a href="#portx/administration">Administration</a></h3>
+<h3 id="_a_href_administration_administration_a"><a class="anchor" href="#_a_href_administration_administration_a"></a><a href="#administration">Administration</a></h3>
 <div class="ulist">
 <ul>
 <li>
-<p><a href="#portx/environments">Environments</a></p>
+<p><a href="#environments">Environments</a></p>
 </li>
 <li>
-<p><a href="#portx/error-codes">Error Codes</a></p>
+<p><a href="#error-codes">Error Codes</a></p>
 </li>
 <li>
-<p><a href="#portx/security">Security</a></p>
+<p><a href="#security">Security</a></p>
 </li>
 <li>
-<p><a href="#portx/lookup-tables">Lookup Tables</a></p>
+<p><a href="#lookup-tables">Lookup Tables</a></p>
 </li>
 </ul>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_a_href_portx_transaction_monitoring_transaction_monitoring_a"><a class="anchor" href="#_a_href_portx_transaction_monitoring_transaction_monitoring_a"></a><a href="#portx/transaction-monitoring">Transaction Monitoring</a></h3>
+<h3 id="_a_href_transaction_monitoring_transaction_monitoring_a"><a class="anchor" href="#_a_href_transaction_monitoring_transaction_monitoring_a"></a><a href="#transaction-monitoring">Transaction Monitoring</a></h3>
 <div class="ulist">
 <ul>
 <li>

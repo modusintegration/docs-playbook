@@ -276,7 +276,7 @@
 <p>The ability to define your own schemas or customize the base EDIFACT schemas</p>
 </li>
 <li>
-<p>Support for many <a href="#portx/supported-edi-document-types">common EDIFACT versions</a> out of the box</p>
+<p>Support for many <a href="#supported-edi-document-types">common EDIFACT versions</a> out of the box</p>
 </li>
 </ul>
 </div>
@@ -347,7 +347,7 @@ Mule EDI Anypoint EDIFACT Connector</a>.</p>
 <p>To configure the EDIFACT Module according to your implementation convention, define an <em>overlay schema</em>. An overlay schema is a special form of ESL that allows you to modify a base schema, such as an EDIFACT D.98B ORDERS schema, with your specific conventions. (You don&#8217;t need an overlay schema if you&#8217;re using the structure defined by the standard, but most EDI exchanges modify the base definitions in an implementation convention)</p>
 </div>
 <div class="paragraph">
-<p>If you wish, you can also define your own schemas from scratch. See the <a href="#portx/edi-schema-language-reference">EDI Schema Language Reference</a> for more details.</p>
+<p>If you wish, you can also define your own schemas from scratch. See the <a href="#edi-schema-language-reference">EDI Schema Language Reference</a> for more details.</p>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -383,7 +383,7 @@ YAML uses a combination of lists and sets of key-value pairs. Order of values is
 </ul>
 </div>
 <div class="paragraph">
-<p>Overlay schemas are very similar in structure to a <a href="#portx/edi-schema-language-reference">complete schema definition</a>, but instead of providing all the details of the schema structure, they only list changes. The schemas specify the way implementation conventions are used with a particular trading partner to extend and customize the standard.</p>
+<p>Overlay schemas are very similar in structure to a <a href="#edi-schema-language-reference">complete schema definition</a>, but instead of providing all the details of the schema structure, they only list changes. The schemas specify the way implementation conventions are used with a particular trading partner to extend and customize the standard.</p>
 </div>
 <div class="paragraph">
 <p>For example, here&#8217;s the start of a sample overlay schema modifying the basic EDIFACT D.98B ORDERS definition. This sample customizes the "PAI" segment and specifies that it is unused - thereby ensuring that it doesn&#8217;t show up in the mapping structures in Studio.</p>
