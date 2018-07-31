@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaction Designer :: PortX(TM) Documentation</title>
+    <link rel="canonical" href="https://modusbox-docs.s3-website-us-west-2.amazonaws.com/portx/index.html/trade-route/2.0/transaction-designer.html">
+    <meta name="generator" content="Antora 1.0.1">
+    <link rel="stylesheet" href="../../_/css/site.css">
+  </head>
+  <body class="article">
+<header class="header" role="banner">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://modusbox-docs.s3-website-us-west-2.amazonaws.com/portx/index.html">PortX(TM) Documentation</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <!--
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Resources</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Resource A</a>
+            <a class="navbar-item" href="#">Resource B</a>
+            <a class="navbar-item" href="#">Resource C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+      -->
+    </div>
+  </nav>
+</header>
+<div class="main-wrapper">
+<div class="navigation-container" data-component="trade-route" data-version="2.0">
+  <aside class="navigation" role="navigation">
+    <div class="panels">
+<div class="navigation-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="index.html">Trade Route(TM)</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="index.html">TradeRoute Manager</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="key-concepts.html">Key Concepts</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="b2b-transaction-processing-framework.html">B2B Transaction-Processing Framework</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="resolution-processes.html">Resolution Processes</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="tracking.html">Tracking</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="examples.html">Examples</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="transaction-monitoring.html">Transaction Monitoring</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="central-pane-elements.html">Central Pane Elements</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="tracking-scenarios.html">Tracking Scenarios</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="partner-configuration.html">Partner Configuration</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="company-information.html">Company Information</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="identifiers.html">Identifiers</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="availability.html">Availability</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="certificate.html">Certificate</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="x12-settings.html">X12 Settings</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="edifact-settings.html">EDIFACT Settings</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="csv-settings.html">CSV Settings</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="3">
+    <a class="nav-link" href="transaction-designer.html">Transaction Designer</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="document-types.html">Document Types</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="endpoints.html">Endpoints</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="maps.html">Maps</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="channels.html">Channels</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="routes.html">Routes</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="partner-conversations.html">Partner Conversations</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="rosettanet-pips.html">RosettaNet PIPs</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="rosettanet-agreements.html">RosettaNet Agreements</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="administration.html">Administration</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="environments.html">Environments</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="error-codes.html">Error Codes</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="security.html">Security</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="lookup-tables.html">Lookup Tables</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="tutorials.html">Tutorials</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="trade-route-tutorial-td.html">Trade Route Tutorial: Designing a Transaction</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="transaction-tracking-walkthrough.html">Transaction Tracking Walkthrough</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="anypoint-partner-manager-api.html">Anypoint Partner Manager API</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="glossary.html">Glossary</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="navigation-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Trade Route(TM)</span>
+    <span class="version">2.0</span>
+  </div>
+  <ul class="components">
+    <li class="component">
+      <span class="title">PortX(TM)</span>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../portx/1/index.html">1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <span class="title">Release Notes</span>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../release-notes/All/release-notes.html">All</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <span class="title">Trade Route Connector</span>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../trade-route-connector/7.0/trade-route-connector.html">7.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component is-current">
+      <span class="title">Trade Route(TM)</span>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="index.html">2.0</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+  <main class="main" role="main">
+<div class="toolbar" role="navigation">
+  <button class="navigation-toggle"></button>
+  <a href="../../portx/1/index.html" class="home-link"></a>
+<nav class="crumbs" role="navigation" aria-label="breadcrumbs">
+  <ul>
+    <li class="crumb"><a href="index.html">Trade Route(TM)</a></li>
+    <li class="crumb"><a href="index.html">TradeRoute Manager</a></li>
+    <li class="crumb"><a href="partner-configuration.html">Partner Configuration</a></li>
+    <li class="crumb"><a href="transaction-designer.html">Transaction Designer</a></li>
+  </ul>
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/modusintegration/modusbox-docs/edit/dev/trade-route/modules/ROOT/pages/transaction-designer.adoc">Edit this Page</a></div>
+</div>
+<article class="doc">
+<h1>Transaction Designer</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p><em>Transaction Designer</em> is an PortX feature that enables you to design the <em>elements</em> of a transaction. Transaction elements include:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Document Types</p>
+</li>
+<li>
+<p>Endpoints</p>
+</li>
+<li>
+<p>Channels</p>
+</li>
+<li>
+<p>Maps</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Transaction Designer enables you to configure these elements from a central page that displays the elements along with their completion status, and what steps may remain in order to complete them. To see how to use this feature to create a transaction that receives a Purchase Order, see  <a href="#portx/apm-tutorial-td">PortX Tutorial: Designing a Transaction</a>.</p>
+</div>
+<div class="paragraph">
+<p>include::/_sources/edit-settings.adoc[]</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic" start="3">
+<li>
+<p>In the <strong>CONFIGURATION</strong> section of the left-hand navigation pane on the <a href="partner-configuration.html#img-company-information" class="page">Company Information Page</a>, click <strong>Transaction Designer</strong>.</p>
+<div class="paragraph">
+<p>The <a href="#img-transaction-designer">Transaction Designer Page</a> appears.</p>
+</div>
+</li>
+</ol>
+</div>
+<div id="img-transaction-designer" class="imageblock">
+<div class="content">
+<img src="_images/transaction-designer.png" alt="img-transaction-designer">
+</div>
+<div class="title">Figure 1. Transaction Designer Page</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic" start="4">
+<li>
+<p>From this page, you can:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="#_design_a_new_transaction">Design a New Transaction</a></p>
+</li>
+<li>
+<p><a href="#_start_designing_a_new_transaction_from_a_template">Start Designing a New Transaction from a Template</a></p>
+</li>
+<li>
+<p><a href="#_create_a_new_transaction_design_template">Create a New Transaction Design Template</a></p>
+</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_design_a_new_transaction"><a class="anchor" href="#_design_a_new_transaction"></a>Design a New Transaction</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>When you choose this method of designing a transaction, you start from scratch. This gives you complete control over the channels, documents, endpoints, and maps that make up the transaction. However, you also have to make the choices required to create those elements.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_start_designing_a_new_transaction_from_a_template"><a class="anchor" href="#_start_designing_a_new_transaction_from_a_template"></a>Start Designing a New Transaction from a Template</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>When you start designing a new transaction from an existing template, the elements created when that template was created (and subsequently modified, if applicable) are available to you. For example, you could use the template created in <a href="#portx/apm-tutorial-td">PortX Tutorial: Designing a Transaction</a> for a template for purchase orders from partners other than Acme Home Supply (the partner in the tutorial).</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_create_a_new_transaction_design_template"><a class="anchor" href="#_create_a_new_transaction_design_template"></a>Create a New Transaction Design Template</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>A <em>Transaction Design Template</em> is a template that you create to facilitate future transaction design. When you create a Transaction Design Template, you identify elements that are constant across multiple transactions, then create and save them in the template so that you don&#8217;t have to create them again.</p>
+</div>
+<div class="paragraph">
+<p>For example, you might create a template for receiving a Purchase Order from a customer. The process of creating such a template is documented in <a href="#portx/apm-tutorial-td">PortX Tutorial: Designing a Transaction</a>.</p>
+</div>
+<div class="paragraph">
+<p>Transaction Design Templates typically leave one or more elements to be completed at the time a new transaction is created. For example, in <a href="#portx/apm-tutorial-td">PortX Tutorial: Designing a Transaction</a>, you open a template in order to <a href="#">portx/apm-tutorial-td.adoc#design-a-source-channel</a> that is not present in the template itself.</p>
+</div>
+</div>
+</div>
+</article>
+  </main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script src="../../_/js/site.js"></script>
+<script src="../../_/js/vendor/highlight.js"></script>
+<script>hljs.initHighlighting()</script>
+  </body>
+</html>

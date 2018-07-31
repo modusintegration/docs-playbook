@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<sitemap>
+<loc>https://modusbox-docs.s3-website-us-west-2.amazonaws.com/portx/index.html/sitemap-portx.xml</loc>
+</sitemap>
+<sitemap>
+<loc>https://modusbox-docs.s3-website-us-west-2.amazonaws.com/portx/index.html/sitemap-release-notes.xml</loc>
+</sitemap>
+<sitemap>
+<loc>https://modusbox-docs.s3-website-us-west-2.amazonaws.com/portx/index.html/sitemap-trade-route.xml</loc>
+</sitemap>
+<sitemap>
+<loc>https://modusbox-docs.s3-website-us-west-2.amazonaws.com/portx/index.html/sitemap-trade-route-connector.xml</loc>
+</sitemap>
+</sitemapindex>

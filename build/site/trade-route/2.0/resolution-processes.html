@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resolution Processes :: PortX(TM) Documentation</title>
+    <link rel="canonical" href="https://modusbox-docs.s3-website-us-west-2.amazonaws.com/portx/index.html/trade-route/2.0/resolution-processes.html">
+    <meta name="generator" content="Antora 1.0.1">
+    <link rel="stylesheet" href="../../_/css/site.css">
+  </head>
+  <body class="article">
+<header class="header" role="banner">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://modusbox-docs.s3-website-us-west-2.amazonaws.com/portx/index.html">PortX(TM) Documentation</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <!--
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Resources</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Resource A</a>
+            <a class="navbar-item" href="#">Resource B</a>
+            <a class="navbar-item" href="#">Resource C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+      -->
+    </div>
+  </nav>
+</header>
+<div class="main-wrapper">
+<div class="navigation-container" data-component="trade-route" data-version="2.0">
+  <aside class="navigation" role="navigation">
+    <div class="panels">
+<div class="navigation-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="index.html">Trade Route(TM)</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="index.html">TradeRoute Manager</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="key-concepts.html">Key Concepts</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="b2b-transaction-processing-framework.html">B2B Transaction-Processing Framework</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="3">
+    <a class="nav-link" href="resolution-processes.html">Resolution Processes</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="tracking.html">Tracking</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="examples.html">Examples</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="transaction-monitoring.html">Transaction Monitoring</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="central-pane-elements.html">Central Pane Elements</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="tracking-scenarios.html">Tracking Scenarios</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="partner-configuration.html">Partner Configuration</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="company-information.html">Company Information</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="identifiers.html">Identifiers</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="availability.html">Availability</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="certificate.html">Certificate</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="x12-settings.html">X12 Settings</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="edifact-settings.html">EDIFACT Settings</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="csv-settings.html">CSV Settings</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="transaction-designer.html">Transaction Designer</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="document-types.html">Document Types</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="endpoints.html">Endpoints</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="maps.html">Maps</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="channels.html">Channels</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="routes.html">Routes</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="partner-conversations.html">Partner Conversations</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="rosettanet-pips.html">RosettaNet PIPs</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="rosettanet-agreements.html">RosettaNet Agreements</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="administration.html">Administration</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="environments.html">Environments</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="error-codes.html">Error Codes</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="security.html">Security</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="lookup-tables.html">Lookup Tables</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="tutorials.html">Tutorials</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="trade-route-tutorial-td.html">Trade Route Tutorial: Designing a Transaction</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="transaction-tracking-walkthrough.html">Transaction Tracking Walkthrough</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="anypoint-partner-manager-api.html">Anypoint Partner Manager API</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="glossary.html">Glossary</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="navigation-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Trade Route(TM)</span>
+    <span class="version">2.0</span>
+  </div>
+  <ul class="components">
+    <li class="component">
+      <span class="title">PortX(TM)</span>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../portx/1/index.html">1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <span class="title">Release Notes</span>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../release-notes/All/release-notes.html">All</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <span class="title">Trade Route Connector</span>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../trade-route-connector/7.0/trade-route-connector.html">7.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component is-current">
+      <span class="title">Trade Route(TM)</span>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="index.html">2.0</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+  <main class="main" role="main">
+<div class="toolbar" role="navigation">
+  <button class="navigation-toggle"></button>
+  <a href="../../portx/1/index.html" class="home-link"></a>
+<nav class="crumbs" role="navigation" aria-label="breadcrumbs">
+  <ul>
+    <li class="crumb"><a href="index.html">Trade Route(TM)</a></li>
+    <li class="crumb"><a href="index.html">TradeRoute Manager</a></li>
+    <li class="crumb"><a href="key-concepts.html">Key Concepts</a></li>
+    <li class="crumb"><a href="resolution-processes.html">Resolution Processes</a></li>
+  </ul>
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/modusintegration/modusbox-docs/edit/dev/trade-route/modules/ROOT/pages/resolution-processes.adoc">Edit this Page</a></div>
+</div>
+<article class="doc">
+<h1>Resolution Processes</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>PortX offers a flexible approach to setting up different kinds of configurations
+for <a href="#">portx/b2b-transaction-processing-framework.adoc#document-type</a>, <a href="#">portx/b2b-transaction-processing-framework.adoc#endpoints</a>, and <a href="#portx/routes">routes</a>. For example, you can configure
+a catch-all document type for a given standard. You can then apply this
+definition to a trading partner in case
+a document does not match any of the defined document types. Going
+even further, you can configure a global catch-all for this standard such that it
+is applied to all your partners. In order to support this level of flexibility,
+configurations are defined at the partner or the home organization level.
+PortX attempts to resolve a configuration at the home organization level should
+it fail to resolve it at the partner level. This page describes in
+the resolution process for each type of configuration.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_endpoint_resolution"><a class="anchor" href="#_endpoint_resolution"></a>Endpoint Resolution</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Endpoint resolution begins when an PortX-managed connector pulls down its
+configuration from PortX. The resolution outputs the endpoint that the connector
+reads to configure itself.</p>
+</div>
+<div class="sect2">
+<h3 id="_resolution_variables"><a class="anchor" href="#_resolution_variables"></a>Resolution variables</h3>
+<div class="paragraph">
+<p>Resolving the following variables drives the process, as shown in <a href="#img-resolve-endpoint">Endpoint Resolution</a>.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Partner</p>
+</li>
+<li>
+<p>Endpoint type (send or receive)</p>
+</li>
+<li>
+<p>Transport type (for example, AS2)</p>
+</li>
+<li>
+<p>Document standard (for example, X12)</p>
+</li>
+<li>
+<p>Document version</p>
+</li>
+<li>
+<p>Document message type</p>
+</li>
+</ul>
+</div>
+<div id="img-resolve-endpoint" class="imageblock">
+<div class="content">
+<img src="_images/resolve-endpoint.png" alt="img-resolve-endpoint">
+</div>
+<div class="title">Figure 1. Endpoint Resolution</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_document_type_resolution"><a class="anchor" href="#_document_type_resolution"></a>Document Type Resolution</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>As mentioned above, you can configure a document type to cover
+different message types and versions. Leaving a document type&#8217;s message
+type and version undefined implicitly means that the document type can be
+applied to any document for the given standard. Alternatively, you can explicitly
+set message type and version to the reserved keyword <strong>ANY</strong> to attain the same
+behavior. PortX always tries to match a document to the most specific
+document type before trying to match the document to a more general
+document type.
+<a href="#img-resolve-document-definition">Document definition resolution flowchart</a> shows the
+sequence of determinations PortX goes through to arrive at the document
+definition to use during route resolution or tracking.</p>
+</div>
+<div id="img-resolve-document-definition" class="imageblock">
+<div class="content">
+<img src="_images/resolve-document-definition.png" alt="img-resolve-document-definition">
+</div>
+<div class="title">Figure 2. Document definition resolution flowchart</div>
+</div>
+<div class="paragraph">
+<p>PortX comes with pre-configured read-only document types for X12 and EDIFACT
+that are defined on the home organization. An X12 or EDIFACT document that is not
+covered by any user-defined document type <em>always</em> matches to one of
+these pre-defined document types.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_routes_resolution"><a class="anchor" href="#_routes_resolution"></a>Routes Resolution</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Calling Partner Manager Connector&#8217;s <em>resolve-route</em> operation triggers routes
+resolution in PortX which, similar to endpoint resolution, is driven by the following
+factors:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Partner</p>
+</li>
+<li>
+<p>Transport type (for example, AS2)</p>
+</li>
+<li>
+<p>Document standard (for example, X12)</p>
+</li>
+<li>
+<p>Document version</p>
+</li>
+<li>
+<p>Document message type</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Taking a closer look, notice that the endpoint type is not included in
+the list of factors determining the output of routes. The is because the process
+assumes the endpoint to be always of type <em>receive</em>. <a href="#img-resolve-routes">Routes resolution flowchart</a>
+illustrates PortX&#8217;s logic for resolving routes.</p>
+</div>
+<div id="img-resolve-routes" class="imageblock">
+<div class="content">
+<img src="_images/resolve-routes.png" alt="img-resolve-routes">
+</div>
+<div class="title">Figure 3. Routes resolution flowchart</div>
+</div>
+</div>
+</div>
+</article>
+  </main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script src="../../_/js/site.js"></script>
+<script src="../../_/js/vendor/highlight.js"></script>
+<script>hljs.initHighlighting()</script>
+  </body>
+</html>

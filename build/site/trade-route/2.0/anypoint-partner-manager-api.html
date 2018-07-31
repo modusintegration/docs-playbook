@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PortX API :: PortX(TM) Documentation</title>
+    <link rel="canonical" href="https://modusbox-docs.s3-website-us-west-2.amazonaws.com/portx/index.html/trade-route/2.0/anypoint-partner-manager-api.html">
+    <meta name="generator" content="Antora 1.0.1">
+    <link rel="stylesheet" href="../../_/css/site.css">
+  </head>
+  <body class="article">
+<header class="header" role="banner">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://modusbox-docs.s3-website-us-west-2.amazonaws.com/portx/index.html">PortX(TM) Documentation</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <!--
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Resources</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Resource A</a>
+            <a class="navbar-item" href="#">Resource B</a>
+            <a class="navbar-item" href="#">Resource C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+      -->
+    </div>
+  </nav>
+</header>
+<div class="main-wrapper">
+<div class="navigation-container" data-component="trade-route" data-version="2.0">
+  <aside class="navigation" role="navigation">
+    <div class="panels">
+<div class="navigation-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="index.html">Trade Route(TM)</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="index.html">TradeRoute Manager</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="key-concepts.html">Key Concepts</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="b2b-transaction-processing-framework.html">B2B Transaction-Processing Framework</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="resolution-processes.html">Resolution Processes</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="tracking.html">Tracking</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="examples.html">Examples</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="transaction-monitoring.html">Transaction Monitoring</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="central-pane-elements.html">Central Pane Elements</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="tracking-scenarios.html">Tracking Scenarios</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="partner-configuration.html">Partner Configuration</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="company-information.html">Company Information</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="identifiers.html">Identifiers</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="availability.html">Availability</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="certificate.html">Certificate</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="x12-settings.html">X12 Settings</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="edifact-settings.html">EDIFACT Settings</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="csv-settings.html">CSV Settings</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="transaction-designer.html">Transaction Designer</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="document-types.html">Document Types</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="endpoints.html">Endpoints</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="maps.html">Maps</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="channels.html">Channels</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="routes.html">Routes</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="partner-conversations.html">Partner Conversations</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="rosettanet-pips.html">RosettaNet PIPs</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="rosettanet-agreements.html">RosettaNet Agreements</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="administration.html">Administration</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="environments.html">Environments</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="error-codes.html">Error Codes</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="security.html">Security</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="lookup-tables.html">Lookup Tables</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="tutorials.html">Tutorials</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="trade-route-tutorial-td.html">Trade Route Tutorial: Designing a Transaction</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="transaction-tracking-walkthrough.html">Transaction Tracking Walkthrough</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="anypoint-partner-manager-api.html">Anypoint Partner Manager API</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="glossary.html">Glossary</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="navigation-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Trade Route(TM)</span>
+    <span class="version">2.0</span>
+  </div>
+  <ul class="components">
+    <li class="component">
+      <span class="title">PortX(TM)</span>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../portx/1/index.html">1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <span class="title">Release Notes</span>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../release-notes/All/release-notes.html">All</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <span class="title">Trade Route Connector</span>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../trade-route-connector/7.0/trade-route-connector.html">7.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component is-current">
+      <span class="title">Trade Route(TM)</span>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="index.html">2.0</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+  <main class="main" role="main">
+<div class="toolbar" role="navigation">
+  <button class="navigation-toggle"></button>
+  <a href="../../portx/1/index.html" class="home-link"></a>
+<nav class="crumbs" role="navigation" aria-label="breadcrumbs">
+  <ul>
+    <li class="crumb"><a href="index.html">Trade Route(TM)</a></li>
+    <li class="crumb"><a href="index.html">TradeRoute Manager</a></li>
+    <li class="crumb"><a href="anypoint-partner-manager-api.html">Anypoint Partner Manager API</a></li>
+  </ul>
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/modusintegration/modusbox-docs/edit/dev/trade-route/modules/ROOT/pages/anypoint-partner-manager-api.adoc">Edit this Page</a></div>
+</div>
+<article class="doc">
+<h1>PortX API</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>Clients often want to interact with PortX
+programmatically to automate their processing tasks.
+PortX has two distinct APIs that clients can call:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Trading Partner Management Service API</strong> (TPM Service API) - Manages partner-related configurations such as document definitions.<br>
+<strong>Download URL:</strong>
+<a href="https://anypoint.mulesoft.com/b2b/tpm/api/definition/api.raml" class="bare">https://anypoint.mulesoft.com/b2b/tpm/api/definition/api.raml</a><br>
+<strong>Experiment URL:</strong> <a href="https://anypoint.mulesoft.com/b2b/tpm/api/console/index.html" class="bare">https://anypoint.mulesoft.com/b2b/tpm/api/console/index.html</a></p>
+</li>
+<li>
+<p><strong>Tracker API</strong> - Gives you access to run-time data such as transactions and business documents.<br>
+<strong>Download URL:</strong>
+<a href="https://anypoint.mulesoft.com/b2b/tracker/api/definition/api.raml" class="bare">https://anypoint.mulesoft.com/b2b/tracker/api/definition/api.raml</a><br>
+<strong>Experiment URL:</strong>
+<a href="https://anypoint.mulesoft.com/b2b/tracker/api/console/index.html" class="bare">https://anypoint.mulesoft.com/b2b/tracker/api/console/index.html</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_partner_manager_query_language"><a class="anchor" href="#_partner_manager_query_language"></a>Partner Manager Query Language</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Resources having the <em>Searchable</em> trait can be queried through the <strong>q</strong> query parameter
+using Partner Manager Query Language (PMQL). PMQL is a SQL-like language giving you
+the ability to search for resources by fields other than the resource ID. Before diving into the syntax,
+here are a few examples of queries expressed in PMQL:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>name == 'AS2 Receive'</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>documentPropertyValue =like= 'MuleSoft%'</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>processedAt &gt; '2016-04-29 00:00:00' and processedAt &lt;= '2016-04-29 00:00:01'</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>standard =in= ('X12', 'EDIFACT') and (direction == 'INBOUND' or messageType == 'PO') and processedAt &gt;= '2016-01-01 00:00:00'</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>A PMQL expression is composed of one or more comparisons, related to each other with logical operators:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Logical AND: <code>and</code></p>
+</li>
+<li>
+<p>Logical OR: <code>or</code></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>By default, the AND operator takes precedence, that is,
+it is evaluated before any OR operators are.
+However, a parenthesized expression can be used to change the precedence,
+yielding whatever the contained expression yields.</p>
+</div>
+<div class="paragraph">
+<p>A comparison is composed of a selector, an operator, and an argument:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>comparison = selector, comparison operator, arguments</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_pmql_selector"><a class="anchor" href="#_pmql_selector"></a>PMQL Selector</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>A selector identifies a field of the resource representation to filter by. It can be
+any non-empty Unicode string that does not contain reserved characters (see below) or a white space.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_pmql_comparison_operator"><a class="anchor" href="#_pmql_comparison_operator"></a>PMQL Comparison Operator</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>A comparison operator can be any one of the following:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Equal to: <code>==</code></p>
+</li>
+<li>
+<p>Not equal to: <code>!=</code></p>
+</li>
+<li>
+<p>Less than: <code>&lt;</code></p>
+</li>
+<li>
+<p>Less than or equal to: <code>&lt;=</code></p>
+</li>
+<li>
+<p>Greater than operator: <code>&gt;</code></p>
+</li>
+<li>
+<p>Greater than or equal to: <code>&gt;=</code></p>
+</li>
+<li>
+<p>In: <code>=in=</code></p>
+</li>
+<li>
+<p>Like: <code>=like=</code></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_pmql_argument"><a class="anchor" href="#_pmql_argument"></a>PMQL Argument</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>An argument can be a single value, or multiple values in parenthesis separated by comma.
+Multiple values can only be used with operators that support such argument types like
+the <em>IN</em> operator. An argument value that does not contain any reserved character or a
+white space can be unquoted, other arguments must be enclosed in single or double quotes.</p>
+</div>
+</div>
+</div>
+</article>
+  </main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script src="../../_/js/site.js"></script>
+<script src="../../_/js/vendor/highlight.js"></script>
+<script>hljs.initHighlighting()</script>
+  </body>
+</html>
