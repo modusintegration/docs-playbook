@@ -27,7 +27,7 @@ output:
     clean: true
 ui:
   bundle:
-    url: ./../antora-ui-default/build/ui-bundle.zip
+    url: ./../../antora-ui-default/build/ui-bundle.zip
     snapshot: true
 runtime:
   pull: true

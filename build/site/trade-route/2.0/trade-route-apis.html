@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PortX API :: PortX(TM) Documentation</title>
-    <link rel="canonical" href="https://modusbox-docs.s3-website-us-west-2.amazonaws.com/portx/index.html/trade-route/2.0/anypoint-partner-manager-api.html">
+    <title>Trade Route APIs :: PortX(TM) Documentation</title>
+    <link rel="canonical" href="https://modusbox-docs.s3-website-us-west-2.amazonaws.com/portx/index.html/trade-route/2.0/trade-route-apis.html">
     <meta name="generator" content="Antora 1.0.1">
     <link rel="stylesheet" href="../../_/css/site.css">
   </head>
@@ -69,7 +69,7 @@
 <ul class="nav-list">
   <li class="nav-item" data-depth="1">
     <button class="nav-toggle"></button>
-    <a class="nav-link" href="index.html">TradeRoute Manager</a>
+    <a class="nav-link" href="index.html">TradeRoute</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
     <button class="nav-toggle"></button>
@@ -186,7 +186,7 @@
 </ul>
   </li>
   <li class="nav-item is-current-page" data-depth="2">
-    <a class="nav-link" href="anypoint-partner-manager-api.html">Anypoint Partner Manager API</a>
+    <a class="nav-link" href="trade-route-apis.html">Trade Route APIs</a>
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="glossary.html">Glossary</a>
@@ -248,14 +248,14 @@
 <nav class="crumbs" role="navigation" aria-label="breadcrumbs">
   <ul>
     <li class="crumb"><a href="index.html">Trade Route(TM)</a></li>
-    <li class="crumb"><a href="index.html">TradeRoute Manager</a></li>
-    <li class="crumb"><a href="anypoint-partner-manager-api.html">Anypoint Partner Manager API</a></li>
+    <li class="crumb"><a href="index.html">TradeRoute</a></li>
+    <li class="crumb"><a href="trade-route-apis.html">Trade Route APIs</a></li>
   </ul>
 </nav>
-  <div class="edit-this-page"><a href="https://github.com/modusintegration/modusbox-docs/edit/dev/trade-route/modules/ROOT/pages/anypoint-partner-manager-api.adoc">Edit this Page</a></div>
+  <div class="edit-this-page"><a href="https://github.com/modusintegration/modusbox-docs/edit/dev/trade-route/modules/ROOT/pages/trade-route-apis.adoc">Edit this Page</a></div>
 </div>
 <article class="doc">
-<h1>PortX API</h1>
+<h1>Trade Route APIs</h1>
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
@@ -268,28 +268,28 @@ PortX has two distinct APIs that clients can call:</p>
 <li>
 <p><strong>Trading Partner Management Service API</strong> (TPM Service API) - Manages partner-related configurations such as document definitions.<br>
 <strong>Download URL:</strong>
-<a href="https://anypoint.mulesoft.com/b2b/tpm/api/definition/api.raml" class="bare">https://anypoint.mulesoft.com/b2b/tpm/api/definition/api.raml</a><br>
-<strong>Experiment URL:</strong> <a href="https://anypoint.mulesoft.com/b2b/tpm/api/console/index.html" class="bare">https://anypoint.mulesoft.com/b2b/tpm/api/console/index.html</a></p>
+<a href="https://traderoute.portx.io/tpm/api/definition/api.raml" class="bare">https://traderoute.portx.io/tpm/api/definition/api.raml</a><br>
+<strong>Experiment URL:</strong> <a href="https://traderoute.portx.io/tpm/api/console/index.html" class="bare">https://traderoute.portx.io/tpm/api/console/index.html</a></p>
 </li>
 <li>
 <p><strong>Tracker API</strong> - Gives you access to run-time data such as transactions and business documents.<br>
 <strong>Download URL:</strong>
-<a href="https://anypoint.mulesoft.com/b2b/tracker/api/definition/api.raml" class="bare">https://anypoint.mulesoft.com/b2b/tracker/api/definition/api.raml</a><br>
+<a href="https://traderoute.portx.io/tracker/api/definition/api.raml" class="bare">https://traderoute.portx.io/tracker/api/definition/api.raml</a><br>
 <strong>Experiment URL:</strong>
-<a href="https://anypoint.mulesoft.com/b2b/tracker/api/console/index.html" class="bare">https://anypoint.mulesoft.com/b2b/tracker/api/console/index.html</a></p>
+<a href="https://traderoute.portx.io/tracker/api/console/index.html" class="bare">https://traderoute.portx.io/tracker/api/console/index.html</a></p>
 </li>
 </ul>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_partner_manager_query_language"><a class="anchor" href="#_partner_manager_query_language"></a>Partner Manager Query Language</h2>
+<h2 id="_trade_route_query_language"><a class="anchor" href="#_trade_route_query_language"></a>Trade Route Query Language</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Resources having the <em>Searchable</em> trait can be queried through the <strong>q</strong> query parameter
-using Partner Manager Query Language (PMQL). PMQL is a SQL-like language giving you
+using Trade Route Query Language (TRQL). TRQL is a SQL-like language giving you
 the ability to search for resources by fields other than the resource ID. Before diving into the syntax,
-here are a few examples of queries expressed in PMQL:</p>
+here are a few examples of queries expressed in TRQL:</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -312,7 +312,7 @@ here are a few examples of queries expressed in PMQL:</p>
 </div>
 </div>
 <div class="paragraph">
-<p>A PMQL expression is composed of one or more comparisons, related to each other with logical operators:</p>
+<p>A TRQL expression is composed of one or more comparisons, related to each other with logical operators:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -341,7 +341,7 @@ yielding whatever the contained expression yields.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_pmql_selector"><a class="anchor" href="#_pmql_selector"></a>PMQL Selector</h2>
+<h2 id="_trql_selector"><a class="anchor" href="#_trql_selector"></a>TRQL Selector</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>A selector identifies a field of the resource representation to filter by. It can be
@@ -350,7 +350,7 @@ any non-empty Unicode string that does not contain reserved characters (see belo
 </div>
 </div>
 <div class="sect1">
-<h2 id="_pmql_comparison_operator"><a class="anchor" href="#_pmql_comparison_operator"></a>PMQL Comparison Operator</h2>
+<h2 id="_trql_comparison_operator"><a class="anchor" href="#_trql_comparison_operator"></a>TRQL Comparison Operator</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>A comparison operator can be any one of the following:</p>
@@ -386,7 +386,7 @@ any non-empty Unicode string that does not contain reserved characters (see belo
 </div>
 </div>
 <div class="sect1">
-<h2 id="_pmql_argument"><a class="anchor" href="#_pmql_argument"></a>PMQL Argument</h2>
+<h2 id="_trql_argument"><a class="anchor" href="#_trql_argument"></a>TRQL Argument</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>An argument can be a single value, or multiple values in parenthesis separated by comma.
