@@ -1,7 +1,7 @@
 site:
   start_page: portx::index.adoc
-  title: PortX(TM) Docs Prototype
-  url: https://modusbox-docs.s3-website-us-west-2.amazonaws.com/portx/LiftOff/index.html
+  title: PortX(TM) Documentation
+  url: https://modusbox-docs.s3-website-us-west-2.amazonaws.com/portx/index.html
 content:
   sources:
 
@@ -13,13 +13,7 @@ content:
     start_path: trade-route
   - url: https://github.com/modusintegration/modusbox-docs.git 
     branches: dev 
-    start_path: as2-connector 
-  - url: https://github.com/modusintegration/modusbox-docs.git 
-    branches: dev 
-    start_path: ftps-connector
-  - url: https://github.com/modusintegration/modusbox-docs.git 
-    branches: dev 
-    start_path: pmc
+    start_path: trade-route-connector
   - url: https://github.com/modusintegration/modusbox-docs.git 
     branches: dev 
     start_path: release-notes
