@@ -1,6 +1,6 @@
 site:
   start_page: portx::index.adoc
-  title: PortX(TM) Documentation
+  title: Port™ Documentation
   url: https://modusbox-docs.s3-website-us-west-2.amazonaws.com/portx/index.html
 content:
   sources:
