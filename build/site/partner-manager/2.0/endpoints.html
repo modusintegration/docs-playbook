@@ -1,0 +1,2888 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Endpoints :: PortX Documentation</title>
+    <link rel="canonical" href="https://modusbox-docs.s3-website-us-west-2.amazonaws.com/portx/index.html/partner-manager/2.0/endpoints.html">
+    <meta name="generator" content="Antora 1.0.1">
+    <link rel="stylesheet" href="../../_/css/site.css">
+  </head>
+  <body class="article">
+<header class="header" role="banner">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://modusbox-docs.s3-website-us-west-2.amazonaws.com/portx/index.html">PortX Documentation</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <!--
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Resources</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Resource A</a>
+            <a class="navbar-item" href="#">Resource B</a>
+            <a class="navbar-item" href="#">Resource C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+      -->
+    </div>
+  </nav>
+</header>
+<div class="main-wrapper">
+<div class="navigation-container" data-component="partner-manager" data-version="2.0">
+  <aside class="navigation" role="navigation">
+    <div class="panels">
+<div class="navigation-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="index.html">Partner Manager</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="index.html">Partner Manager</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="key-concepts.html">Key Concepts</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="b2b-transaction-processing-framework.html">B2B Transaction-Processing Framework</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="resolution-processes.html">Resolution Processes</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="tracking.html">Tracking</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="examples.html">Examples</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="transaction-monitoring.html">Transaction Monitoring</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="central-pane-elements.html">Central Pane Elements</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="tracking-scenarios.html">Tracking Scenarios</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="partner-configuration.html">Partner Configuration</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="company-information.html">Company Information</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="identifiers.html">Identifiers</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="availability.html">Availability</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="certificate.html">Certificate</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="x12-settings.html">X12 Settings</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="edifact-settings.html">EDIFACT Settings</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="csv-settings.html">CSV Settings</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="transaction-designer.html">Transaction Designer</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="document-types.html">Document Types</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="3">
+    <a class="nav-link" href="endpoints.html">Endpoints</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="maps.html">Maps</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="channels.html">Channels</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="routes.html">Routes</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="partner-conversations.html">Partner Conversations</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="rosettanet-pips.html">RosettaNet PIPs</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="rosettanet-agreements.html">RosettaNet Agreements</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="administration.html">Administration</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="environments.html">Environments</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="error-codes.html">Error Codes</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="security.html">Security</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="lookup-tables.html">Lookup Tables</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="tutorials.html">Tutorials</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="partner-manager-tutorial-td.html">Partner Manager Tutorial: Designing a Transaction</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="transaction-tracking-walkthrough.html">Transaction Tracking Walkthrough</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="partner-manager-apis.html">Partner Manager APIs</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="glossary.html">Glossary</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="navigation-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Partner Manager</span>
+    <span class="version">2.0</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <span class="title">Partner Manager</span>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="index.html">2.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <span class="title">Partner Manager Connector</span>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../partner-manager-connector/7.0/partner-manager-connector.html">7.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <span class="title">PortX</span>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../portx/1/index.html">1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <span class="title">Release Notes</span>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../release-notes/All/release-notes.html">All</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+  <main class="main" role="main">
+<div class="toolbar" role="navigation">
+  <button class="navigation-toggle"></button>
+  <a href="../../portx/1/index.html" class="home-link"></a>
+<nav class="crumbs" role="navigation" aria-label="breadcrumbs">
+  <ul>
+    <li class="crumb"><a href="index.html">Partner Manager</a></li>
+    <li class="crumb"><a href="partner-configuration.html">Partner Configuration</a></li>
+    <li class="crumb"><a href="endpoints.html">Endpoints</a></li>
+  </ul>
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/modusintegration/modusbox-docs/edit/dev/partner-manager/modules/ROOT/pages/endpoints.adoc">Edit this Page</a></div>
+</div>
+<article class="doc">
+<h1>Endpoints</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>An <em>endpoint</em> is the entry point to a service, a process, or a queue or topic destination in service-oriented architecture. In PortX, an endpoint defines the protocol, address, and other details specific to an exchange of messages between partners.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_get_started"><a class="anchor" href="#_get_started"></a>Get Started</h2>
+<div class="sectionbody">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><a href="partner-manager.html#start-partner-manager" class="page">Start Partner Manager</a>.
+The <a href="partner-manager.html#img-partner-manager-start" class="page">Transaction Monitoring Page</a> appears.</p>
+</li>
+<li>
+<p>In the left-hand navigation pane, click <strong>Partner Configuration</strong>. The <a href="partner-configuration.html#img-partner-configuration" class="page">Partner Configuration Page</a> appears.</p>
+<div class="paragraph">
+<p>To edit or add settings for your company, in the <strong>Name</strong> table,
+click the name of your company.</p>
+</div>
+<div class="paragraph">
+<p>To edit or add settings for an existing trading partner, in the <strong>Name</strong> table, click the name of the partner.</p>
+</div>
+<div class="paragraph">
+<p>The <a href="partner-configuration.html#img-company-information" class="page">Company Information Page</a> appears.</p>
+</div>
+</li>
+</ol>
+</div>
+<div class="olist arabic">
+<ol class="arabic" start="3">
+<li>
+<p>In the <strong>CONFIGURATION</strong> section of the left-hand navigation pane on the <a href="partner-configuration.html#img-company-information" class="page">Company Information Page</a>, click <strong>Endpoints</strong>.</p>
+<div class="paragraph">
+<p>The <a href="#img-endpoints">Endpoints Page</a> appears.</p>
+</div>
+<div id="img-endpoints" class="imageblock">
+<div class="content">
+<img src="_images/endpoints.png" alt="img-endpoints">
+</div>
+<div class="title">Figure 1. Endpoints Page</div>
+</div>
+</li>
+<li>
+<p>From this page, you can:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="#_edit_an_existing_endpoint">Edit an Existing Endpoint</a></p>
+</li>
+<li>
+<p><a href="#_add_a_new_endpoint">Add a New Endpoint</a></p>
+</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_edit_an_existing_endpoint"><a class="anchor" href="#_edit_an_existing_endpoint"></a>Edit an Existing Endpoint</h2>
+<div class="sectionbody">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>On the <a href="#img-endpoints">Endpoints Page</a>, in the <strong>Name</strong> column, click the endpoint you want to edit.</p>
+<div class="paragraph">
+<p>The <a href="#img-endpoint-settings-a">Endpoint Page</a> appears. The settings that appear depend on the values for <strong>Protocol</strong> and <strong>Type</strong>.</p>
+</div>
+<div id="img-endpoint-settings-a" class="imageblock">
+<div class="content">
+<img src="_images/endpoint-settings.png" alt="img-endpoint-settings">
+</div>
+<div class="title">Figure 2. Endpoint Page</div>
+</div>
+</li>
+<li>
+<p>To edit the Endpoint Name, Protocol, or Type, go to <a href="#choose">Choose Endpoint Name, Protocol, and Type</a>.</p>
+<div class="paragraph">
+<p>To edit settings specific to the existing Name, Protocol, and Type, go to the appropriate Protocol-Type combination in <a href="#Protocol/Type-Specific Endpoint Settings
+">[Protocol/Type-Specific Endpoint Settings
+]</a>.</p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_add_a_new_endpoint"><a class="anchor" href="#_add_a_new_endpoint"></a>Add a New Endpoint</h2>
+<div class="sectionbody">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>On the <a href="#img-endpoints">Endpoints Page</a>, click <strong>New</strong>.</p>
+<div class="paragraph">
+<p>The <a href="#img-endpoint-add">Add New Endpoint Page</a> appears.</p>
+</div>
+<div id="img-endpoint-add" class="imageblock">
+<div class="content">
+<img src="_images/endpoint.png" alt="img-endpoint-add">
+</div>
+<div class="title">Figure 3. Add New Endpoint Page</div>
+</div>
+</li>
+<li>
+<p>Go to <a href="#choose">Choose Endpoint Name, Protocol, and Type</a>.</p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+If you are working with other partners, you can change an existing endpoint, but you cannot add a new endpoint.
+</td>
+</tr>
+</table>
+</div>
+</li>
+</ol>
+</div>
+<div class="sect2">
+<h3 id="_a_id_choose_a_choose_endpoint_name_protocol_and_type"><a class="anchor" href="#_a_id_choose_a_choose_endpoint_name_protocol_and_type"></a><a id="choose"></a>Choose Endpoint Name, Protocol and Type</h3>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>On the <a href="#img-endpoint-add">Add New Endpoint Page</a>, enter the appropriate settings.</p>
+<div class="paragraph">
+<p>When you have entered settings for <strong>Name</strong>, <strong>Protocol</strong> and <strong>Type</strong>, the <a href="#img-endpoint-add">Add New Endpoint Page</a> becomes the <a href="#img-endpoint-settings-a">Endpoint Page</a>.</p>
+</div>
+<div class="paragraph">
+<p>For information about Protocol- and Type-specific settings, go to the corresponding section in <a href="#_to_enter_protocol_type_specific_endpoint_settings">To Enter Protocol/Type-Specific Endpoint Settings</a>.</p>
+</div>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Setting</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Name</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Name for this endpoint</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Required</dt>
+<dd>
+<p>Yes</p>
+</dd>
+<dt class="hdlist1">Default</dt>
+<dd>
+<p>Auto-populates based on the following values:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Company name</strong> (see <a href="#partners">Partners</a> and <a href="#company-information">Company Information</a>)</p>
+</li>
+<li>
+<p><strong>Protocol</strong></p>
+</li>
+<li>
+<p><strong>Type</strong></p>
+</li>
+</ul>
+</div>
+</dd>
+</dl>
+</div>
+<div class="paragraph">
+<p>If you choose to change the default, then subsequently want to revert to it, click <strong>Auto Fill</strong>.</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Protocol</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Protocol for this endpoint</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Required?</dt>
+<dd>
+<p>No</p>
+</dd>
+<dt class="hdlist1">Valid values</dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p>'AS2'</p>
+</li>
+<li>
+<p>'FTP'</p>
+</li>
+<li>
+<p>'FTPS'</p>
+</li>
+<li>
+<p>'SFTP'</p>
+</li>
+<li>
+<p>'HTTP'</p>
+</li>
+<li>
+<p>'JMS'</p>
+</li>
+<li>
+<p>'SMTP'</p>
+</li>
+<li>
+<p>'POP3'</p>
+</li>
+<li>
+<p>'IMAP'</p>
+</li>
+<li>
+<p>'RNIF'</p>
+</li>
+</ul>
+</div>
+</dd>
+<dt class="hdlist1">Default</dt>
+<dd>
+<p>None</p>
+</dd>
+</dl>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Type</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Type of endpoint</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Required?</dt>
+<dd>
+<p>No</p>
+</dd>
+<dt class="hdlist1">Valid values</dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p>'SEND'</p>
+</li>
+<li>
+<p>'RECEIVE'</p>
+</li>
+</ul>
+</div>
+</dd>
+<dt class="hdlist1">Default</dt>
+<dd>
+<p>None</p>
+</dd>
+</dl>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Default for <em>partner</em> checkbox</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Select this box if you want the choices you make for this endpoint to apply to all endpoints for this partner.</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>When you have entered settings for <strong>Name</strong>, <strong>Protocol</strong> and <strong>Type</strong>, additional settings specific to the protocol-type combination appear; the <a href="#img-endpoint-add">Add New Endpoint Page</a> becomes the <a href="#img-endpoint-settings-b">Endpoint Page</a>. For  information about the additional settings, go to the appropriate Protocol-Type combination in <a href="#_to_enter_protocol_type_specific_endpoint_settings">To Enter Protocol/Type-Specific Endpoint Settings</a>.</p>
+</div>
+<div id="img-endpoint-settings-b" class="imageblock">
+<div class="content">
+<img src="_images/endpoint-settings.png" alt="img-endpoint-settings">
+</div>
+<div class="title">Figure 4. Endpoint Page</div>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_protocol_type_specific_endpoint_settings"><a class="anchor" href="#_protocol_type_specific_endpoint_settings"></a>Protocol/Type-Specific Endpoint Settings</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>For a given endpoint, the values you select for <strong>Protocol</strong> and <strong>Type</strong> determine which additional settings appear. These additional settings are a subset of the settings provided in the corresponding <a href="#mule-user-guide/v/3.8/anypoint-connectors">Anypoint Connector</a>.</p>
+</div>
+<div class="sect2">
+<h3 id="_to_enter_protocol_type_specific_endpoint_settings"><a class="anchor" href="#_to_enter_protocol_type_specific_endpoint_settings"></a>To Enter Protocol/Type-Specific Endpoint Settings</h3>
+<div class="paragraph">
+<p>Choose the section that corresponds to the Protocol-Type of the Endpoint for which you are entering settings.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="#_as2_send_settings">AS2 Send Settings</a></p>
+</li>
+<li>
+<p><a href="#_as2_receive_settings">AS2 Receive Settings</a></p>
+</li>
+<li>
+<p><a href="#_ftp_send_settings">FTP Send Settings</a></p>
+</li>
+<li>
+<p><a href="#_ftps_send_settings">FTPS Send Settings</a></p>
+</li>
+<li>
+<p><a href="#_ftps_receive_settings">FTPS Receive Settings</a></p>
+</li>
+<li>
+<p><a href="#_sftp_send_settings">SFTP Send Settings</a></p>
+</li>
+<li>
+<p><a href="#_sftp_receive_settings">SFTP Receive Settings</a></p>
+</li>
+<li>
+<p><a href="#_http_send_settings">HTTP Send Settings</a></p>
+</li>
+<li>
+<p><a href="#_http_receive_settings">HTTP Receive Settings</a></p>
+</li>
+<li>
+<p><a href="#_jms_send_settings">JMS Send Settings</a></p>
+</li>
+<li>
+<p><a href="#_jms_receive_settings">JMS Receive Settings</a></p>
+</li>
+<li>
+<p><a href="#_smtp_send_settings">SMTP Send Settings</a></p>
+</li>
+<li>
+<p><a href="#_pop3_receive_settings">POP3 Receive Settings</a></p>
+</li>
+<li>
+<p><a href="#_imap_receive_settings">IMAP Receive Settings</a></p>
+</li>
+<li>
+<p><a href="#_rnif_settings">RNIF Settings</a></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_to_save_endpoint_settings"><a class="anchor" href="#_to_save_endpoint_settings"></a>To Save Endpoint Settings</h3>
+<div class="paragraph">
+<p>See <a href="partner-configuration.html#saving-settings" class="page">Saving Settings</a>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_to_add_an_endpoint_property"><a class="anchor" href="#_to_add_an_endpoint_property"></a>To Add an Endpoint Property</h3>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Click <strong>Add Endpoint Property</strong>.</p>
+<div class="paragraph">
+<p>The <strong>Add Property</strong> box appears. Refer to the table that follows for adding property settings.</p>
+</div>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Setting</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Property Type</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Dropdown listbox that includes types of properties you can track</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Required?</dt>
+<dd>
+<p>Yes</p>
+</dd>
+<dt class="hdlist1">Default</dt>
+<dd>
+<p><code>None</code></p>
+</dd>
+</dl>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Property Source Type</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Dropdown listbox that includes valid sources of trackable properties</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Required?</dt>
+<dd>
+<p>Yes</p>
+</dd>
+<dt class="hdlist1">Valid values</dt>
+<dd>
+<p><code>Inbound Properties</code></p>
+<div class="paragraph">
+<p><code>Outbound Properties</code></p>
+</div>
+<div class="paragraph">
+<p><code>Constant</code></p>
+</div>
+<div class="paragraph">
+<p><code>MEL Expression</code></p>
+</div>
+</dd>
+<dt class="hdlist1">Default</dt>
+<dd>
+<p><code>None</code></p>
+</dd>
+</dl>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Property Source</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Identifies source for this property</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Required?</dt>
+<dd>
+<p>Yes</p>
+</dd>
+<dt class="hdlist1">Valid values</dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p>Valid XPath expression (for XML documents)</p>
+</li>
+<li>
+<p>Valid JSONPath expression (for JSON or EDI documents)</p>
+</li>
+</ul>
+</div>
+</dd>
+</dl>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_as2_send_settings"><a class="anchor" href="#_as2_send_settings"></a>AS2 Send Settings</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>AS2 Send Settings pertain to trading partner-specific AS2 settings such as <strong>certificate</strong> and <strong>URL</strong>.</p>
+</div>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Setting</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URL</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>URL to which you will send AS2 transmissions for this partner, including port<br></p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Required?</dt>
+<dd>
+<p>Yes, if AS2 is the transport protocol</p>
+</dd>
+<dt class="hdlist1">Valid values</dt>
+<dd>
+<p>Alphanumeric</p>
+</dd>
+<dt class="hdlist1">Default</dt>
+<dd>
+<p>None</p>
+</dd>
+<dt class="hdlist1">Example</dt>
+<dd>
+<p><code>www.midsizesupplier.com:8080</code></p>
+</dd>
+</dl>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Content Type</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Content type for messages sent over AS2.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+If you choose <code>Custom</code>, a <strong>Custom content type</strong> box appears that accepts an alphanumeric string. Be sure that the string is known to your trading partner.
+</td>
+</tr>
+</table>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Valid values</dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p>'application/edi-x12'</p>
+</li>
+<li>
+<p>'application/edi-consent'</p>
+</li>
+<li>
+<p>'Custom'</p>
+</li>
+</ul>
+</div>
+</dd>
+<dt class="hdlist1">Default</dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p>'application/edi-x12'</p>
+</li>
+</ul>
+</div>
+</dd>
+</dl>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Digest Algorithm</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>MIC algorithm for use in signing the returned receipt</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Required?</dt>
+<dd>
+<p>No</p>
+</dd>
+<dt class="hdlist1">Valid values</dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p>'SHA1'</p>
+</li>
+<li>
+<p>'MD5'</p>
+</li>
+</ul>
+</div>
+</dd>
+<dt class="hdlist1">Default</dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p>'SHA1'</p>
+</li>
+</ul>
+</div>
+</dd>
+</dl>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Fallback Digest Algorithm</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Digest algorithm the receiver uses to create the MIC and signature</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Required?</dt>
+<dd>
+<p>No</p>
+</dd>
+<dt class="hdlist1">Valid values</dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p>'None'</p>
+</li>
+<li>
+<p>'SHA1'</p>
+</li>
+<li>
+<p>'MD5'</p>
+</li>
+</ul>
+</div>
+</dd>
+<dt class="hdlist1">Default</dt>
+<dd>
+<p>'None'</p>
+</dd>
+</dl>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Subject</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Subject of the message being sent</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Required?</dt>
+<dd>
+<p>No</p>
+</dd>
+<dt class="hdlist1">Valid values</dt>
+<dd>
+<p>Alphanumeric</p>
+</dd>
+<dt class="hdlist1">Default</dt>
+<dd>
+<p><code>AS2 Message</code></p>
+</dd>
+</dl>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Filename</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Name of file to send</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Required</dt>
+<dd>
+<p>No</p>
+</dd>
+<dt class="hdlist1">Valid values</dt>
+<dd>
+<p>Alphanumeric</p>
+</dd>
+<dt class="hdlist1">Default</dt>
+<dd>
+<p>'File name'</p>
+</dd>
+</dl>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Encoding</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Type of encoding to use when sending a message with AS2</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Required</dt>
+<dd>
+<p>Yes</p>
+</dd>
+<dt class="hdlist1">Default</dt>
+<dd>
+<p>Binary</p>
+</dd>
+<dt class="hdlist1">Valid values</dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Binary</strong><br>
+A method of encoding in which a message is represented using a combination of 0s and 1s.</p>
+</li>
+<li>
+<p><strong>7-bit</strong></p>
+<div class="paragraph">
+<p>Data that is all represented as relatively short lines with 998 bytes or less between CRLF line separation sequences.
+No bytes with decimal values greater than 127 are allowed and neither are NULLs (bytes with decimal value 0).
+CR (decimal value 13) and LF (decimal value 10) bytes only occur as part of CRLF line separation sequences.</p>
+</div>
+</li>
+<li>
+<p><strong>8-bit</strong></p>
+<div class="paragraph">
+<p>Data that is all represented as relatively
+short lines with 998 bytes or less between CRLF line separation
+sequences, but bytes with decimal values greater than 127
+may be used.  As with "7bit data" CR and LF bytes only occur as part
+of CRLF line separation sequences and no NULLs are allowed.</p>
+</div>
+</li>
+<li>
+<p><strong>Quoted-Printable</strong></p>
+<div class="paragraph">
+<p>Intended to represent data that largely consists of bytes that correspond to printable characters in
+the US-ASCII character set.  It encodes the data in such a way that
+the resulting bytes are unlikely to be modified by mail transport.
+If the data being encoded are mostly US-ASCII text, the encoded form
+of the data remains largely recognizable by humans.  A body which is
+entirely US-ASCII may also be encoded in Quoted-Printable to ensure
+the integrity of the data should the message pass through a
+character-translating, and/or line-wrapping gateway.</p>
+</div>
+</li>
+</ul>
+</div>
+</dd>
+</dl>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Encryption Algorithm</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>3DES is an encryption that uses 3 different <em>keys</em>, or encryptions, to encrypt the messages.
+No other choices are available at this time.</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Checkbox options:</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="dlist">
+<dl>
+<dt class="hdlist1">Compress</dt>
+<dd>
+<p>Compresses message-size</p>
+</dd>
+<dt class="hdlist1">Message Encrypted</dt>
+<dd>
+<p>Adds an encryption wrapper around the document, signature, and compression payloads</p>
+</dd>
+<dt class="hdlist1">Message Signed</dt>
+<dd>
+<p>Adds a signature wrapper around the document payload</p>
+</dd>
+</dl>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>MDN Signed</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Ensures trading partner validation and security</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>MDN Async</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Allows AS2 MDNs to be returned to the AS2 message sender&#8217;s server at a later time.
+Typically used when large files are involved, or when a trading partner&#8217;s AS2 server has poor Internet service. If this checkbox is selected the <strong>MDN Async URL</strong> box appears.</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>MDN Async URL</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>An Async Message Disposal Notification (MDN)  returns the MDN to this URL at a later time for files sent if an MDN is required.
+If you are using Async MDN, enter the URL and port to which it should be sent.</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Required</dt>
+<dd>
+<p>No</p>
+</dd>
+<dt class="hdlist1">Valid values</dt>
+<dd>
+<p>Alphanumeric</p>
+</dd>
+<dt class="hdlist1">Default</dt>
+<dd>
+<p><code>None</code></p>
+</dd>
+</dl>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>MDN Required::</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>An Async MDN will return the MDN to the URL at a later time for files sent if an MDN is required. If you are using Async MDN, enter the URL and port to which it should be sent.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+If this checkbox is selected, the <strong>Require Receipt for Unsupported Digest Algorithm</strong> and <strong>Require Receipt for Unsupported Signature Format</strong> checkboxes appear.
+</td>
+</tr>
+</table>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_as2_receive_settings"><a class="anchor" href="#_as2_receive_settings"></a>AS2 Receive Settings</h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Setting</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URL</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>URL you  expose in MuleSoft to receive messages from a trading partner. Enter the URL, including the port.</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Required?</dt>
+<dd>
+<p>Yes, if AS2 is the transport protocol.</p>
+</dd>
+<dt class="hdlist1">Example</dt>
+<dd>
+<p><code>www.midsizesupplier.com:8080</code></p>
+</dd>
+</dl>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>MDN Subject</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Subject of the MDN (Message Disposition Notification) sent</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Required?</dt>
+<dd>
+<p>Yes</p>
+</dd>
+<dt class="hdlist1">Valid values</dt>
+<dd>
+<p>Alphanumeric</p>
+</dd>
+<dt class="hdlist1">Default</dt>
+<dd>
+<p><code>Message Disposition Notification</code></p>
+</dd>
+</dl>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Preferred Digest Algorithm</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>MIC algorithm for use in signing the returned receipt.</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Required?</dt>
+<dd>
+<p>Yes</p>
+</dd>
+<dt class="hdlist1">Valid values</dt>
+<dd>
+<p><code>None</code><br>
+<code>SHA1</code><br>
+<code>MD5</code></p>
+</dd>
+<dt class="hdlist1">Default</dt>
+<dd>
+<p><code>None</code></p>
+</dd>
+</dl>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Checkbox options</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="dlist">
+<dl>
+<dt class="hdlist1">Compress</dt>
+<dd>
+<p>Compresses message-size</p>
+</dd>
+<dt class="hdlist1">Message Encrypted</dt>
+<dd>
+<p>Adds an encryption wrapper around the document, signature, and compression payloads</p>
+</dd>
+<dt class="hdlist1">Message Signed</dt>
+<dd>
+<p>Adds a signature wrapper around the document payload</p>
+</dd>
+</dl>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_ftp_send_settings"><a class="anchor" href="#_ftp_send_settings"></a>FTP Send Settings</h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Setting</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Server Address</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Address from which outbound documents are sent.</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Required?</dt>
+<dd>
+<p>Yes</p>
+</dd>
+<dt class="hdlist1">Valid values</dt>
+<dd>
+<p>Alphanumeric</p>
+</dd>
+<dt class="hdlist1">Default</dt>
+<dd>
+<p><code>localhost</code></p>
+</dd>
+</dl>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Port</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Specific outbound port to be used with this trading partner. Set the host of the partner&#8217;s FTP server; this can be an IP address or a host name.</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Required?</dt>
+<dd>
+<p>Yes</p>
+</dd>
+<dt class="hdlist1">Valid values</dt>
+<dd>
+<p>Numeric</p>
+</dd>
+<dt class="hdlist1">Default</dt>
+<dd>
+<p><code>990</code></p>
+</dd>
+</dl>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>User Name</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="dlist">
+<dl>
+<dt class="hdlist1">Required?</dt>
+<dd>
+<p>Yes</p>
+</dd>
+<dt class="hdlist1">Valid values</dt>
+<dd>
+<p>Alphanumeric</p>
+</dd>
+<dt class="hdlist1">Default</dt>
+<dd>
+<p>None</p>
+</dd>
+</dl>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Password</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="dlist">
+<dl>
+<dt class="hdlist1">Required?</dt>
+<dd>
+<p>Yes</p>
+</dd>
+<dt class="hdlist1">Valid values</dt>
+<dd>
+<p>Alphanumeric</p>
+</dd>
+<dt class="hdlist1">Default</dt>
+<dd>
+<p>None</p>
+</dd>
+</dl>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Transfer Mode</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>For ease of client use, use passive mode when possible.</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Required?</dt>
+<dd>
+<p>Yes</p>
+</dd>
+<dt class="hdlist1">Valid values</dt>
+<dd>
+<p><code>Active</code>|<code>Active</code>\</p>
+</dd>
+</dl>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><code>Passive</code></strong></p>
+<p class="tableblock"><strong>Default::</strong></p>
+<p class="tableblock"><strong><code>Passive</code></strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Path</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Required?::
+No</strong></p>
+<p class="tableblock"><strong>Valid values::</strong></p>
+<p class="tableblock"><strong>Alphanumeric</strong></p>
+<p class="tableblock"><strong>Default::</strong></p>
+<p class="tableblock"><strong><code>/</code></strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Filename</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Required?::
+No</strong></p>
+<p class="tableblock"><strong>Valid values::</strong></p>
+<p class="tableblock"><strong>Numeric</strong></p>
+<p class="tableblock"><strong>Default::</strong></p>
+<p class="tableblock"><strong><code>None</code></strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Upload Temporary Directory</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_ftps_send_settings"><a class="anchor" href="#_ftps_send_settings"></a>FTPS Send Settings</h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Setting</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Server Address</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Address from which outbound documents are sent.</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Required?</dt>
+<dd>
+<p>Yes</p>
+</dd>
+<dt class="hdlist1">Valid values</dt>
+<dd>
+<p>Alphanumeric</p>
+</dd>
+<dt class="hdlist1">Default</dt>
+<dd>
+<p><code>localhost</code></p>
+</dd>
+</dl>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Port</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Specific outbound port to be used with this trading partner. Set the host of the partner&#8217;s FTP server; this can be an IP address or a host name.</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Required?</dt>
+<dd>
+<p>Yes</p>
+</dd>
+<dt class="hdlist1">Valid values</dt>
+<dd>
+<p>Numeric</p>
+</dd>
+<dt class="hdlist1">Default</dt>
+<dd>
+<p><code>990</code></p>
+</dd>
+</dl>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>User Name</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="dlist">
+<dl>
+<dt class="hdlist1">Required?</dt>
+<dd>
+<p>Yes</p>
+</dd>
+<dt class="hdlist1">Valid values</dt>
+<dd>
+<p>Alphanumeric</p>
+</dd>
+<dt class="hdlist1">Default</dt>
+<dd>
+<p>None</p>
+</dd>
+</dl>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Password</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="dlist">
+<dl>
+<dt class="hdlist1">Required?</dt>
+<dd>
+<p>Yes</p>
+</dd>
+<dt class="hdlist1">Valid values</dt>
+<dd>
+<p>Alphanumeric</p>
+</dd>
+<dt class="hdlist1">Default</dt>
+<dd>
+<p>None</p>
+</dd>
+</dl>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Transfer Mode</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>For ease of client use, use passive mode when possible.</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Required?</dt>
+<dd>
+<p>Yes</p>
+</dd>
+<dt class="hdlist1">Valid values</dt>
+<dd>
+<p><code>Active</code>|<code>Active</code>\</p>
+</dd>
+</dl>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><code>Passive</code></strong></p>
+<p class="tableblock"><strong>Default::</strong></p>
+<p class="tableblock"><strong><code>Passive</code></strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>SSL Mode</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Required?::
+Yes</strong></p>
+<p class="tableblock"><strong>Valid values::</strong></p>
+<p class="tableblock"><strong><code>Explicit</code>|<code>Explicit</code>\</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p><code>Implicit</code></p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Default</dt>
+<dd>
+<p><code>Implicit</code></p>
+</dd>
+</dl>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Enable Server Validation (Checkbox)</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Selecting this checkbox validate the servers identity; only JKS format is supported at this time.</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Default</dt>
+<dd>
+<p>Not selected</p>
+</dd>
+</dl>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Path</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="dlist">
+<dl>
+<dt class="hdlist1">Required?</dt>
+<dd>
+<p>No</p>
+</dd>
+<dt class="hdlist1">Valid values</dt>
+<dd>
+<p>Alphanumeric</p>
+</dd>
+<dt class="hdlist1">Default</dt>
+<dd>
+<p><code>/</code></p>
+</dd>
+</dl>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Filename</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="dlist">
+<dl>
+<dt class="hdlist1">Required?</dt>
+<dd>
+<p>No</p>
+</dd>
+<dt class="hdlist1">Valid values</dt>
+<dd>
+<p>Numeric</p>
+</dd>
+<dt class="hdlist1">Default</dt>
+<dd>
+<p><code>None</code></p>
+</dd>
+</dl>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Upload Temporary Directory</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="dlist">
+<dl>
+<dt class="hdlist1">Required?</dt>
+<dd>
+<p>No</p>
+</dd>
+<dt class="hdlist1">Valid values</dt>
+<dd>
+<p>Alphanumeric</p>
+</dd>
+<dt class="hdlist1">Default</dt>
+<dd>
+<p><code>None</code></p>
+</dd>
+</dl>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_ftps_receive_settings"><a class="anchor" href="#_ftps_receive_settings"></a>FTPS Receive Settings</h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Setting</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Server Address</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Server address to which inbound B2B documents are delivered.</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Required?</dt>
+<dd>
+<p>Yes</p>
+</dd>
+<dt class="hdlist1">Valid values</dt>
+<dd>
+<p>Alphanumeric</p>
+</dd>
+<dt class="hdlist1">Default</dt>
+<dd>
+<p><code>localhost</code></p>
+</dd>
+</dl>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Port</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Specific inbound port to be used with this trading partner. Set the host of your FTP server, this can be an IP address or a host name.</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Required?</dt>
+<dd>
+<p>Yes</p>
+</dd>
+<dt class="hdlist1">Valid values</dt>
+<dd>
+<p>Numeric</p>
+</dd>
+<dt class="hdlist1">Default</dt>
+<dd>
+<p><code>990</code></p>
+</dd>
+</dl>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>User Name</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>The user name you specify for this FTPS instance.</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Required?</dt>
+<dd>
+<p>Yes</p>
+</dd>
+<dt class="hdlist1">Valid values</dt>
+<dd>
+<p>Alphanumeric</p>
+</dd>
+<dt class="hdlist1">Default</dt>
+<dd>
+<p>None</p>
+</dd>
+</dl>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Password</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>The password you are using with this trading partner.</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Required?</dt>
+<dd>
+<p>Yes</p>
+</dd>
+<dt class="hdlist1">Valid values</dt>
+<dd>
+<p>Alphanumeric</p>
+</dd>
+<dt class="hdlist1">Default</dt>
+<dd>
+<p>None</p>
+</dd>
+</dl>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Transfer Mode</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>For ease of client use, use passive mode when possible.</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Required?</dt>
+<dd>
+<p>Yes</p>
+</dd>
+<dt class="hdlist1">Valid values</dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p>'Active'</p>
+</li>
+<li>
+<p>'Passive'</p>
+</li>
+</ul>
+</div>
+</dd>
+<dt class="hdlist1">Default</dt>
+<dd>
+<p><code>Passive</code></p>
+</dd>
+</dl>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>SSL Mode</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Method of invoking client security</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Required?</dt>
+<dd>
+<p>Yes</p>
+</dd>
+<dt class="hdlist1">Valid values</dt>
+<dt class="hdlist1"><code>Explicit</code></dt>
+<dd>
+<p>Uses standard FTPS commands and replies.</p>
+</dd>
+<dt class="hdlist1"><code>Implicit</code></dt>
+<dd>
+<p>Requires a Transport Layer Security to be established at the beginning of the connection.</p>
+</dd>
+<dt class="hdlist1">Default</dt>
+<dd>
+<p><code>Implicit</code></p>
+</dd>
+</dl>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Enable Server Validation (Checkbox)</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Selecting this checkbox validates the servers identity; only JKS format is supported at this time.</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Default</dt>
+<dd>
+<p>Not selected</p>
+</dd>
+</dl>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Path</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Specific FTPS file location where inbound documents will reside.</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Required?</dt>
+<dd>
+<p>No</p>
+</dd>
+<dt class="hdlist1">Valid values</dt>
+<dd>
+<p>Alphanumeric</p>
+</dd>
+<dt class="hdlist1">Default</dt>
+<dd>
+<p><code>/</code></p>
+</dd>
+</dl>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Filename</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="dlist">
+<dl>
+<dt class="hdlist1">Required?</dt>
+<dd>
+<p>No</p>
+</dd>
+<dt class="hdlist1">Valid values</dt>
+<dd>
+<p>Numeric</p>
+</dd>
+<dt class="hdlist1">Default</dt>
+<dd>
+<p><code>None</code></p>
+</dd>
+</dl>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Move to directory</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Places the files in the specified directory until they complete uploading.</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Required?</dt>
+<dd>
+<p>No</p>
+</dd>
+<dt class="hdlist1">Valid values</dt>
+<dd>
+<p>Alphanumeric</p>
+</dd>
+<dt class="hdlist1">Default</dt>
+<dd>
+<p><code>None</code></p>
+</dd>
+</dl>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Polling frequency</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="dlist">
+<dl>
+<dt class="hdlist1">Required?</dt>
+<dd>
+<p>No</p>
+</dd>
+<dt class="hdlist1">Valid values</dt>
+<dd>
+<p>Alphanumeric</p>
+</dd>
+<dt class="hdlist1">Default</dt>
+<dd>
+<p><code>1000</code></p>
+</dd>
+</dl>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Maximum Number of Download Threads</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Controls the concurrency level at a given time.</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Required?</dt>
+<dd>
+<p>No</p>
+</dd>
+<dt class="hdlist1">Valid values</dt>
+<dd>
+<p>Numeric</p>
+</dd>
+<dt class="hdlist1">Default</dt>
+<dd>
+<p><code>None</code></p>
+</dd>
+</dl>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_sftp_send_settings"><a class="anchor" href="#_sftp_send_settings"></a>SFTP Send Settings</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_server_information"><a class="anchor" href="#_server_information"></a>Server information</h3>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Name</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Host</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Enter the Fully Qualified Domain Name (FQDN) or IP address of the server on your host machine that connects to the external SFTP server.<br>
+Type: string<br>
+Required: Yes<br>
+Default: None</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Port</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>The port that connects to the local (host) server. (Commonly <strong>22</strong>)<br>
+Type: integer<br>
+Required: Yes<br>
+Default: None</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Path</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Specify a path that facilitates connection to the local server<br>
+Type: string<br>
+Required: Yes<br>
+Default: None</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Username</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>&nbsp;<br>
+Type: string<br>
+Required: Yes<br>
+Default: None</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Password</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>&nbsp;<br>
+Type: string<br>
+Required: Yes<br>
+Default: None</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_timing"><a class="anchor" href="#_timing"></a>Timing</h3>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Name</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Polling frequency</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Frequency in milliseconds to check the read directory. The read directory is specified by the endpoint of the listening component.<br>
+Type: integer<br>
+Required: No<br>
+Default: None</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>File Age</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Minimum age in milliseconds for Mule to wait before consuming a file. This allows a file write to complete before processing.<br>
+Type: integer<br>
+Required: No<br>
+Default: None</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Size Check Wait Time</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Wait time in milliseconds between size checks to determine if a file is ready to be processed. This allows a file write to complete before processing. You can disable this feature by setting to a negative number or omitting a value. When enabled, Mule performs two size checks waiting the specified time between calls. If both checks return the same value, the file is ready to process.<br>
+Type: integer<br>
+Required: No<br>
+Default: None</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_sftp_receive_settings"><a class="anchor" href="#_sftp_receive_settings"></a>SFTP Receive Settings</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_server_information_2"><a class="anchor" href="#_server_information_2"></a>Server information</h3>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Name</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Host</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Enter the Fully Qualified Domain Name (FQDN) or IP address of the server on your host machine that connects to the external SFTP server.<br>
+Type: string<br>
+Required: Yes<br>
+Default: None</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Port</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>The port that connects to the local (host) server. (Commonly <strong>22</strong>)<br>
+Type: integer<br>
+Required: Yes<br>
+Default: None</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Path</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Specify a path that facilitates connection to the local server<br>
+Type: string<br>
+Required: Yes<br>
+Default: None</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Username</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>&nbsp;<br>
+Type: string<br>
+Required: Yes<br>
+Default: None</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Password</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>&nbsp;<br>
+Type: string<br>
+Required: Yes<br>
+Default: None</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_timing_2"><a class="anchor" href="#_timing_2"></a>Timing</h3>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Name</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Polling frequency</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Frequency in milliseconds to check the read directory. The read directory is specified by the endpoint of the listening component.<br>
+Type: integer<br>
+Required: No<br>
+Default: None</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>File Age</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Minimum age in milliseconds for Mule to wait before consuming a file. This allows a file write to complete before processing.<br>
+Type: integer<br>
+Required: No<br>
+Default: None</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Size Check Wait Time</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Wait time in milliseconds between size checks to determine if a file is ready to be processed. This allows a file write to complete before processing. You can disable this feature by setting to a negative number or omitting a value. When enabled, Mule performs two size checks waiting the specified time between calls. If both checks return the same value, the file is ready to process.<br>
+Type: integer<br>
+Required: No<br>
+Default: None</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_http_send_settings"><a class="anchor" href="#_http_send_settings"></a>HTTP Send Settings</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>These settings are a subset of those in <a href="/mule-user-guide/v/3.8/http-request-connector">HTTP Request Connector</a>.</p>
+</div>
+<div class="sect2">
+<h3 id="_global_config"><a class="anchor" href="#_global_config"></a>Global Config</h3>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Name</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Protocol</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Select <strong>HTTP</strong> or <strong>HTTPS</strong><br>
+Type: Radio-button-selected value<br>
+Required: Yes<br>
+Default: HTTP</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Use Persistent Connections</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>&nbsp;<br>
+Type: Checkbox selection<br>
+Required: no<br>
+Default: Selected</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Connection Idle Timeout (milliseconds)</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>&nbsp;<br>
+Type: string<br>
+Required: yes<br>
+Default: 30000</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Response Timeout (milliseconds)</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>&nbsp;<br>
+Type: string<br>
+Required: no<br>
+Default: none</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_operation_settings"><a class="anchor" href="#_operation_settings"></a>Operation Settings</h3>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Name</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Host</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>&nbsp;<br>
+Type: &nbsp;<br>
+Required: no<br>
+Default: None</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Port</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>&nbsp;<br>
+Type: &nbsp;<br>
+Required: no<br>
+Default: None</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Path</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>&nbsp;<br>
+Type: &nbsp;<br>
+Required: no<br>
+Default: None</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Method</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>&nbsp;<br>
+Type: Listbox selection<br>
+Required: no<br>
+Default: None</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_authentication_settings"><a class="anchor" href="#_authentication_settings"></a>Authentication Settings</h3>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Name</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Type</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Type: Listbox selection<br>
+Required: No<br>
+Default: None</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_http_receive_settings"><a class="anchor" href="#_http_receive_settings"></a>HTTP Receive Settings</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>These settings are a subset of those in <a href="/mule-user-guide/v/3.8/http-listener-connector">HTTP Listener Connector</a>.</p>
+</div>
+<div class="sect2">
+<h3 id="_global_config_2"><a class="anchor" href="#_global_config_2"></a>Global Config</h3>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Name</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Protocol</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p><strong>HTTP</strong> or <strong>HTTPS</strong><br>
+Type: Radio-button-selected value
+Required: yes<br>
+Default: HTTP</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Use Persistent Connections</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>&nbsp;+
+Type: Checkbox selection<br>
+Required: no<br>
+Default: Selected</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Connection idle Timeout (milliseconds)</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>&nbsp;<br>
+Type: string<br>
+Required: yes<br>
+Default: 30000</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Response Timeout (milliseconds)</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>&nbsp;<br>
+Type: string<br>
+Required: no<br>
+Default: none</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_operation_settings_2"><a class="anchor" href="#_operation_settings_2"></a>Operation Settings</h3>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Name</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Host</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>&nbsp;<br>
+Type: string<br>
+Required: yes<br>
+Default: None</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Port</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>&nbsp;<br>
+Type: string<br>
+Required: no<br>
+Default: None</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Path</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>&nbsp;<br>
+Type: string<br>
+Required: yes<br>
+Default: None</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Allowed Methods</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>&nbsp;<br>
+Type: String<br>
+Required: no<br>
+Default: None</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_jms_send_settings"><a class="anchor" href="#_jms_send_settings"></a>JMS Send Settings</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_global_config_settings"><a class="anchor" href="#_global_config_settings"></a>Global Config Settings</h3>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Setting</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>JMS Connection Type</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Select a connection type from the listbox. If you select <strong>Other</strong>, a box appears in which you can enter an alphanumeric connection type not in the listbox list.
+Required?: Yes<br>
+Type: Alphanumeric<br>
+Default: <code>TIBCO EMS</code></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URL Protocol</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Populates based on the value selected for <strong>JMS Connection Type</strong><br>
+Type: Read-only<br>
+Default: <code>tibjmsnaming</code></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Host</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Required: Yes<br>
+Type: string<br>
+Default: None</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Port</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Required:Yes<br>
+Type: integer<br>
+Default: None</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Username</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Required?: Yes<br>
+Type: string<br>
+Default: None</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Password</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Required?: Yes<br>
+Type: string<br>
+Default: None</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_operation_settings_3"><a class="anchor" href="#_operation_settings_3"></a>Operation Settings</h3>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Setting</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Queue/Topic</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Select the appropriate radio button<br>
+Type: Radio button<br>
+Default: <strong>Queue</strong></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Queue Name</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Required?: Yes<br>
+Type:<a href="glossary.html#sects" class="page">Standard APM field format</a><br>
+Default: None</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Exchange Pattern</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Select either the <strong>One-Way</strong> or the <strong>Request-Response</strong> radio button<br>
+Type: Radio button<br>
+Default: <strong>One-Way</strong></p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_jms_receive_settings"><a class="anchor" href="#_jms_receive_settings"></a>JMS Receive Settings</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_global_config_settings_2"><a class="anchor" href="#_global_config_settings_2"></a>Global Config Settings</h3>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Setting</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>JMS Connection Type</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Select a connection type from the listbox. If you select <strong>Other</strong>, a box appears in which you can enter an alphanumeric connection type not in the listbox list.
+Required?: Yes<br>
+Type: Alphanumeric<br>
+Default: <code>TIBCO EMS</code></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URL Protocol</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Populates based on the value selected for <strong>JMS Connection Type</strong><br>
+Type: Read-only<br>
+Default: <code>tibjmsnaming</code></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Host</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Required: Yes<br>
+Type: string<br>
+Default: None</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Port</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Required:Yes<br>
+Type: integer<br>
+Default: None</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Username</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Required?: Yes<br>
+Type: string<br>
+Default: None</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Password</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Required?: Yes<br>
+Type: string<br>
+Default: None</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_operation_settings_4"><a class="anchor" href="#_operation_settings_4"></a>Operation Settings</h3>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Setting</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Queue/Topic</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Select the appropriate radio button<br>
+Type: Radio button<br>
+Default: <strong>Queue</strong></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Queue Name</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Required?: Yes<br>
+Type:<a href="glossary.html#sects" class="page">Standard APM field format</a><br>
+Default: None</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Exchange Pattern</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Select either the <strong>One-Way</strong> or the <strong>Request-Response</strong> radio button<br>
+Type: Radio button<br>
+Default: <strong>One-Way</strong></p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_smtp_send_settings"><a class="anchor" href="#_smtp_send_settings"></a>SMTP Send Settings</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_operation_settings_5"><a class="anchor" href="#_operation_settings_5"></a>Operation Settings</h3>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Setting</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Host</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Required?: Yes<br>
+Type: Alphanumeric<br></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Port</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Required?: Yes<br>
+Type: Numeric</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Username</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Required?: No<br>
+Type: Alphanumeric<br></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Password</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Required?: No<br>
+Type: Alphanumeric<br></p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_email_settings"><a class="anchor" href="#_email_settings"></a>Email Settings</h3>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Setting</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>From</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Required?: No
+Type: Alphanumeric<br></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>To</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Required?: No
+Type: Alphanumeric<br></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Cc</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Required?: No
+Type: Alphanumeric<br></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Bcc</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Required?: No
+Type: Alphanumeric<br></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Reply To</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Required?: No
+Type: Alphanumeric<br></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Subject</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Required?: No
+Type: Alphanumeric<br></p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_pop3_receive_settings"><a class="anchor" href="#_pop3_receive_settings"></a>POP3 Receive Settings</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_operation_settings_6"><a class="anchor" href="#_operation_settings_6"></a>Operation Settings</h3>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Setting</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Host</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Required?: Yes<br>
+Type: Alphanumeric<br></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Port</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Required?: Yes<br>
+Type: Numeric</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Username</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Required?: No<br>
+Type: Alphanumeric<br></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Password</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Required?: No<br>
+Type: Alphanumeric<br></p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_imap_receive_settings"><a class="anchor" href="#_imap_receive_settings"></a>IMAP Receive Settings</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_general_settings"><a class="anchor" href="#_general_settings"></a>General Settings</h3>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Setting</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Backup Folder</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Required?: No<br>
+Type: Alphanumeric<br></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Mailbox Folder</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Required?: No<br>
+Type: Alphanumeric<br></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Move to Folder</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Required?: No<br>
+Type: Alphanumeric<br></p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_operation_settings_7"><a class="anchor" href="#_operation_settings_7"></a>Operation Settings</h3>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Setting</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Host</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Required?: Yes<br>
+Type: Alphanumeric<br></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Port</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Required?: Yes<br>
+Type: Numeric</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Username</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Required?: No<br>
+Type: Alphanumeric<br></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Password</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Required?: No<br>
+Type: Alphanumeric<br></p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_rnif_settings"><a class="anchor" href="#_rnif_settings"></a>RNIF Settings</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>RNIF Settings pertain to trading partner-specific RNIF settings such as <strong>Receive Http Reference</strong>.</p>
+</div>
+<div class="sect2">
+<h3 id="_receive"><a class="anchor" href="#_receive"></a>Receive</h3>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Setting</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Receive Http Reference</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Name of global HTTP listener connector configuration for this organization’s endpoint.</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Required?</dt>
+<dd>
+<p>Yes</p>
+</dd>
+<dt class="hdlist1">Valid values</dt>
+<dd>
+<p>String</p>
+</dd>
+<dt class="hdlist1">Default</dt>
+<dd>
+<p>None</p>
+</dd>
+</dl>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Service Path</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Path relative to the <strong>Receive Http Reference</strong>; required for multiple paths under a single server</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Valid values</dt>
+<dd>
+<p>String</p>
+</dd>
+<dt class="hdlist1">Required</dt>
+<dd>
+<p>Yes</p>
+</dd>
+<dt class="hdlist1">Default</dt>
+<dd>
+<p>None</p>
+</dd>
+</dl>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_send"><a class="anchor" href="#_send"></a>Send</h3>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Setting</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Send Http Reference</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Name of global HTTP request connector configuration for partner organization’s endpoint.</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Valid values</dt>
+<dd>
+<p>String</p>
+</dd>
+<dt class="hdlist1">Required?</dt>
+<dd>
+<p>No</p>
+</dd>
+<dt class="hdlist1">Default</dt>
+<dd>
+<p>None</p>
+</dd>
+</dl>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</article>
+  </main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script src="../../_/js/site.js"></script>
+<script src="../../_/js/vendor/highlight.js"></script>
+<script>hljs.initHighlighting()</script>
+  </body>
+</html>

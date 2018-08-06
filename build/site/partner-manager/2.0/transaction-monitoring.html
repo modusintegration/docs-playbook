@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaction Monitoring :: PortX Documentation</title>
+    <link rel="canonical" href="https://modusbox-docs.s3-website-us-west-2.amazonaws.com/portx/index.html/partner-manager/2.0/transaction-monitoring.html">
+    <meta name="generator" content="Antora 1.0.1">
+    <link rel="stylesheet" href="../../_/css/site.css">
+  </head>
+  <body class="article">
+<header class="header" role="banner">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://modusbox-docs.s3-website-us-west-2.amazonaws.com/portx/index.html">PortX Documentation</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <!--
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Resources</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Resource A</a>
+            <a class="navbar-item" href="#">Resource B</a>
+            <a class="navbar-item" href="#">Resource C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+      -->
+    </div>
+  </nav>
+</header>
+<div class="main-wrapper">
+<div class="navigation-container" data-component="partner-manager" data-version="2.0">
+  <aside class="navigation" role="navigation">
+    <div class="panels">
+<div class="navigation-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="index.html">Partner Manager</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="index.html">Partner Manager</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="key-concepts.html">Key Concepts</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="b2b-transaction-processing-framework.html">B2B Transaction-Processing Framework</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="resolution-processes.html">Resolution Processes</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="tracking.html">Tracking</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="examples.html">Examples</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="2">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="transaction-monitoring.html">Transaction Monitoring</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="central-pane-elements.html">Central Pane Elements</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="tracking-scenarios.html">Tracking Scenarios</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="partner-configuration.html">Partner Configuration</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="company-information.html">Company Information</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="identifiers.html">Identifiers</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="availability.html">Availability</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="certificate.html">Certificate</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="x12-settings.html">X12 Settings</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="edifact-settings.html">EDIFACT Settings</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="csv-settings.html">CSV Settings</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="transaction-designer.html">Transaction Designer</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="document-types.html">Document Types</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="endpoints.html">Endpoints</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="maps.html">Maps</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="channels.html">Channels</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="routes.html">Routes</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="partner-conversations.html">Partner Conversations</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="rosettanet-pips.html">RosettaNet PIPs</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="rosettanet-agreements.html">RosettaNet Agreements</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="administration.html">Administration</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="environments.html">Environments</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="error-codes.html">Error Codes</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="security.html">Security</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="lookup-tables.html">Lookup Tables</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="tutorials.html">Tutorials</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="partner-manager-tutorial-td.html">Partner Manager Tutorial: Designing a Transaction</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="transaction-tracking-walkthrough.html">Transaction Tracking Walkthrough</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="partner-manager-apis.html">Partner Manager APIs</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="glossary.html">Glossary</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="navigation-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Partner Manager</span>
+    <span class="version">2.0</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <span class="title">Partner Manager</span>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="index.html">2.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <span class="title">Partner Manager Connector</span>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../partner-manager-connector/7.0/partner-manager-connector.html">7.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <span class="title">PortX</span>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../portx/1/index.html">1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <span class="title">Release Notes</span>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../release-notes/All/release-notes.html">All</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+  <main class="main" role="main">
+<div class="toolbar" role="navigation">
+  <button class="navigation-toggle"></button>
+  <a href="../../portx/1/index.html" class="home-link"></a>
+<nav class="crumbs" role="navigation" aria-label="breadcrumbs">
+  <ul>
+    <li class="crumb"><a href="index.html">Partner Manager</a></li>
+    <li class="crumb"><a href="transaction-monitoring.html">Transaction Monitoring</a></li>
+  </ul>
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/modusintegration/modusbox-docs/edit/dev/partner-manager/modules/ROOT/pages/transaction-monitoring.adoc">Edit this Page</a></div>
+</div>
+<article class="doc">
+<h1>Transaction Monitoring</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>PortX enables you to monitor B2B <em>transaction</em> data.
+A transaction is the full set of end-to-end events (including transmissions, documents, and errors) involved in processing a transmission.</p>
+</div>
+<div class="paragraph">
+<p>You can:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Filter to find the specific transaction data for which you are looking</p>
+</li>
+<li>
+<p>Review and monitor errors and acknowledgements.</p>
+</li>
+<li>
+<p>Search for metadata</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>This page identifies the PortX components you use to monitor transactions; see also <a href="#tracking-scenarios">Tracking Scenarios</a>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_get_started"><a class="anchor" href="#_get_started"></a>Get Started</h2>
+<div class="sectionbody">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><a href="#">anypoint-partner-manager.adoc#start-anypoint-manager</a>.
+The <a href="#img-transaction-monitoring">Transaction Monitoring Page</a> appears.</p>
+</li>
+</ol>
+</div>
+<div id="img-transaction-monitoring" class="imageblock">
+<div class="content">
+<img src="_images/transaction-monitoring.png" alt="img-transaction-monitoring">
+</div>
+<div class="title">Figure 1. Transaction Monitoring Page</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>By default, this page presents data for today&#8217;s transactions.</p>
+<div class="paragraph">
+<p>To change the time period, see <a href="central-pane-elements.html#overview-for-em-timeframe-em-dropdown-list" class="page">Overview for <em>timeframe</em> Dropdown List</a>.</p>
+</div>
+<div class="paragraph">
+<p>To change the type of data displayed, see <a href="central-pane-elements.html#view-dropdown-list" class="page">View Dropdown List</a>.</p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_page_elements"><a class="anchor" href="#_page_elements"></a>Page Elements</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The <a href="#img-transaction-monitoring">Transaction Monitoring Page</a> consists of the following elements:</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Anypoint Platform Header</dt>
+<dd>
+<p>At the top of every page.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Menu on the left enables you to switch to other Anypoint applications.</p>
+</li>
+<li>
+<p><strong>?</strong> button provides access to support resources.</p>
+</li>
+<li>
+<p><em>Master Organization</em> name appears at top right. For more information, see <a href="#access-management/organization">Organization</a>.</p>
+</li>
+</ul>
+</div>
+</dd>
+<dt class="hdlist1">Navigation Sidebar (left)</dt>
+<dd>
+<p>Use this sidebar to move from page to page.</p>
+</dd>
+<dt class="hdlist1">Top Bar</dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p>Fixed on scroll</p>
+</li>
+<li>
+<p>Provides all action buttons associated with any selection you might have made.</p>
+</li>
+</ul>
+</div>
+</dd>
+<dt class="hdlist1">Detail Sidebar (right)</dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p>Provides the details of what you have selected in the Central Pane.</p>
+</li>
+<li>
+<p>Most IDs have a copy button to the far right of them.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Clicking on this will add the ID to your clip board.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</dd>
+<dt class="hdlist1">Central Pane</dt>
+<dd>
+<p>Presents content associated with the selection in the Navigation Sidebar.<br>
+For information about elements that can appear within this pane, see <a href="#central-pane-elements">Central Pane elements</a>.</p>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+</article>
+  </main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script src="../../_/js/site.js"></script>
+<script src="../../_/js/vendor/highlight.js"></script>
+<script>hljs.initHighlighting()</script>
+  </body>
+</html>

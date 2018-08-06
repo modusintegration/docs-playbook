@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X12 Settings - Outbound (Write) :: PortX Documentation</title>
+    <link rel="canonical" href="https://modusbox-docs.s3-website-us-west-2.amazonaws.com/portx/index.html/partner-manager/2.0/x12-outbound-(write)-settings.html">
+    <meta name="generator" content="Antora 1.0.1">
+    <link rel="stylesheet" href="../../_/css/site.css">
+  </head>
+  <body class="article">
+<header class="header" role="banner">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://modusbox-docs.s3-website-us-west-2.amazonaws.com/portx/index.html">PortX Documentation</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <!--
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Resources</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Resource A</a>
+            <a class="navbar-item" href="#">Resource B</a>
+            <a class="navbar-item" href="#">Resource C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+      -->
+    </div>
+  </nav>
+</header>
+<div class="main-wrapper">
+<div class="navigation-container" data-component="partner-manager" data-version="2.0">
+  <aside class="navigation" role="navigation">
+    <div class="panels">
+<div class="navigation-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="index.html">Partner Manager</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="index.html">Partner Manager</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="key-concepts.html">Key Concepts</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="b2b-transaction-processing-framework.html">B2B Transaction-Processing Framework</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="resolution-processes.html">Resolution Processes</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="tracking.html">Tracking</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="examples.html">Examples</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="transaction-monitoring.html">Transaction Monitoring</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="central-pane-elements.html">Central Pane Elements</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="tracking-scenarios.html">Tracking Scenarios</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="partner-configuration.html">Partner Configuration</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="company-information.html">Company Information</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="identifiers.html">Identifiers</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="availability.html">Availability</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="certificate.html">Certificate</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="x12-settings.html">X12 Settings</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="edifact-settings.html">EDIFACT Settings</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="csv-settings.html">CSV Settings</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="transaction-designer.html">Transaction Designer</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="document-types.html">Document Types</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="endpoints.html">Endpoints</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="maps.html">Maps</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="channels.html">Channels</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="routes.html">Routes</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="partner-conversations.html">Partner Conversations</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="rosettanet-pips.html">RosettaNet PIPs</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="rosettanet-agreements.html">RosettaNet Agreements</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="administration.html">Administration</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="environments.html">Environments</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="error-codes.html">Error Codes</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="security.html">Security</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="lookup-tables.html">Lookup Tables</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="tutorials.html">Tutorials</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="partner-manager-tutorial-td.html">Partner Manager Tutorial: Designing a Transaction</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="transaction-tracking-walkthrough.html">Transaction Tracking Walkthrough</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="partner-manager-apis.html">Partner Manager APIs</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="glossary.html">Glossary</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="navigation-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Partner Manager</span>
+    <span class="version">2.0</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <span class="title">Partner Manager</span>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="index.html">2.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <span class="title">Partner Manager Connector</span>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../partner-manager-connector/7.0/partner-manager-connector.html">7.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <span class="title">PortX</span>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../portx/1/index.html">1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <span class="title">Release Notes</span>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../release-notes/All/release-notes.html">All</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+  <main class="main" role="main">
+<div class="toolbar" role="navigation">
+  <button class="navigation-toggle"></button>
+  <a href="../../portx/1/index.html" class="home-link"></a>
+<nav class="crumbs" role="navigation" aria-label="breadcrumbs">
+  <ul>
+    <li class="crumb"><a href="index.html">Partner Manager</a></li>
+    <li class="crumb"><a href="x12-outbound-(write)-settings.html">X12 Settings - Outbound (Write)</a></li>
+  </ul>
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/modusintegration/modusbox-docs/edit/dev/partner-manager/modules/ROOT/pages/x12-outbound-(write)-settings.adoc">Edit this Page</a></div>
+</div>
+<article class="doc">
+<h1>X12 Settings - Outbound (Write)</h1>
+<div id="preamble">
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Setting</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Envelope Headers (ISA)</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>The fields in this section enable you to set envelope header options.</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Auth Info. Qualifier (ISA 01)</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>The most common value is <code>00</code>; rarely is another used.</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Required?</dt>
+<dd>
+<p>No</p>
+</dd>
+<dt class="hdlist1">Valid values</dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p><code>00</code></p>
+</li>
+<li>
+<p><code>01</code></p>
+</li>
+<li>
+<p><code>02</code></p>
+</li>
+<li>
+<p><code>03</code></p>
+</li>
+<li>
+<p><code>04</code></p>
+</li>
+<li>
+<p><code>05</code></p>
+</li>
+<li>
+<p><code>06</code></p>
+</li>
+</ul>
+</div>
+</dd>
+<dt class="hdlist1">Default</dt>
+<dd>
+<p><code>00</code></p>
+</dd>
+</dl>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Authorization Information (ISA 02)</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+If the value in the previous box (ISA 01) is <code>00</code> (the default), then this box is disabled.
+</td>
+</tr>
+</table>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Required?</dt>
+<dd>
+<p>No</p>
+</dd>
+<dt class="hdlist1">Valid values</dt>
+<dd>
+<p>Alphanumeric</p>
+</dd>
+<dt class="hdlist1">Default</dt>
+<dd>
+<p>Ten blanks</p>
+</dd>
+</dl>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Security Inf. Qualifier (ISA 03)</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>In the dropdown listbox, enter a value for this trading partner.</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Required?</dt>
+<dd>
+<p>Yes</p>
+</dd>
+<dt class="hdlist1">Valid values</dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p><code>00</code></p>
+</li>
+<li>
+<p><code>01</code></p>
+</li>
+</ul>
+</div>
+</dd>
+<dt class="hdlist1">Default</dt>
+<dd>
+<p><code>00</code></p>
+</dd>
+</dl>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+If the value in (ISA 03) is 01, then a valid password value is required in ISA 04.
+</td>
+</tr>
+</table>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Security Information (ISA 04)</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+If the value in the previous box (ISA 03) is <code>00</code> (the default), then this box is disabled.
+</td>
+</tr>
+</table>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Required?</dt>
+<dd>
+<p>No</p>
+</dd>
+<dt class="hdlist1">Valid values</dt>
+<dd>
+<p>Alphanumeric</p>
+</dd>
+<dt class="hdlist1">Default</dt>
+<dd>
+<p>None</p>
+</dd>
+</dl>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Interchange sender ID qualifier (ISA 05)</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>This value populates based on the value saved in <a href="#Interchange ID qualifier - ISA">[Interchange ID qualifier - ISA]</a></p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Required?</dt>
+<dd>
+<p>Yes (must be entered and saved in <a href="#Interchange ID qualifier - ISA">[Interchange ID qualifier - ISA]</a>)</p>
+</dd>
+</dl>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Interchange sender ID (ISA 06)</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>This value populates based on the value entered and saved in <a href="#Interchange ID - ISA">[Interchange ID - ISA]</a></p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Required?</dt>
+<dd>
+<p>Yes (must be entered and saved in <a href="#Interchange ID - ISA">[Interchange ID - ISA]</a>)</p>
+</dd>
+</dl>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Interchange receiver ID qualifier (ISA 07)</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>This value populates based on the value entered and saved in <a href="#Interchange ID qualifier - ISA">[Interchange ID qualifier - ISA]</a></p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Required?</dt>
+<dd>
+<p>Yes (must be entered and saved in <a href="#Interchange ID qualifier - ISA">[Interchange ID qualifier - ISA]</a>)</p>
+</dd>
+</dl>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Interchange receiver ID (ISA 08)</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>This value populates based on the value entered and saved in <a href="#Interchange ID - ISA">[Interchange ID - ISA]</a></p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Required?</dt>
+<dd>
+<p>Yes (must be entered and saved in <a href="#Interchange ID - ISA">[Interchange ID - ISA]</a>)</p>
+</dd>
+<dt class="hdlist1">Repetition separator character (ISA 11)</dt>
+<dd>
+<p>Drop-down listbox that enables you to choose a repetition character.</p>
+</dd>
+<dt class="hdlist1">Required?</dt>
+<dd>
+<p>No</p>
+</dd>
+<dt class="hdlist1">Valid values</dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p><code>U</code></p>
+</li>
+<li>
+<p><code>^</code></p>
+</li>
+<li>
+<p><code>+</code></p>
+</li>
+</ul>
+</div>
+</dd>
+<dt class="hdlist1">Default</dt>
+<dd>
+<p><code>^</code></p>
+</dd>
+</dl>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Interchange Control Version (ISA 12)</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Drop-down listbox that enables you to choose which X12 version you use. If you choose <code>Custom</code>, another box appears in which you can enter an numeric value of your choice. Currently <code>004010</code> and <code>005010</code> are the supported X12 versions.</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Required?</dt>
+<dd>
+<p>No</p>
+</dd>
+<dt class="hdlist1">Valid values</dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p><code>004010 (4010)</code></p>
+</li>
+<li>
+<p><code>005010 (5010)`</code></p>
+</li>
+<li>
+<p><code>Custom</code></p>
+</li>
+</ul>
+</div>
+</dd>
+<dt class="hdlist1">Default</dt>
+<dd>
+<p><code>004010 (4010)</code></p>
+</dd>
+</dl>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Request Interchange Acknowledgements (ISA 14)</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Drop-down list that enables you to choose whether or not a 997 message is required.</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Required?</dt>
+<dd>
+<p>Yes</p>
+</dd>
+<dt class="hdlist1">Valid values</dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p><code>0 (997 not required)</code></p>
+</li>
+<li>
+<p><code>1 (997 required)</code></p>
+</li>
+</ul>
+</div>
+</dd>
+<dt class="hdlist1">Default</dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p><code>1 (997 required)</code></p>
+</li>
+</ul>
+</div>
+</dd>
+</dl>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Default Interchange usage indicator (ISA 15)</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Indicates whether  you are in Test or Production with this trading partner.</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Required?</dt>
+<dd>
+<p>Yes</p>
+</dd>
+<dt class="hdlist1">Valid values</dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p><code>Production</code></p>
+</li>
+<li>
+<p><code>Test</code></p>
+</li>
+</ul>
+</div>
+</dd>
+<dt class="hdlist1">Default</dt>
+<dd>
+<p><code>Production</code></p>
+</dd>
+</dl>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Component element separator character (ISA 16)</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Indicates the character used to separate data.
+"<strong>&gt;</strong>" is a commonly used character.</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Required?</dt>
+<dd>
+<p>No</p>
+</dd>
+<dt class="hdlist1">Valid values</dt>
+<dd>
+<p>Most special characters excluding numbers; must be a single character.</p>
+</dd>
+</dl>
+</div>
+<div class="paragraph">
+<p>Alphanumeric</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Default</dt>
+<dd>
+<p><code>&gt;</code></p>
+</dd>
+</dl>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_group_headers_gs"><a class="anchor" href="#_group_headers_gs"></a>Group Headers (GS)</h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Setting</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Version identifier code suffix (GS 08)</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Enables you to identify the X12 version being used in the outbound message.</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Required?</dt>
+<dd>
+<p>Yes</p>
+</dd>
+<dt class="hdlist1">Valid values</dt>
+<dd>
+<p>12 characters, alphanumeric</p>
+</dd>
+<dt class="hdlist1">Default</dt>
+<dd>
+<p><code>004010</code></p>
+</dd>
+</dl>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_terminator_delimiter"><a class="anchor" href="#_terminator_delimiter"></a>Terminator/Delimiter</h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Setting</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Segment terminator character</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Identifies the end of X12 segment.
+"<strong>~</strong>" is a commonly used terminator character.</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Required?</dt>
+<dd>
+<p>No</p>
+</dd>
+<dt class="hdlist1">Valid values</dt>
+<dd>
+<p>Most special characters; must only be a single character only.</p>
+</dd>
+<dt class="hdlist1">Default</dt>
+<dd>
+<p><code>~</code></p>
+</dd>
+</dl>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Data Element Delimiter</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Separates data elements from each other.
+One of the most common values used in this field is “<strong>*</strong>”</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Required?</dt>
+<dd>
+<p>No</p>
+</dd>
+<dt class="hdlist1">Valid values</dt>
+<dd>
+<p>Most special characters except whole numbers; must be a single character only.</p>
+</dd>
+<dt class="hdlist1">Default</dt>
+<dd>
+<p><code>*</code></p>
+</dd>
+</dl>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_character_set_and_encoding"><a class="anchor" href="#_character_set_and_encoding"></a>Character Set and Encoding</h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Setting</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Character Set</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Drop-down listbox enabling choice of three character sets.</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Valid values</dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Basic</strong><br>
+This character set includes:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Uppercase letters <code>A</code> through <code>Z</code></p>
+</li>
+<li>
+<p>Digits <code>0</code> through <code>9</code></p>
+</li>
+<li>
+<p>Special characters<br>
+<code>! “ &amp; ’ ( ) * + , - . / : ; ? =</code></p>
+</li>
+<li>
+<p>The character created by pressing the space bar.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>Extended</strong><br>
+This character set includes:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>All characters in the Basic character set</p>
+</li>
+<li>
+<p>Lowercase letters <code>a</code> through <code>z</code></p>
+</li>
+<li>
+<p>Select language characters</p>
+</li>
+<li>
+<p>Other special characters:<br>
+<code>% @ [ ] _ { } \ |</code>% @ [ ] _ { } \ \</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</dd>
+</dl>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>&lt; &gt; ~ # $`</strong></p>
+<p class="tableblock"><strong>* <strong>Unrestricted</strong> character set - includes all characters.</strong></p>
+<p class="tableblock"><strong>Default::
+<code>Basic</code></strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Character Encoding</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Drop-down listbox enabling you to select character encoding.</strong></p>
+<p class="tableblock"><strong>Required?::
+Yes</strong></p>
+<p class="tableblock"><strong>Valid values::</strong></p>
+<p class="tableblock"><strong>* <code>ASCII</code>
+* <code>ISO-8859-1</code>
+* <code>IBM 1047</code></strong></p>
+<p class="tableblock"><strong>Default::</strong></p>
+<p class="tableblock"><strong><code>ASCII</code></strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Line ending between segment</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_control_number_settings"><a class="anchor" href="#_control_number_settings"></a>Control Number Settings</h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Setting</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Initial Interchange control number (ISA 13)</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>You can use this box to specify a whole number to appear in the ISA control number that begins your outbound documents with a Trading Partner. If a single digit is specified it will be padded with leading zeros.</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Required?</dt>
+<dd>
+<p>No</p>
+</dd>
+<dt class="hdlist1">Valid values</dt>
+<dd>
+<p>Alphanumeric</p>
+</dd>
+<dt class="hdlist1">Default</dt>
+<dd>
+<p><code>1</code></p>
+</dd>
+</dl>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Initial GS control number (GS 06)</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>You can use this box to specify a whole number to appear in the GS control number that begins your outbound documents with a Trading Partner. If a single digit is specified it will be padded with leading zeros.</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Required?</dt>
+<dd>
+<p>No</p>
+</dd>
+<dt class="hdlist1">Valid values</dt>
+<dd>
+<p>Alphanumeric</p>
+</dd>
+<dt class="hdlist1">Default</dt>
+<dd>
+<p><code>1</code></p>
+</dd>
+</dl>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Initial transaction set control numbers (ST 02)</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>You can use this box to specify a whole number to appear in the ST control number that begins your outbound documents with a Trading Partner. If a single digit is specified it will be padded with leading zeros.</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Required?</dt>
+<dd>
+<p>No</p>
+</dd>
+<dt class="hdlist1">Valid values</dt>
+<dd>
+<p>Alphanumeric</p>
+</dd>
+<dt class="hdlist1">Default</dt>
+<dd>
+<p><code>1</code></p>
+</dd>
+</dl>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Implementation Convention reference (ST 03)</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Used in the Healthcare space in X12 versions 5010 and above.</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Required?</dt>
+<dd>
+<p>No</p>
+</dd>
+<dt class="hdlist1">Valid values</dt>
+<dd>
+<p>Alphanumeric</p>
+</dd>
+<dt class="hdlist1">Default</dt>
+<dd>
+<p>None provided</p>
+</dd>
+</dl>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Require unique GS control numbers (GS06)</strong></p></td>
+<td class="tableblock halign-left valign-top"><div><div class="paragraph">
+<p>Select this checkbox to require unique GS control numbers.</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</article>
+  </main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script src="../../_/js/site.js"></script>
+<script src="../../_/js/vendor/highlight.js"></script>
+<script>hljs.initHighlighting()</script>
+  </body>
+</html>

@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Working with Environments :: PortX Documentation</title>
+    <link rel="canonical" href="https://modusbox-docs.s3-website-us-west-2.amazonaws.com/portx/index.html/partner-manager/2.0/working-with-environments.html">
+    <meta name="generator" content="Antora 1.0.1">
+    <link rel="stylesheet" href="../../_/css/site.css">
+  </head>
+  <body class="article">
+<header class="header" role="banner">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://modusbox-docs.s3-website-us-west-2.amazonaws.com/portx/index.html">PortX Documentation</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <!--
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Resources</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Resource A</a>
+            <a class="navbar-item" href="#">Resource B</a>
+            <a class="navbar-item" href="#">Resource C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+      -->
+    </div>
+  </nav>
+</header>
+<div class="main-wrapper">
+<div class="navigation-container" data-component="partner-manager" data-version="2.0">
+  <aside class="navigation" role="navigation">
+    <div class="panels">
+<div class="navigation-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="index.html">Partner Manager</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="index.html">Partner Manager</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="key-concepts.html">Key Concepts</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="b2b-transaction-processing-framework.html">B2B Transaction-Processing Framework</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="resolution-processes.html">Resolution Processes</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="tracking.html">Tracking</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="examples.html">Examples</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="transaction-monitoring.html">Transaction Monitoring</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="central-pane-elements.html">Central Pane Elements</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="tracking-scenarios.html">Tracking Scenarios</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="partner-configuration.html">Partner Configuration</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="company-information.html">Company Information</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="identifiers.html">Identifiers</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="availability.html">Availability</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="certificate.html">Certificate</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="x12-settings.html">X12 Settings</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="edifact-settings.html">EDIFACT Settings</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="csv-settings.html">CSV Settings</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="transaction-designer.html">Transaction Designer</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="document-types.html">Document Types</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="endpoints.html">Endpoints</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="maps.html">Maps</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="channels.html">Channels</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="routes.html">Routes</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="partner-conversations.html">Partner Conversations</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="rosettanet-pips.html">RosettaNet PIPs</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="rosettanet-agreements.html">RosettaNet Agreements</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="administration.html">Administration</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="environments.html">Environments</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="error-codes.html">Error Codes</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="security.html">Security</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="lookup-tables.html">Lookup Tables</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="tutorials.html">Tutorials</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="partner-manager-tutorial-td.html">Partner Manager Tutorial: Designing a Transaction</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="transaction-tracking-walkthrough.html">Transaction Tracking Walkthrough</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="partner-manager-apis.html">Partner Manager APIs</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="glossary.html">Glossary</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="navigation-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Partner Manager</span>
+    <span class="version">2.0</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <span class="title">Partner Manager</span>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="index.html">2.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <span class="title">Partner Manager Connector</span>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../partner-manager-connector/7.0/partner-manager-connector.html">7.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <span class="title">PortX</span>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../portx/1/index.html">1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <span class="title">Release Notes</span>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../release-notes/All/release-notes.html">All</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+  <main class="main" role="main">
+<div class="toolbar" role="navigation">
+  <button class="navigation-toggle"></button>
+  <a href="../../portx/1/index.html" class="home-link"></a>
+<nav class="crumbs" role="navigation" aria-label="breadcrumbs">
+  <ul>
+    <li class="crumb"><a href="index.html">Partner Manager</a></li>
+    <li class="crumb"><a href="working-with-environments.html">Working with Environments</a></li>
+  </ul>
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/modusintegration/modusbox-docs/edit/dev/partner-manager/modules/ROOT/pages/working-with-environments.adoc">Edit this Page</a></div>
+</div>
+<article class="doc">
+<h1>Working with Environments</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>&lt;Begin New Text&gt;</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_promotion_scenarios"><a class="anchor" href="#_promotion_scenarios"></a>Promotion Scenarios</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This section identifies common scenarios for promoting partners from one environment to another. For more information, see <a href="partner-configuration.html#promoting-a-partner" class="page">Promoting a Partner</a>.</p>
+</div>
+<div class="paragraph">
+<p>In each of these scenarios, a trading partner <strong>P1</strong> has been created in an environment <strong>E1</strong>. In the table below, that partner is therefore identified as <strong>P1<sub>E1</sub></strong>.<br>
+Another partner <strong>P1</strong> has been created in environment <strong>E2</strong> (<strong>P1<sub>E2</sub></strong> below). In some scenarios, <strong>P1<sub>E2</sub></strong> was created by promoting <strong>P1<sub>E1</sub></strong> from <strong>E1</strong> to <strong>E2</strong>.</p>
+</div>
+<div class="paragraph">
+<p>In the last scenario, an additional trading partner <strong>P2</strong> has been created in environment <strong>E2</strong> (<strong>P2<sub>E2</sub></strong> below).</p>
+</div>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 37.5%;">
+<col style="width: 12.5%;">
+<col style="width: 12.5%;">
+<col style="width: 37.5%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Scenario</th>
+<th class="tableblock halign-left valign-top">Override<br>
+Certificates<br>
+Checkbox</th>
+<th class="tableblock halign-left valign-top">Keep<br>
+Identifiers<br>
+Checkbox</th>
+<th class="tableblock halign-left valign-top">Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-middle" rowspan="2"><p class="tableblock"><strong>P1<sub>E1</sub></strong> has previously been promoted to <strong>P1<sub>E2</sub></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Selected</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Either selected or not selected</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">If <strong>P1<sub>E1</sub></strong> contains any new cerfificates, they will be copied to <strong>P1<sub>E2</sub></strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Not Selected</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Either selected or not selected</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>P1<sub>E1</sub></strong> will not be copied to <strong>P1<sub>E2</sub></strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle" rowspan="2"><p class="tableblock"><strong>P1<sub>E1</sub></strong> and <strong>P1<sub>E2</sub></strong> were identical at some point, but a set of identifiers (types and values) has subsequently been configured for AS2, EDI X12 and EDIFACT in <strong>P1<sub>E1</sub></strong>.</p></td>
+<td class="tableblock halign-left valign-middle" rowspan="6"><p class="tableblock">Either selected or not selected</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Selected</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>P1<sub>E1</sub></strong> identifiers will be copied to <strong>P1<sub>E2</sub></strong> because the copied data may need  information associated with the identifiers (for example Endpoints, or Document Definitions)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Not selected</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>P1<sub>E1</sub></strong> identifiers will be copied to <strong>P1<sub>E2</sub></strong> because the copied data may need  information associated with the identifiers (for example Endpoints, or Document Definitions)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>P1<sub>E1</sub></strong> and <strong>P1<sub>E2</sub></strong> were identical at some point, but a set of identifiers (types and values) has subsequently been configured for AS2, EDI X12 and EDIFACT in <strong>P1<sub>E1</sub></strong> and in addition, <em>E2 has another partner (say, P1<sub>E3</sub>) that coincidentally has the same identifiers (that is, types &amp; values) as <strong>P1<sub>E2</sub></strong></em>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Either selected or not selected</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Promotion fails, because having the same set of identifiers (types and values) more than once causes an error.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle" rowspan="2"><p class="tableblock"><strong>P1<sub>E1</sub></strong> and <strong>P1<sub>E2</sub></strong> were identical at some point. Subsequently, a set of identifiers (types and values) has  been configured for AS2, EDI X12 and EDIFACT in <strong>P1<sub>E1</sub></strong> and a <em>different</em> set  of identifiers (types and values) has  been configured for AS2, EDI X12 and EDIFACT in <strong>P1<sub>E2</sub></strong>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Selected</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>P1<sub>E1</sub></strong> values replace <strong>P1<sub>E2</sub></strong> values.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Not selected</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>P1<sub>E2</sub></strong> values are not replaced.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>P1<sub>E1</sub></strong> has a set of identifiers (types and values) for AS2, EDI X12 and EDIFACT.<br>
+<strong>P2<sub>E2</sub></strong>, for whatever reason, has exactly the same set of identifiers as <strong>P1<sub>E1</sub></strong>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Either selected or not selected</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Promotion fails, because having the same set of identifiers (types and values) more than once (that is, in both <strong>P1<sub>E2</sub></strong> and <strong>P2<sub>E2</sub></strong>) causes an error.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="sect2">
+<h3 id="_rough_draft_graphic_for_certs_promo"><a class="anchor" href="#_rough_draft_graphic_for_certs_promo"></a>Rough draft graphic for certs promo</h3>
+<div class="paragraph">
+<p><span class="image"><img src="_images/PromoteIDsOffCertsOn.png" alt="rough draft graphic, cert promotion scenario"></span></p>
+</div>
+<div class="paragraph">
+<p>&lt;/New Text</p>
+</div>
+<div class="paragraph">
+<p>&lt;Begin Existing Text&gt;</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_exporting_partners_from_an_environment"><a class="anchor" href="#_exporting_partners_from_an_environment"></a>Exporting partners from an environment</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>PortX provides the ability to export Partners for backup purposes. These Partners can be imported back into PortX later. Please consult the <a href="#_importing_partners_into_a_specific_environment">Importing Partners Into A Specific Environment</a> section for more information.
+Exporting partners involves a series of steps. From the partners list:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Select one or more partners from list. This will cause the "Export" button will be enabled.</p>
+</li>
+<li>
+<p>Click on the "Export" button. This will pop up a confirmation window listing all the partners that will be exported. You can hit "Dismiss" to cancel the process.</p>
+</li>
+<li>
+<p>Hit the Export button on the window. This will start the export process and, after completion, it will download a plain-text file with the selected partners and their associated data.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Please not that the file is automatically named. The file name pattern consists of the words "partners_export" and has a current-date suffix, e.g. "partners_export_2016-07-12.txt"</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_importing_partners_into_a_specific_environment"><a class="anchor" href="#_importing_partners_into_a_specific_environment"></a>Importing Partners Into A Specific Environment</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>PortX provides the ability to import <a href="#Partners">[Partners]</a> that were previously backed up using the export functionality. Please consult the <a href="#_exporting_partners_from_an_environment">Exporting partners from an environment</a> section for more information.
+Only users with the appropriate role or permissions will be able to import partners. The destination environment may already have the same partners that are being imported. If this is the case, data from the partners being imported will override the data of the existing partners.
+Importing partners involves a series of steps, starting from the partners list screen:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Find the "New Partner" on the top right. Click on the little arrow pointing down next to the button and select "Import". This will pop up the "Import" window. You can hit "Dismiss" to cancel the process.</p>
+</li>
+<li>
+<p>Select the "target environment", this is the environment into which the partners will be imported. Hit "Next".</p>
+</li>
+<li>
+<p>Select the file with the partners (which was previoulsy exported) by hitting "Choose File" and browsing through your file system. At this point you can hit "Back" to change the selected target environment, if needed.</p>
+</li>
+<li>
+<p>Select whether the partners being imported will keep their identifiers when matching existing or previoulsy imported partners on the target environment.</p>
+</li>
+<li>
+<p>Select whether the partners being imported will keep their AS2 certificates or use the certificates from the matching existing, or previoulsy imported partners on the target environment. Hit import to start the process.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_promoting_partners_into_a_specific_environment"><a class="anchor" href="#_promoting_partners_into_a_specific_environment"></a>Promoting Partners Into A Specific Environment</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>PortX provides the ability to "promote", i.e. "copy", <a href="#Partners">[Partners]</a> from one environment to another.
+Only users with the appropriate role or permissions will be able to promote partners. This process involves a series of steps, starting from the partners list screen:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Select one or more partners to promote from the list.</p>
+</li>
+<li>
+<p>Hit the "Promote" button. This will pop up the "Promote" window listing the partners to be promoted. You can hit "Dismiss" to cancel the process.</p>
+</li>
+<li>
+<p>Select the "target environment", this is the environment into which the partners will be promoted. Hit "Next" to go to the next step. Alternatively, you can hit "Back" to change the selected target environment, if needed.</p>
+</li>
+<li>
+<p>Select whether the partners being promoted will keep their identifiers when matching existing or previoulsy imported partners on the target environment.</p>
+</li>
+<li>
+<p>Select whether the partners being imported will keep their AS2 certificates or use the certificates from the matching existing, or previoulsy promoted partners on the target environment. Hit import to start the process.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</article>
+  </main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script src="../../_/js/site.js"></script>
+<script src="../../_/js/vendor/highlight.js"></script>
+<script>hljs.initHighlighting()</script>
+  </body>
+</html>

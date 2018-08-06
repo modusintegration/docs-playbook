@@ -10,10 +10,10 @@ content:
     start_path: portx
   - url: https://github.com/modusintegration/modusbox-docs.git 
     branches: dev 
-    start_path: trade-route
+    start_path: partner-manager
   - url: https://github.com/modusintegration/modusbox-docs.git 
     branches: dev 
-    start_path: trade-route-connector
+    start_path: partner-manager-connector
   - url: https://github.com/modusintegration/modusbox-docs.git 
     branches: dev 
     start_path: release-notes
