@@ -16,12 +16,17 @@ content:
   - url: https://github.com/modusintegration/modusbox-docs.git 
     branches: [master, new-mule] 
     start_path: partner-manager-connector
-    
+ 
   - url: https://github.com/modusintegration/modusbox-docs.git 
-    branches: [master, new-mule]
+    branches: [master, new-mule] 
     start_path: release-notes
     
-
+asciidoc:
+  attributes:
+    experimental: ''
+    idprefix: ''
+    idseparator: '-'
+    linkattrs: ''
 
 output:
   destinations:
