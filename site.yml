@@ -6,16 +6,19 @@ content:
   sources:
 
   - url: https://github.com/modusintegration/modusbox-docs.git 
-    branches: dev 
+    branches: master
     start_path: portx
+    
   - url: https://github.com/modusintegration/modusbox-docs.git 
-    branches: dev 
+    branches: [master, new-mule]
     start_path: partner-manager
+    
   - url: https://github.com/modusintegration/modusbox-docs.git 
-    branches: dev 
+    branches: master 
     start_path: partner-manager-connector
+    
   - url: https://github.com/modusintegration/modusbox-docs.git 
-    branches: dev 
+    branches: master 
     start_path: release-notes
     
 
