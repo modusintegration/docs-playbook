@@ -18,7 +18,7 @@ content:
     start_path: partner-manager-connector
     
   - url: https://github.com/modusintegration/modusbox-docs.git 
-    branches: master 
+    branches: [master, new-mule]
     start_path: release-notes
     
 
