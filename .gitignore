@@ -1,1 +1,5 @@
 /build/site
+package-lock.json
+/node_modules
+/site-master-head.yml
+/build
