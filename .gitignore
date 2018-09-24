@@ -1,4 +1,5 @@
 /build/site
 /site-dev.yml
 /node_modules
+/site-master-head.yml
 /build

@@ -1,9 +1,14 @@
 site:
   start_page: portx::index.adoc
   title: PortX Documentation
-  url: https://modusbox-docs.s3-website-us-west-2.amazonaws.com/portx/index.html
+  url: https://port.io
+
 content:
   sources:
+  
+  - url: https://github.com/modusintegration/docs-playbook.git 
+    branches: master
+    start_path: home
 
   - url: https://github.com/modusintegration/modusbox-docs.git 
     branches: master
