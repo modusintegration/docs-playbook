@@ -1,1 +1,4 @@
 /build/site
+/site-dev.yml
+/node_modules
+/build
