@@ -1,1 +1,5 @@
 /build/site
+/node_modules
+/site-master-head.yml
+/build
+/.gitignore
