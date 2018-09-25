@@ -1,5 +1,5 @@
 site:
-  start_page: portx::index.adoc
+  start_page: home::index.adoc
   title: PortX Documentation
   url: https://port.io
 
@@ -9,10 +9,6 @@ content:
   - url: https://github.com/modusintegration/docs-playbook.git 
     branches: master
     start_path: home
-
-  - url: https://github.com/modusintegration/modusbox-docs.git 
-    branches: master
-    start_path: portx
     
   - url: https://github.com/modusintegration/modusbox-docs.git 
     branches: [master, new-mule]
