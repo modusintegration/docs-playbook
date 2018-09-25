@@ -1,7 +1,7 @@
 site:
   start_page: portx::index.adoc
   title: PortX Documentation
-  url: https://modusbox-docs.s3-website-us-west-2.amazonaws.com/portx/index.html
+  url: https://port.io
 content:
   sources:
 
