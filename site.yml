@@ -1,7 +1,7 @@
 site:
   start_page: portx::index.adoc
   title: PortX Documentation
-  url: https://port.io
+  url: https://portx.io
 content:
   sources:
 
