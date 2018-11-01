@@ -17,6 +17,14 @@ content:
   - url: https://github.com/modusintegration/modusbox-docs.git
     branches: [master, new-mule]
     start_path: partner-manager-connector
+    
+  - url: https://github.com/modusintegration/modusbox-docs.git
+    branches: [master, new-mule]
+    start_path: as2-connector
+    
+  - url: https://github.com/modusintegration/modusbox-docs.git
+    branches: [master, new-mule]
+    start_path: ftps-connector
 
   - url: https://github.com/modusintegration/modusbox-docs.git
     branches: [master, new-mule]
