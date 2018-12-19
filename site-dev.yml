@@ -1,0 +1,42 @@
+site:
+  title: PortX Documentation
+  url: https://portx.io
+content:
+  sources:
+
+
+
+  - url: https://github.com/modusintegration/modusbox-docs.git
+    branches: [master, new-mule]
+    start_path: partner-manager
+
+  - url: https://github.com/modusintegration/modusbox-docs.git
+    branches: [master, new-mule]
+    start_path: partner-manager-connector
+
+  - url: https://github.com/modusintegration/modusbox-docs.git
+    branches: [master, new-mule]
+    start_path: release-notes
+
+  - url: https://github.com/modusintegration/modusbox-docs.git
+    branches: master
+    start_path: portx
+
+asciidoc:
+  attributes:
+    experimental: ''
+    idprefix: ''
+    idseparator: '-'
+    linkattrs: ''
+
+output:
+  destinations:
+  - provider: fs
+    path: build/site
+    clean: true
+ui:
+  bundle:
+    url: ./../antora-ui/build/ui-bundle.zip
+    snapshot: true
+runtime:
+  pull: true
