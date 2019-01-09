@@ -7,31 +7,27 @@ content:
   sources:
 
   - url: https://github.com/modusintegration/modusbox-docs.git
-    branches: master
+    branches: combo
     start_path: portx
 
-  - url: https://github.com/modusintegration/modusbox-docs.git
-    branches: [master, new-mule]
-    start_path: partner-manager
+  - url: ../modusbox-docs/
+    branches: [combo]
+    start_path: configuration
+
+  - url: ../modusbox-docs/
+    branches: [combo]
+    start_path: monitoring
+
+  - url: ../modusbox-docs/
+    branches: [combo]
+    start_path: administration
 
   - url: https://github.com/modusintegration/modusbox-docs.git
-    branches: [master, new-mule]
+    branches: [combo]
     start_path: partner-manager-connector
-    
-  - url: https://github.com/modusintegration/modusbox-docs.git
-    branches: [master, new-mule]
-    start_path: as2-connector
-    
-  - url: https://github.com/modusintegration/modusbox-docs.git
-    branches: [master, new-mule]
-    start_path: ftps-connector
 
   - url: https://github.com/modusintegration/modusbox-docs.git
-    branches: [master]
-    start_path: jde
-
-  - url: https://github.com/modusintegration/modusbox-docs.git
-    branches: [master, new-mule]
+    branches: [combo, new-mule]
     start_path: release-notes
 
 asciidoc:

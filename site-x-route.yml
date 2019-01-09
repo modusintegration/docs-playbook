@@ -1,18 +1,18 @@
 site:
   start_page: portx::index.adoc
-  title: PortX Documentation  
+  title: PortX Documentation Beta 
   url: https://portx.io/docs
 
 content:
   sources:
 
-  - url: https://github.com/modusintegration/modusbox-docs.git
-    branches: master
+  - url: ../modusbox-docs
+    branches: [x-route]
     start_path: portx
 
-  - url: https://github.com/modusintegration/modusbox-docs.git
-    branches: [master, new-mule]
-    start_path: partner-manager
+  - url: ../modusbox-docs
+    branches: [x-route]
+    start_path: x-route
 
   - url: https://github.com/modusintegration/modusbox-docs.git
     branches: [master, new-mule]
