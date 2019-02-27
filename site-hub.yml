@@ -1,6 +1,6 @@
 site:
   start_page: portx::index.adoc
-  title: PortX Documentation Beta 
+  title: PortX Documentation RC1
   url: https://portx.io/docs
 
 content:
