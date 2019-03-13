@@ -36,7 +36,7 @@ content:
 
 asciidoc:
   attributes:
-    otheresb: ''
+    other-esb: ''
     experimental: ''
     idprefix: ''
     idseparator: '-'
