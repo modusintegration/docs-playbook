@@ -1,0 +1,55 @@
+site:
+  start_page: portx::index.adoc
+  title: PortX Beta Documentation 
+  url: https://portx.io/docs
+
+content:
+  sources:
+
+  - url: ../modusbox-docs
+    branches: [latest]
+    start_path: portx
+
+  - url: ../modusbox-docs
+    branches: [latest]
+    start_path: integration-hub
+
+  - url: ../modusbox-docs
+    branches: [latest]
+    start_path: integration-hub-connector
+    
+  - url: ../modusbox-docs
+    branches: [latest]
+    start_path: as2-connector
+    
+  - url: ../modusbox-docs
+    branches: [latest]
+    start_path: ftps-connector
+    
+  - url: ../modusbox-docs
+    branches: [latest]
+    start_path: jde
+
+  - url: ../modusbox-docs
+    branches: [latest]
+    start_path: release-notes
+
+asciidoc:
+  attributes:
+    otheresb: ''
+    experimental: ''
+    idprefix: ''
+    idseparator: '-'
+    linkattrs: ''
+
+output:
+  destinations:
+  - provider: fs
+    path: build/site
+    clean: true
+ui:
+  bundle:
+    url: ./../antora-ui/build/ui-bundle.zip
+    snapshot: true
+runtime:
+  pull: true
