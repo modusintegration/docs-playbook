@@ -6,31 +6,31 @@ site:
 content:
   sources:
 
-  - url: ../modusbox-docs
+  - url: https://github.com/modusintegration/modusbox-docs
     branches: [latest]
     start_path: portx
 
-  - url: ../modusbox-docs
+  - url: https://github.com/modusintegration/modusbox-docs
     branches: [latest]
     start_path: integration-hub
 
-  - url: ../modusbox-docs
+  - url: https://github.com/modusintegration/modusbox-docs
     branches: [latest]
     start_path: integration-hub-connector
     
-  - url: ../modusbox-docs
+  - url: https://github.com/modusintegration/modusbox-docs
     branches: [latest]
     start_path: as2-connector
     
-  - url: ../modusbox-docs
+  - url: https://github.com/modusintegration/modusbox-docs
     branches: [latest]
     start_path: ftps-connector
     
-  - url: ../modusbox-docs
+  - url: https://github.com/modusintegration/modusbox-docs
     branches: [latest]
     start_path: jde
 
-  - url: ../modusbox-docs
+  - url: https://github.com/modusintegration/modusbox-docs
     branches: [latest]
     start_path: release-notes
 
